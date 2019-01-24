@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
   var HoverDown = document.getElementsByClassName("hover_down");
   var HeaderTopLang = document.getElementsByClassName("m_header_top_lang")[0];
   var ArrowClick = document.getElementsByClassName("arrow_click");
@@ -21,14 +21,14 @@ window.onload = function() {
     ArrowClick[0].appendChild(SliderProductArrow[i]);
   }
   Size[0].innerHTML = SliderProductDots.length;
-  SliderProductArrow[1].addEventListener("click", function() {
+  SliderProductArrow[1].addEventListener("click", function () {
     for (var i = 0; i < SliderProductDots.length; i++) {
       if (SliderProductDots[i].classList.length == 1) {
         SizeUp[0].innerHTML = SliderProductDots[i].children[0].innerHTML;
       }
     }
   });
-  SliderProductArrow[0].addEventListener("click", function() {
+  SliderProductArrow[0].addEventListener("click", function () {
     for (var i = 0; i < SliderProductDots.length; i++) {
       if (SliderProductDots[i].classList.length == 1) {
         SizeUp[0].innerHTML = SliderProductDots[i].children[0].innerHTML;
@@ -40,14 +40,14 @@ window.onload = function() {
     ArrowClick[1].appendChild(SliderProductHitsArrow[i]);
   }
   Size[1].innerHTML = SliderProductHitsDots.length;
-  SliderProductHitsArrow[1].addEventListener("click", function() {
+  SliderProductHitsArrow[1].addEventListener("click", function () {
     for (var i = 0; i < SliderProductHitsDots.length; i++) {
       if (SliderProductHitsDots[i].classList.length == 1) {
         SizeUp[1].innerHTML = SliderProductHitsDots[i].children[0].innerHTML;
       }
     }
   });
-  SliderProductHitsArrow[0].addEventListener("click", function() {
+  SliderProductHitsArrow[0].addEventListener("click", function () {
     for (var i = 0; i < SliderProductHitsDots.length; i++) {
       if (SliderProductHitsDots[i].classList.length == 1) {
         SizeUp[1].innerHTML = SliderProductHitsDots[i].children[0].innerHTML;
@@ -58,8 +58,8 @@ window.onload = function() {
   var button_catalog = document.getElementsByClassName("button_catalog")[0];
   var Device = document.getElementsByClassName("device_container")[0];
   if (button_catalog) {
-    button_catalog.addEventListener("click", function() {
-      setTimeout(function() {
+    button_catalog.addEventListener("click", function () {
+      setTimeout(function () {
         Device.classList.remove("active-scale");
       }, 500);
       if (Device.classList.length === 2) {
@@ -69,6 +69,7 @@ window.onload = function() {
         Device.classList.add("active-scale");
       }
     });
+
     function addClick(e) {
       for (var i = 0; i < HeaderTopLang.children.length; i++) {
         HeaderTopLang.children[i].classList.remove("active");
@@ -100,12 +101,13 @@ window.onload = function() {
       "m_header_center_logo"
     )[0];
     var iconTel = document.getElementsByClassName("iconTel")[0];
-    iconTel.children[0].attributes[0].nodeValue = "../img/telephone-orange.png";
+    iconTel.children[0].attributes[0].nodeValue = "./img/telephone-orange.png";
     HeaderCenterLogo.children[0].children[0].attributes[0].nodeValue =
-      "../img/logo_two.png";
+      "./img/logo_two.png";
     MobRowElement.children[0].appendChild(MobAdaptive.lastElementChild);
     MobileHeaderTop.appendChild(MobTelSearch);
     ModalHeaderTop.appendChild(HeaderTopLang);
+
     function menu(e) {
       if (
         e.currentTarget.classList[e.currentTarget.classList.length - 1] ===
@@ -133,9 +135,7 @@ window.onload = function() {
       createElem.appendChild(linkhover[k]);
       for (var i = 0; i < HoverDown[k].children.length - 1; i++) {
         for (
-          var j = 0;
-          j < HoverDown[k].children[i].children[0].children.length;
-          j++
+          var j = 0; j < HoverDown[k].children[i].children[0].children.length; j++
         ) {
           massiveTwo.push(HoverDown[k].children[i].children[0].children[j]);
         }
@@ -149,14 +149,14 @@ window.onload = function() {
       massiveTwo = [];
     }
     var DropDown = document.getElementsByClassName("drop_down");
+
     function dropDown(e) {
-      if (e.currentTarget.classList[e.currentTarget.classList.length - 1] ==="active"
-      ) {
+      if (e.currentTarget.classList[e.currentTarget.classList.length - 1] === "active") {
         e.currentTarget.classList.remove("active");
         e.currentTarget.parentNode.children[0].classList.remove("active");
 
       } else {
-         e.currentTarget.parentNode.children[0].classList.add("active");
+        e.currentTarget.parentNode.children[0].classList.add("active");
         e.currentTarget.classList.add("active");
       }
     }
@@ -169,9 +169,7 @@ window.onload = function() {
     for (var k = 0; k < HoverDown.length; k++) {
       for (var i = 0; i < HoverDown[k].children.length - 1; i++) {
         for (
-          var j = 0;
-          j < HoverDown[k].children[i].children[0].children.length;
-          j++
+          var j = 0; j < HoverDown[k].children[i].children[0].children.length; j++
         ) {
           massive.push(HoverDown[k].children[i].children[0].children[j]);
         }

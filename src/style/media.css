@@ -925,7 +925,8 @@
         width: 25px;
         height: 50px;
     }
-.slider_container .slick-prev:before,
+
+    .slider_container .slick-prev:before,
     .slider_container .slick-next:before {
         width: 12px;
         height: 20px;
@@ -1576,6 +1577,7 @@
 
     .m_header_center_tel .iconTel {
         height: 100% !important;
+        background-color: #fff;
         width: 100% !important;
         display: flex;
         align-items: center;
