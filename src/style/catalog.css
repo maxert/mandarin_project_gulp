@@ -1,0 +1,65 @@
+.l_container.top_catalog_filter {
+    margin-top: 22px;
+    margin-bottom: 30px;
+}
+
+.device_list svg path {
+    fill: #e9e9e9 !important;
+}
+
+.device_list {
+    position: relative;
+}
+
+.device_list svg {
+    width: 170px;
+    height: 40px;
+    margin-left: -15px;
+}
+
+.filter {
+    margin-left: auto;
+}
+
+.filter>div {
+    height: 40px;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-left: 30px;
+}
+
+.filter span {
+    color: #010101;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 12px 18px;
+}
+
+
+
+.filter select {
+    color: #40a7ff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 14px;
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #40a7ff;
+}
+
+.device_list .text_list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #010101;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
