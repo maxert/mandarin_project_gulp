@@ -20,6 +20,9 @@ window.onload = function () {
   for (var i = 0; i < SliderProductArrow.length; i++) {
     ArrowClick[0].appendChild(SliderProductArrow[i]);
   }
+  if(SliderProductDots.length==0){
+SliderProductDots=null;
+  }else{
   Size[0].innerHTML = SliderProductDots.length;
   SliderProductArrow[1].addEventListener("click", function () {
     for (var i = 0; i < SliderProductDots.length; i++) {
@@ -54,7 +57,7 @@ window.onload = function () {
       }
     }
   });
-
+  }
   var button_catalog = document.getElementsByClassName("button_catalog")[0];
   var Device = document.getElementsByClassName("device_container")[0];
   if (button_catalog) {

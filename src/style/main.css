@@ -194,6 +194,7 @@ textarea {
   padding: 0;
 }
 
+
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -726,8 +727,10 @@ ul {
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.11);
   background-color: #ffffff;
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
+
+
 
 #device {
   display: flex;
