@@ -1,4 +1,5 @@
 window.onload = function () {
+  var NewProduct = document.querySelectorAll(".new_product .item_product");
   var HoverDown = document.getElementsByClassName("hover_down");
   var HeaderTopLang = document.getElementsByClassName("m_header_top_lang")[0];
   var ArrowClick = document.getElementsByClassName("arrow_click");
@@ -20,44 +21,71 @@ window.onload = function () {
   for (var i = 0; i < SliderProductArrow.length; i++) {
     ArrowClick[0].appendChild(SliderProductArrow[i]);
   }
-  if(SliderProductDots.length==0){
-SliderProductDots=null;
-  }else{
-  Size[0].innerHTML = SliderProductDots.length;
-  SliderProductArrow[1].addEventListener("click", function () {
-    for (var i = 0; i < SliderProductDots.length; i++) {
-      if (SliderProductDots[i].classList.length == 1) {
-        SizeUp[0].innerHTML = SliderProductDots[i].children[0].innerHTML;
+  if (SliderProductDots.length == 0) {
+    SliderProductDots = null;
+  } else {
+    Size[0].innerHTML = SliderProductDots.length;
+    SliderProductArrow[1].addEventListener("click", function () {
+      for (var i = 0; i < SliderProductDots.length; i++) {
+        if (SliderProductDots[i].classList.length == 1) {
+          SizeUp[0].innerHTML = SliderProductDots[i].children[0].innerHTML;
+        }
       }
-    }
-  });
-  SliderProductArrow[0].addEventListener("click", function () {
-    for (var i = 0; i < SliderProductDots.length; i++) {
-      if (SliderProductDots[i].classList.length == 1) {
-        SizeUp[0].innerHTML = SliderProductDots[i].children[0].innerHTML;
+    });
+    SliderProductArrow[0].addEventListener("click", function () {
+      for (var i = 0; i < SliderProductDots.length; i++) {
+        if (SliderProductDots[i].classList.length == 1) {
+          SizeUp[0].innerHTML = SliderProductDots[i].children[0].innerHTML;
+        }
       }
-    }
-  });
+    });
 
-  for (var i = 0; i < SliderProductHitsArrow.length; i++) {
-    ArrowClick[1].appendChild(SliderProductHitsArrow[i]);
-  }
-  Size[1].innerHTML = SliderProductHitsDots.length;
-  SliderProductHitsArrow[1].addEventListener("click", function () {
-    for (var i = 0; i < SliderProductHitsDots.length; i++) {
-      if (SliderProductHitsDots[i].classList.length == 1) {
-        SizeUp[1].innerHTML = SliderProductHitsDots[i].children[0].innerHTML;
-      }
+    for (var i = 0; i < SliderProductHitsArrow.length; i++) {
+      ArrowClick[1].appendChild(SliderProductHitsArrow[i]);
     }
-  });
-  SliderProductHitsArrow[0].addEventListener("click", function () {
-    for (var i = 0; i < SliderProductHitsDots.length; i++) {
-      if (SliderProductHitsDots[i].classList.length == 1) {
-        SizeUp[1].innerHTML = SliderProductHitsDots[i].children[0].innerHTML;
+    Size[1].innerHTML = SliderProductHitsDots.length;
+    SliderProductHitsArrow[1].addEventListener("click", function () {
+      for (var i = 0; i < SliderProductHitsDots.length; i++) {
+        if (SliderProductHitsDots[i].classList.length == 1) {
+          SizeUp[1].innerHTML = SliderProductHitsDots[i].children[0].innerHTML;
+        }
       }
-    }
-  });
+    });
+    SliderProductHitsArrow[0].addEventListener("click", function () {
+      for (var i = 0; i < SliderProductHitsDots.length; i++) {
+        if (SliderProductHitsDots[i].classList.length == 1) {
+          SizeUp[1].innerHTML = SliderProductHitsDots[i].children[0].innerHTML;
+        }
+      }
+    });
   }
+
+  for (var i = 0; i < NewProduct.length; i++) {
+    var createElement = document.createElement("div");
+    NewProduct[i].parentNode.appendChild(createElement);
+    createElement.classList.add("product_size");
+    createElement.appendChild(NewProduct[i]);
+  }
+  var CatalogProductAll = document.querySelectorAll(".catalog_product_all > .item_product ");
+  for (var i = 0; i < CatalogProductAll.length; i++) {
+    var createElementTwo = document.createElement("div");
+    CatalogProductAll[i].parentNode.appendChild(createElementTwo);
+    createElementTwo.classList.add("product_size");
+    createElementTwo.appendChild(CatalogProductAll[i]);
+  }
+
+  function Mouse(e) {
+    for (var i = 0; i < CatalogProductAll.length; i++) {
+      CatalogProductAll[i].style.zIndex = "1";
+    }
+    e.currentTarget.style.zIndex = "14";
+  }
+  for (var i = 0; i < CatalogProductAll.length; i++) {
+    CatalogProductAll[i].addEventListener("mouseover", Mouse, false);
+  }
+
+
+
   var button_catalog = document.getElementsByClassName("button_catalog")[0];
   var Device = document.getElementsByClassName("device_container")[0];
   if (button_catalog) {

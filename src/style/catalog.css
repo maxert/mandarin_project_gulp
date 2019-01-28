@@ -204,7 +204,7 @@
 .backgraund_image {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -11px;
     height: 100%;
     width: 100%;
     background: url(../img/Rectangle_579.png) no-repeat;
@@ -231,13 +231,160 @@
     cursor: pointer;
     padding: 6px 52px;
 }
+
 .banner_sale {
     top: 50%;
     position: absolute;
-    transform:translate(0%,-50%);
+    transform: translate(0%, -50%);
     right: 101px;
-    -webkit-transform:translate(0%,-50%);
-    -moz-transform:translate(0%,-50%);
-    -ms-transform:translate(0%,-50%);
-    -o-transform:translate(0%,-50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+}
+
+.new_product>div:first-child {
+    margin-left: 0px;
+}
+
+.new_product>div {
+    margin-left: 50px;
+}
+
+.catalog_product_all .item_product .new_tovar_img {
+    display: none;
+}
+
+.display_all {
+    border: none;
+    border-radius: 20px;
+    background-color: #f5cf05;
+    padding: 10px 53px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.display_all svg path {
+    fill: white;
+}
+
+.display_all svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+}
+
+.filters_product_container {
+    margin-bottom: 70px;
+}
+
+.number_button_select {
+    margin-top: 18px;
+}
+
+.left_arrow_number {
+    position: relative;
+    margin-right: 45px;
+    position: relative;
+    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.09);
+    background-color: #f5cf05;
+    padding: 19px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    ;
+    margin-left: 45px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.left_arrow_number.active {
+    border: 1px solid #b9b9b9;
+    padding: 19px;
+    background: transparent;
+    border-radius: 50px;
+    box-shadow: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.right_arrow_number.active::before {
+    background: url(../img/arrow_left_gray.png) no-repeat center;
+    background: transparent;
+    border: 1px solid #b9b9b9;
+    box-shadow: none;
+}
+
+.left_arrow_number.active::before {
+    background: url(../img/arrow_left_gray.png) no-repeat center;
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.right_arrow_number::before {
+    background: url(../img/arrow_right_white.png) no-repeat center;
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.right_arrow_number,
+.left_arrow_number {
+    cursor: pointer;
+}
+
+.right_arrow_number {
+
+    position: relative;
+    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.09);
+    background-color: #f5cf05;
+    padding: 19px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    ;
+    margin-left: 45px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.number_list li:first-child {
+    margin-left: 0px;
+}
+
+.number_list li.active {
+    color: #000000;
+    font-weight: 900;
+}
+
+.number_list li {
+    color: #858585;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-left: 27px;
+    cursor: pointer;
 }

@@ -35,6 +35,10 @@
   display: flex;
 }
 
+.f_wrap {
+  flex-wrap: wrap;
+}
+
 /*-------------------------------*/
 
 button,
@@ -727,7 +731,7 @@ ul {
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.11);
   background-color: #ffffff;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 
@@ -901,6 +905,8 @@ ul {
 .item_product {
   height: 460px;
   overflow: hidden;
+  position: relative;
+  z-index: 3;
   width: 300px !important;
   margin: 10px auto;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.06);
@@ -918,11 +924,11 @@ ul {
   box-shadow: 0 0 21px rgba(64, 167, 255, 0.24);
 }
 
-.slider_product_hits .item_product:hover .new_tovar_img svg #g20 path {
+.slider_product_hits .item_product:hover .new_tovar_img svg path {
   fill: #ff9d03 !important;
 }
 
-.item_product:hover .new_tovar_img svg #g20 path {
+.item_product:hover .new_tovar_img svg path {
   fill: #ff0000 !important;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -951,8 +957,10 @@ ul {
 }
 
 .new_tovar_img svg {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: -18px;
+  left: -20px;
+
 }
 
 .new_tovar_img {
@@ -998,6 +1006,7 @@ ul {
   color: #000000;
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   margin-top: 15px;
 }
@@ -1627,4 +1636,64 @@ footer {
 
 .button_catalog {
   display: none;
+}
+
+.item_product.active .buy_product button:nth-child(1) {
+  display: none;
+}
+
+.item_product.active .content_block .none_product {
+  display: block;
+}
+.item_product.active .price_product span{
+  color: #b4b4b4;
+}
+
+.none_product {
+  color: #ff0000;
+  font-weight: 700;
+  display: none;
+  position: absolute;
+  bottom: 30px;
+}
+
+button.report_availability {
+  border-radius: 20px;
+  background-color: #aabccc;
+  padding: 10px 56px;
+}
+
+.report_availability img {
+  height: 28px;
+  width: 28px;
+}
+
+.product_size {
+  height: 460px;
+  margin-left: 50px;
+}
+
+.catalog_product_all {
+  position: relative;
+  z-index: 1;
+
+}
+
+.catalog_product_all>div:nth-child(4n+1) {
+  margin-left: 0px;
+}
+
+.new_product {
+  margin-top: 42px;
+  margin-bottom: 50px;
+}
+
+.new_product .item_product {
+  margin: 0px auto;
+}
+.catalog_product_all .product_size{
+  margin-bottom: 50px;
+}
+.catalog_product_all .item_product{
+  margin: 0px auto;
 }
