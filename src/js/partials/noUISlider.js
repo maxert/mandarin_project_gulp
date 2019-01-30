@@ -1,4 +1,4 @@
-window.onload = function() {
+$(document).ready(function () {
 
     var keypressSlider = document.getElementById('input-range-container');
     var input0 = document.getElementById('min_range');
@@ -6,17 +6,14 @@ window.onload = function() {
     var inputs = [input0, input1];
 
     noUiSlider.create(keypressSlider, {
-        start: [20, 80],
+        start: [600, 14000],
         connect: true,
         tooltips: [true, wNumb({
             decimals: 1
         })],
         range: {
-            'min': [0],
-            '10%': [10, 10],
-            '50%': [80, 50],
-            '80%': 150,
-            'max': 200
+            'min': [0, 100],
+            'max': [15000, 100]
         }
     });
 
@@ -84,4 +81,7 @@ window.onload = function() {
             }
         });
     });
-}
+    $(document).ready(function () {
+        $('select').niceSelect();
+    });
+});

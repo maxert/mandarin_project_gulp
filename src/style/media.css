@@ -239,6 +239,10 @@
 
     }
 
+    .items_online_store>div {
+        height: 100%;
+    }
+
     .items_online_store img {
         width: 100%;
     }
@@ -358,6 +362,77 @@
     .social_img svg {
         width: 21px;
         height: 21px;
+    }
+
+    .product_size {
+        height: 328px;
+    }
+
+    .new_product {
+        margin-top: 29px;
+        margin-bottom: 35px;
+    }
+
+    .list_filter {
+        width: 147px;
+    }
+
+    .filter>div>span {
+        color: #010101;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 9.96px;
+    }
+
+    .list_filter>.nice-select {
+        width: 43px;
+    }
+
+    .price_filter>.nice-select {
+        width: 129px !important;
+    }
+
+    .price_filter {
+        width: 186px;
+    }
+
+    .sorting_filter>.nice-select {
+        width: 134px !important;
+    }
+
+    .sorting_filter {
+        width: 237px;
+    }
+
+    .current {
+        color: #40a7ff;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 9.96px;
+    }
+
+    .nice-select:after {
+        width: 11px !important;
+        height: 7px !important;
+        background-size: 100%;
+        right: 7px;
+        top: 22px !important;
+    }
+
+    .nice-select.open .list {
+        background: none !important;
+    }
+
+    .nice-select .option {
+        min-height: 30px !important;
+        line-height: 30px;
+    }
+
+    .nice-select,
+    .nice-select.open {
+        padding-left: 6px !important;
+        padding-right: 0px !important;
+        height: auto !important;
     }
 }
 
