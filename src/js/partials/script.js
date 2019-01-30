@@ -86,6 +86,11 @@ window.onload = function () {
 
 
 
+
+  
+
+
+
   var button_catalog = document.getElementsByClassName("button_catalog")[0];
   var Device = document.getElementsByClassName("device_container")[0];
   if (button_catalog) {

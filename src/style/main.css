@@ -1037,6 +1037,11 @@ ul {
   font-weight: 700;
 }
 
+.slider_product .slick-slide>div,
+.slider_product_hits .slick-slide>div {
+  display: flex;
+}
+
 .slider_product .slick-dots {
   display: none !important;
 }
@@ -1645,14 +1650,14 @@ footer {
 .item_product.active .content_block .none_product {
   display: block;
 }
-.item_product.active .price_product span{
+
+.item_product .price_product span.gray {
   color: #b4b4b4;
 }
 
 .none_product {
   color: #ff0000;
   font-weight: 700;
-  display: none;
   position: absolute;
   bottom: 30px;
 }
@@ -1691,9 +1696,11 @@ button.report_availability {
 .new_product .item_product {
   margin: 0px auto;
 }
-.catalog_product_all .product_size{
+
+.catalog_product_all .product_size {
   margin-bottom: 50px;
 }
-.catalog_product_all .item_product{
+
+.catalog_product_all .item_product {
   margin: 0px auto;
 }

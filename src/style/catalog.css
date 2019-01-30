@@ -388,3 +388,173 @@
     margin-left: 27px;
     cursor: pointer;
 }
+
+.input-range-container {
+    position: relative;
+    height: 6px;
+    border-radius: 3px;
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+}
+
+.input-range-tracker {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.input-range-container input {
+    margin-top: 2px;
+}
+
+.input-range-tracker-between {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 6px;
+    transform: translate(0%, -50%);
+    border-radius: 10px;
+    background: orange;
+    pointer-events: none;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+}
+
+input[type="range"] {
+    appearance: none;
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+
+input[type="range"].display-upper {
+    z-index: 1;
+}
+
+input[type="range"]:not(*:root) {
+    pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-webkit-media-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    pointer-events: auto;
+}
+
+input[name="range-lower"]::-webkit-slider-thumb,
+input[name="range-lower"]::-webkit-media-slider-thumb {
+    width: 14px;
+    height: 14px;
+    background-color: #f5cf05;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+}
+
+input[name="range-upper"]::-webkit-slider-thumb,
+input[name="range-upper"]::-webkit-media-slider-thumb {
+    width: 22px;
+    height: 22px;
+    background-color: #f5cf05;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+}
+
+input[type="range"]::-moz-range-track {
+    background: transparent;
+}
+
+input[type="range"]::-moz-range-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    pointer-events: auto;
+}
+
+input[name="range-lower"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background-color: #f5cf05;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+}
+
+input[name="range-upper"]::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    background-color: #f5cf05;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+}
+
+input[type="range"]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    z-index: 1;
+}
+
+input[type="range"]::-ms-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+}
+
+input[name="range-lower"]::-ms-thumb {
+    width: 14px;
+    height: 14px;
+    background-color: #f5cf05;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+}
+
+input[name="range-upper"]::-ms-thumb {
+    width: 22px;
+    height: 22px;
+    background-color: #f5cf05;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+}
