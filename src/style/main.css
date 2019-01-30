@@ -1193,11 +1193,15 @@ ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 55px;
+  margin-top: 65px;
 }
 
-.buy_product button:hover {
+.buy_product button.buy:hover {
   box-shadow: 0px 12px 42px -9px rgba(53, 0, 255, 0.5);
+}
+
+.buy_product button.report_availability:hover {
+  box-shadow: 0px 12px 42px -9px rgba(92, 92, 92, 0.5);
 }
 
 .buy_product button {
@@ -1219,6 +1223,10 @@ ul {
   -moz-transition: 0.5s all;
   -ms-transition: 0.5s all;
   -o-transition: 0.5s all;
+}
+
+.buy_product button.report_availability {
+  box-shadow: 0px 12px 42px -9px rgba(92, 92, 92, 0.25);
 }
 
 .buy_product svg {
@@ -1440,9 +1448,19 @@ footer {
   border: 1px solid #fff;
   padding: 7px 42px;
   background: 0 0;
+  transition: .5s all;
   margin-top: 37px;
   cursor: pointer;
   margin-bottom: 39px;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+}
+
+.search_online:hover {
+  border: 1px solid transparent;
+  background-color: #f5cf05;
 }
 
 .item_footer p {
@@ -1614,8 +1632,12 @@ footer {
 }
 
 .top_hover_items {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin: 35px 41px 0px 47px;
+  justify-content: center;
+  height: 100%;
+  margin: 35px 41px 0 47px;
 }
 
 .bottom_button {
@@ -1703,4 +1725,12 @@ button.report_availability {
 
 .catalog_product_all .item_product {
   margin: 0px auto;
+}
+
+.top_hover_items img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }

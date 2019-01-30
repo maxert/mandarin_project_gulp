@@ -1,4 +1,11 @@
 @media only screen and (max-width:1800px) {
+    .buy_product svg {
+        left: 8px;
+    }
+
+    button.report_availability {
+        padding: 10px 31px;
+    }
 
     .m_header_top_content,
     .m_header_top_content a {
@@ -168,7 +175,8 @@
         margin-top: 9px;
     }
 
-    .text_model {
+    .text_model,
+    .none_product {
         font-size: 13px;
     }
 
@@ -366,7 +374,6 @@
         100% {
             top: 195px;
             opacity: 1;
-              z-index: 3;
         }
     }
 
@@ -507,6 +514,7 @@
         align-items: center;
         max-width: 731px;
         left: 50%;
+        z-index: 1;
         transform: translate(-50%, 0%);
         position: absolute;
         background-color: #fff !important;
@@ -564,6 +572,7 @@
         -ms-transform: translate(-50%, 0%);
         -o-transform: translate(-50%, 0%);
         background-color: transparent;
+        z-index: -1;
     }
 
     #device>li::before {
