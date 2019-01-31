@@ -1,6 +1,10 @@
-.l_container.top_catalog_filter {
+.l_container.top_link_list {
     margin-top: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.l_container.filter_content {
+    margin-bottom: 35px;
 }
 
 .device_list svg path {
@@ -11,13 +15,15 @@
     position: relative;
     display: flex;
 }
-.current{
-    color: #40a7ff;
-font-family: Roboto;
-font-size: 18px;
-font-weight: 400;
-line-height: 14px;
+
+.current {
+    color: #c0c0c0;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 14px;
 }
+
 .device_list svg {
     width: 170px;
     height: 40px;
@@ -53,33 +59,35 @@ line-height: 14px;
     padding: 12px 18px;
     margin-right: auto;
 }
-.nice-select.open:after{
-        transform: rotate(180deg)!important;
-        -webkit-transform: rotate(180deg)!important;
-        -moz-transform: rotate(180deg)!important;
-        -ms-transform: rotate(180deg)!important;
-        -o-transform: rotate(180deg)!important;
-        top: 16px!important;
+
+.nice-select.open:after {
+    transform: rotate(180deg) !important;
+    -webkit-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
+    top: 16px !important;
 }
+
 .nice-select:after {
-    background: url(../img/blue_arrow.png) no-repeat center;
-    width: 14px!important;
-    height: 8px!important;
-    border: none!important;
-    margin-top: -5px!important;
-    transform: rotate(0deg)!important;
-    -webkit-transform: rotate(0deg)!important;
-    -moz-transform: rotate(0deg)!important;
-    -ms-transform: rotate(0deg)!important;
-    -o-transform: rotate(0deg)!important;
-    top: 20px!important;
+    background: url(../img/gray_arrow.png) no-repeat center;
+    width: 14px !important;
+    height: 8px !important;
+    border: none !important;
+    margin-top: -5px !important;
+    transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
+    -moz-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    -o-transform: rotate(0deg) !important;
+    top: 20px !important;
 }
 
 .nice-select.open {
     padding-left: 8px !important;
     padding-right: 30px !important;
     top: 0px;
-    height: auto!important;
+    height: auto !important;
 }
 
 .sorting_filter {
@@ -115,7 +123,7 @@ line-height: 14px;
 }
 
 .nice-select {
-    color: #40a7ff;
+    color: #c0c0c0;
     font-size: 18px;
     font-weight: 400;
     line-height: 14px;
@@ -125,7 +133,7 @@ line-height: 14px;
     padding-right: 30px !important;
     height: auto !important;
     border-radius: 0 20px 20px 0 !important;
-    border: 1px solid #40a7ff !important;
+    border: 1px solid #c0c0c0 !important;
     -webkit-border-radius: 0 20px 20px 0 !important;
     -moz-border-radius: 0 20px 20px 0 !important;
     -ms-border-radius: 0 20px 20px 0 !important;
@@ -271,6 +279,7 @@ line-height: 14px;
 
 .all_product_content {
     margin-left: 65px;
+    max-width: 1350px;
 }
 
 .select_text {
@@ -279,6 +288,14 @@ line-height: 14px;
     font-weight: 400;
     line-height: 27px;
     margin-left: 10px;
+}
+
+.select_text a:hover {
+    font-weight: 500;
+}
+
+.select_text a {
+    color: #575757;
 }
 
 .banner {
@@ -314,7 +331,7 @@ line-height: 14px;
 .items_button {
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 142px;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -355,7 +372,7 @@ line-height: 14px;
 }
 
 .display_all {
-      border: none;
+    border: none;
     border-radius: 20px;
     background-color: #f5cf05;
     padding: 10px 69px;
@@ -364,6 +381,11 @@ line-height: 14px;
     position: relative;
     font-weight: 700;
     cursor: pointer;
+    z-index: 0;
+}
+
+.select_list>a:nth-child(3) {
+    margin-left: -1px;
 }
 
 .display_all svg path {
@@ -420,10 +442,12 @@ line-height: 14px;
     background: transparent;
     border: 1px solid #b9b9b9;
     box-shadow: none;
+    background-size: 100% 100%;
 }
 
 .left_arrow_number.active::before {
     background: url(../img/arrow_left_gray.png) no-repeat center;
+    background-size: 100% 100%;
     position: absolute;
     content: "";
     width: 8px;
@@ -571,6 +595,8 @@ input[name="range-lower"]::-webkit-media-slider-thumb {
     -o-transform: translate(0%, -50%);
     -webkit-transform: translate(0%, -50%);
 }
+
+
 
 input[name="range-upper"]::-webkit-slider-thumb,
 input[name="range-upper"]::-webkit-media-slider-thumb {
@@ -727,6 +753,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .noUi-connects {
     border-radius: 3px;
 }
-.banner img{
+
+.banner img {
     width: 100%;
 }

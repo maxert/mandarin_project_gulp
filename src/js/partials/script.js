@@ -1,5 +1,5 @@
 window.onload = function () {
-  var NewProduct = document.querySelectorAll(".new_product .item_product");
+
   var HoverDown = document.getElementsByClassName("hover_down");
   var HeaderTopLang = document.getElementsByClassName("m_header_top_lang")[0];
   var ArrowClick = document.getElementsByClassName("arrow_click");
@@ -60,13 +60,8 @@ window.onload = function () {
     });
   }
 
-  for (var i = 0; i < NewProduct.length; i++) {
-    var createElement = document.createElement("div");
-    NewProduct[i].parentNode.appendChild(createElement);
-    createElement.classList.add("product_size");
-    createElement.appendChild(NewProduct[i]);
-  }
-  var CatalogProductAll = document.querySelectorAll(".catalog_product_all > .item_product ");
+
+  var CatalogProductAll = document.querySelectorAll(".catalog_items  .item_product ");
   for (var i = 0; i < CatalogProductAll.length; i++) {
     var createElementTwo = document.createElement("div");
     CatalogProductAll[i].parentNode.appendChild(createElementTwo);
@@ -87,7 +82,7 @@ window.onload = function () {
 
 
 
-  
+
 
 
 
@@ -133,13 +128,7 @@ window.onload = function () {
     var MobileHeaderTop = document.getElementsByClassName(
       "mobile_header_top"
     )[0];
-    var HeaderCenterLogo = document.getElementsByClassName(
-      "m_header_center_logo"
-    )[0];
-    var iconTel = document.getElementsByClassName("iconTel")[0];
-    iconTel.children[0].attributes[0].nodeValue = "./img/telephone-orange.png";
-    HeaderCenterLogo.children[0].children[0].attributes[0].nodeValue =
-      "./img/logo_two.png";
+
     MobRowElement.children[0].appendChild(MobAdaptive.lastElementChild);
     MobileHeaderTop.appendChild(MobTelSearch);
     ModalHeaderTop.appendChild(HeaderTopLang);
@@ -202,6 +191,7 @@ window.onload = function () {
   } else if (window.innerWidth <= 1280) {
     var massive = [];
     var count = 0;
+
     for (var k = 0; k < HoverDown.length; k++) {
       for (var i = 0; i < HoverDown[k].children.length - 1; i++) {
         for (
@@ -224,5 +214,30 @@ window.onload = function () {
       }
       massive = [];
     }
+  }
+  if (window.innerWidth <= 1280) {
+    var FiltersProductContainer = document.getElementsByClassName("filters_product_container")[0];
+    var Banner = document.getElementsByClassName("banner")[0];
+    if (FiltersProductContainer) {
+      FiltersProductContainer.appendChild(Banner);
+    }
+  }
+  if (window.innerWidth <= 767) {
+    var ButtonClose = document.getElementsByClassName("button_close")[0];
+    var TextContainer = document.getElementsByClassName('text_container')[0];
+    var ItemsOnlineStore = document.getElementsByClassName("items_online_store")[1];
+    TextContainer.appendChild(ItemsOnlineStore.children[0]);
+    var FilterProduct = document.getElementsByClassName("filter_product")[0];
+    var PopUpMobileFilter = document.getElementsByClassName("pop_up_mobile_filter")[0];
+    PopUpMobileFilter.appendChild(FilterProduct);
+    var FilterMobile = document.getElementsByClassName("filter_mobile")[0];
+    FilterMobile.addEventListener("click", function () {
+      PopUpMobileFilter.classList.add("active");
+      ButtonClose.classList.add("active");
+      ButtonClose.addEventListener("click", function () {
+        PopUpMobileFilter.classList.remove("active");
+        ButtonClose.classList.remove("active");
+      })
+    });
   }
 };
