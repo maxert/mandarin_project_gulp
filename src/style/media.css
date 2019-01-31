@@ -2195,4 +2195,15 @@
         -ms-transform: translate(0%, -50%);
         -o-transform: translate(0%, -50%);
     }
+    .filter_mobile{
+        display: block;
+    }
+    .items_button{
+        right: 0px;
+        transform: translate(-10%,-50%)    ;
+        -webkit-transform: translate(-10%,-50%)    ;
+        -moz-transform: translate(-10%,-50%)    ;
+        -ms-transform: translate(-10%,-50%)    ;
+        -o-transform: translate(-10%,-50%)    ;
+}
 }
