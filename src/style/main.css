@@ -178,9 +178,11 @@ button:-moz-focusring {
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
-.filter_mobile{
+
+.filter_mobile {
   display: none;
 }
+
 legend {
   box-sizing: border-box;
   color: inherit;
@@ -737,36 +739,45 @@ ul {
   position: relative;
   z-index: 3;
 }
-.m_header_center_tel:hover .inActive{
+
+.m_header_center_tel:hover .inActive {
   margin-bottom: auto;
   opacity: 1;
 }
-.m_header_center_tel:hover .inActive{
+
+.m_header_center_tel:hover .inActive {
   pointer-events: all;
 }
+
 .m_header_center_tel .inActive {
   position: relative;
-  display:block;
+  display: block;
   opacity: 0;
- margin-bottom: -42px;
- pointer-events: none;
+  margin-bottom: -42px;
+  pointer-events: none;
 }
-.m_header_center_tel *,.m_header_center_tel, .m_header_center_tel .iconTel{
+
+.m_header_center_tel *,
+.m_header_center_tel,
+.m_header_center_tel .iconTel {
   transition: .5s all;
   -webkit-transition: .5s all;
   -moz-transition: .5s all;
   -ms-transition: .5s all;
   -o-transition: .5s all;
 }
+
 #device {
   display: flex;
   max-width: 1720px;
   margin: 0 auto;
   position: relative;
 }
-#device>li:last-child{
+
+#device>li:last-child {
   margin-right: 0px;
 }
+
 #device>li {
   padding: 12px 12px 9px 9px;
   text-align: center;
@@ -891,7 +902,7 @@ ul {
 }
 
 .slider_container {
-  margin-top: 28px;
+  margin-top: 24px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.36);
   background-color: #1d2c2f;
 }
@@ -1012,6 +1023,7 @@ ul {
 
 .img_product {
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
 }
@@ -1039,7 +1051,12 @@ ul {
   text-align: center;
 }
 
-.name_product>span,
+.name_product>a {
+  color: #000000;
+  cursor: pointer;
+}
+
+.name_product>a>span,
 .model_id {
   font-size: 18px;
   font-weight: 700;
@@ -1755,8 +1772,8 @@ button.report_availability {
 .new_product {
   margin-top: 42px;
   margin-bottom: 50px;
-position: relative;
-z-index: 2;  
+  position: relative;
+  z-index: 2;
 }
 
 .new_product .item_product {
@@ -1786,7 +1803,11 @@ z-index: 2;
   stroke-width: 0.4;
 }
 
-.select_list {}
+.select_list svg path {
+  stroke: black;
+  stroke-opacity: 0.2;
+  stroke-width: 0.4;
+}
 
 @import "/bower_components/nouislider/distribute/nouislider.min.css";
 @import "/bower_components/jquery-nice-select/css/nice-select.css";

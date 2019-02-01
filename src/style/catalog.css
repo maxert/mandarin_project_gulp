@@ -385,9 +385,11 @@
 }
 
 .select_list>a:nth-child(3) {
+    margin-left: -2px;
+}
+.select_list>a:nth-child(4) {
     margin-left: -1px;
 }
-
 .display_all svg path {
     fill: white;
 }
