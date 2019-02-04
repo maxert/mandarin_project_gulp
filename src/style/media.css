@@ -166,7 +166,7 @@
     }
 
     .model_id,
-    .name_product>span {
+    .name_product>a>span {
         font-size: 13px;
         line-height: 19.22px;
     }
@@ -199,7 +199,7 @@
     }
 
     .buy_product {
-        margin-top: 27px;
+        margin-top: 33px;
     }
 
     .item_product:hover {

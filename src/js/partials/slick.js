@@ -69,7 +69,33 @@ $(document).ready(function () {
             }
         }]
     })
-
+ $('.slider_feedback').slick({
+        dots: true,
+        infinite: false,
+        arrows: true,
+        speed: 1000,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [{
+            breakpoint: 1280,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                infinite: false,
+            }
+        }, {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                infinite: false,
+            }
+        }]
+    })
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
