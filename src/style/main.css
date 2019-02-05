@@ -16,7 +16,7 @@
 }
 
 .j_c_flex_end {
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 
 .j_c_center {
@@ -1827,3 +1827,4 @@ button.report_availability {
 
 @import "/bower_components/nouislider/distribute/nouislider.min.css";
 @import "/bower_components/jquery-nice-select/css/nice-select.css";
+@import "media/media.css";

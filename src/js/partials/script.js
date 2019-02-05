@@ -117,29 +117,29 @@ window.onload = function () {
   }
 
   var TabSproduct = document.getElementsByClassName("tabs_product")[0];
-  var TabsProductItems = document.getElementsByClassName("tabs_product_items")[0];
-  if (TabSproduct) {
-    function tabsFunction(e) {
-      for (var i = 0; i < TabSproduct.children.length; i++) {
-        TabSproduct.children[i].classList.remove("active");
-      }
 
-
-      e.currentTarget.classList.add("active");
-      for (var i = 0; i < TabSproduct.children.length; i++) {
-        if (TabSproduct.children[i].classList.length === 1) {
-          TabsProductItems.children[i].classList.add("active");
-        } else {
-          TabsProductItems.children[i].classList.remove("active");
-        }
-      }
-    }
-
+  TabSproduct.onmouseover = function (event) {
     for (var i = 0; i < TabSproduct.children.length; i++) {
-      TabSproduct.children[i].addEventListener("click", tabsFunction, false)
+      TabSproduct.children[i].classList.remove("active");
     }
+    var target = event.target;
 
-  }
+    if (target.nodeName === "LI") {
+
+      target.classList.add("active");
+    } else if (target.nodeName === "A") {
+      target.parentNode.classList.add("active");
+    }
+  };
+
+  TabSproduct.onmouseout = function (event) {
+    var target = event.target;
+    if (target.nodeName === "LI") {
+      target.classList.remove("active");
+    }else if (target.nodeName === "A") {
+      target.parentNode.classList.remove("active");
+    }
+  };
 
   if (SliderFeedbackDots.length === 0) {
     SliderFeedbackDots = null;

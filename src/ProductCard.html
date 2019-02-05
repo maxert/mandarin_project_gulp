@@ -129,26 +129,24 @@
                 <input value="1" class="middle_count d_flex a_items_center j_c_center" />
                 <button class="right_counter">+1</button>
             </div>
-            <div class="popup_buy_click d_flex f_column a_items_center j_c_center">
+            <!-- ПОПАП ДЛЯ КНОПКИ КУПИТЬ
+            <div class="popup_buy_click d_flex f_column">
                 <div class="content_pop_up_product">
-                    <div class="header_close">
-                        <div>Закрыть окно <span><img src="./img/close@2x.png" alt="Картинка"></span></div>
+                    <div class="header_close d_flex j_c_flex_end">
+                        <div class="d_flex a_items_center j_c_center">Закрыть окно <span class="d_flex"><img src="./img/close@2x.png"
+                                    alt="Картинка"></span></div>
                     </div>
-                    <div class="text_product_popup">
+                    <div class="text_product_popup d_flex j_c_center">
                         <span>1</span>товар добавлен в корзину
                     </div>
                     <div class="img_product">
                         <a href="#"><img src="img/img_product_4.png" alt="Картинка"></a>
                     </div>
                     <div class="content_block">
-                        <div class="name_product"> <a href="#"><span>Блюдце зеленое 16 см,</span><br>
-                                Royal, Genware</div></a>
+                        <div class="name_product"> <a href="#"><span>Блюдце зеленое 16 см</span></div></a>
                         <div class="model_product">
                             <div class="text_model">Модель:</div>
                             <span class="model_id">182115GR</span>
-                        </div>
-                        <div class="none_product">
-                            Нет в наличии
                         </div>
                         <div class="price_product">
                             <div class="price_text">Цена:</div>
@@ -161,8 +159,52 @@
                         <input value="1" class="middle_count d_flex a_items_center j_c_center" />
                         <button class="right_counter">+1</button>
                     </div>
+                    <div class="summa d_flex j_c_center">На сумму<span>235.70 грн.</span></div>
+                    <div class="buy_product">
+                        <button class="buy">
+                            <span>Перейти в корзину</span></button>
+                        <button class="buy_one button_next_buy">
+                            Продолжить покупки
+                        </button>
+                    </div>
                 </div>
             </div>
+            -->
+            <!-- ПОПАП ДЛЯ КНОПКИ В ОДИН КЛИК
+            <div class="one_click_popup popup_buy_click d_flex f_column j_c_center">
+                <div class="content_pop_up_product">
+                    <div class="header_close d_flex j_c_flex_end">
+                        <div class="d_flex a_items_center j_c_center">Закрыть окно <span class="d_flex"><img src="./img/close@2x.png"
+                                    alt="Картинка"></span></div>
+                    </div>
+                    <div class="content_block">
+                        <div class="name_product"> <a href="#"><span>Блюдце зеленое 16 см</span></div></a>
+                        <div class="model_product">
+                            <div class="text_model">Модель:</div>
+                            <span class="model_id">182115GR</span>
+                        </div>
+                        <div class="price_product">
+                            <div class="price_text">Цена:</div>
+                            <span class="money">117.85</span>
+                            <span class="currency">грн</span>
+                        </div>
+                    </div>
+                    <div class="counter_number d_flex a_items_center">
+                        <button class="left_counter active">-1</button>
+                        <input value="1" class="middle_count d_flex a_items_center j_c_center" />
+                        <button class="right_counter">+1</button>
+                    </div>
+                    <div class="summa d_flex j_c_center">На сумму<span>235.70 грн.</span></div>
+                    <div class="input_center">
+                        <input type="text" placeholder="Введите Ваш телефон">
+                    </div>
+                    <div class="buy_product">
+                        <button class="buy">
+                            <span>Купить</span></button>
+                    </div>
+                </div>
+            </div>
+            -->
             <div class="buy_product">
                 <button class="buy">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
@@ -175,31 +217,33 @@
 
                     </svg>
                     <span>Купить</span></button>
-                <Div class="buy_one">
+                <div class="buy_one">
                     Купить в 1 клик
-                </Div>
+                </div>
             </div>
         </div>
     </div>
     <div class="section_product content_buy">
         <div class="delivery">
-            <div>
-                <p>Гарантии</p>
-                <div>Cогласно Закону о Защите прав потребителей.</div>
-            </div>
-            <div>
-                <p>Доставка</p>
-                <div>Доставка товаров осуществляется курьером
-                    Новой почты, либо на склад служб:</div>
-            </div>
-            <div class="d_flex image_delivery">
-                <div class="d_flex f_column a_items_center">
-                    <img src="./img/Nova_Poshta.png" alt="Картинка">
-                    <div>«Новая почта»</div>
+            <div class="mobile_row">
+                <div>
+                    <p>Гарантии</p>
+                    <div>Cогласно Закону о Защите прав потребителей.</div>
                 </div>
-                <div class="d_flex f_column a_items_center">
-                    <img src="./img/logo-delivery-auto-330@.png" alt="Картинка">
-                    <div>«Деливери»</div>
+                <div>
+                    <p>Доставка</p>
+                    <div>Доставка товаров осуществляется курьером
+                        Новой почты, либо на склад служб:</div>
+                </div>
+                <div class="d_flex image_delivery">
+                    <div class="d_flex f_column a_items_center">
+                        <img src="./img/Nova_Poshta.png" alt="Картинка">
+                        <div>«Новая почта»</div>
+                    </div>
+                    <div class="d_flex f_column a_items_center">
+                        <img src="./img/logo-delivery-auto-330@.png" alt="Картинка">
+                        <div>«Деливери»</div>
+                    </div>
                 </div>
             </div>
             <div>
@@ -226,7 +270,7 @@
     <div class="forms_feedback d_flex a_items_center">
 
         <form class="feedback_items">
-            <!-- ПОПАП ДЛЯ ОТПРАВКИ
+             <!--ПОПАП ДЛЯ ОТПРАВКИ
             <div class="popap_feedback d_flex a_items_center j_c_center">
                 <div class="content_popap_feedback">
                     <div class="image_popap">
@@ -820,101 +864,80 @@
     </div>
 </div>
 <div class="l_container product_buy_container">
-    <div class="text_container">С этим товаром покупают</div>
+    <div class="header_text">С этим товаром покупают</div>
     <ul class="tabs_product d_flex f_wrap">
-        <li class="active">Популярные</li>
-        <li>Чашки</li>
-        <li>Венчик</li>
-        <li>Сито</li>
-        <li>Джигер</li>
-        <li>Чесночница</li>
-        <li>Нож</li>
-        <li>Солонка</li>
-        <li>Сахарница</li>
-        <li>Кастрюля</li>
-        <li>Сковорода</li>
-        <li>Ложки</li>
-        <li>Вилки</li>
-        <li>Блюдца</li>
-        <li>Сотейники</li>
-        <li>Лопатки</li>
-        <li>Формочки</li>
-        <li>Стаканы</li>
-        <li>Кружки</li>
-        <li>Кувшины</li>
+        <li class="active"><a href="#">Популярные</a></li>
+        <li><a href="#">Чашки</a></li>
+        <li><a href="#">Венчик</a></li>
+        <li><a href="#">Сито</a></li>
+        <li><a href="#">Джигер</a></li>
+        <li><a href="#">Чесночница</a></li>
+        <li><a href="#">Нож</a></li>
+        <li><a href="#">Солонка</a></li>
+        <li><a href="#">Сахарница</a></li>
+        <li><a href="#">Кастрюля</a></li>
+        <li><a href="#">Сковорода</a></li>
+        <li><a href="#">Ложки</a></li>
+        <li><a href="#">Вилки</a></li>
+        <li><a href="#">Блюдца</a></li>
+        <li><a href="#">Сотейники</a></li>
+        <li><a href="#">Лопатки</a></li>
+        <li><a href="#">Формочки</a></li>
+        <li><a href="#">Стаканы</a></li>
+        <li><a href="#">Кружки</a></li>
+        <li><a href="#">Кувшины</a></li>
     </ul>
-    <div class="tabs_product_items">
-        <div class="active">
-            <div class="item_product">
+    <div class="tabs_product_items d_flex">
+        <div class="item_product">
 
-                <div class="new_tovar_img">
-                    <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 1200">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: none;
-                                    stroke: #ff0000;
-                                    stroke-miterlimit: 10;
-                                }
-                            </style>
-                        </defs>
-                        <title>Монтажная область 1</title>
-                        <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
-                    </svg>
-                    <div class="img_header">
-                        <p>New</p>
-                    </div>
-                </div>
-                <div class="img_product">
-                    <a href="#"><img src="img/img_product_4.png" alt="Картинка"></a>
-                </div>
-                <div class="content_block">
-                    <div class="name_product"> <a href="#"><span>Блюдце зеленое 16 см,</span><br>
-                            Royal, Genware</div></a>
-                    <div class="model_product">
-                        <div class="text_model">Модель:</div>
-                        <span class="model_id">182115GR</span>
-                    </div>
-                    <div class="none_product">
-                        Нет в наличии
-                    </div>
-                    <div class="price_product">
-                        <div class="price_text">Цена:</div>
-                        <span class="money">117.85</span>
-                        <span class="currency">грн</span>
-                    </div>
-                </div>
-                <div class="buy_product ">
-                    <button class="buy select_buy">
-                        <span>+</span>
-                        <span>Добавить</span></button>
+            <div class="new_tovar_img">
+                <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                                stroke: #ff0000;
+                                stroke-miterlimit: 10;
+                            }
+                        </style>
+                    </defs>
+                    <title>Монтажная область 1</title>
+                    <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
+                </svg>
+                <div class="img_header">
+                    <p>New</p>
                 </div>
             </div>
+            <div class="img_product">
+                <a href="#"><img src="img/img_product_4.png" alt="Картинка"></a>
+            </div>
+            <div class="content_block">
+                <div class="name_product"> <a href="#"><span>Блюдце зеленое 16 см,</span><br>
+                        Royal, Genware</div></a>
+                <div class="model_product">
+                    <div class="text_model">Модель:</div>
+                    <span class="model_id">182115GR</span>
+                </div>
+                <div class="none_product">
+                    Нет в наличии
+                </div>
+                <div class="price_product">
+                    <div class="price_text">Цена:</div>
+                    <span class="money">117.85</span>
+                    <span class="currency">грн</span>
+                </div>
+            </div>
+            <div class="buy_product ">
+                <button class="buy select_buy">
+                    <span>+</span>
+                    <span>Добавить</span></button>
+            </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
     </div>
 </div>
 <div class="l_container look_container">
-    <div class="text_container">Вы ранее смотрели</div>
+    <div class="header_text">Вы ранее смотрели</div>
     <div class="look_items d_flex">
         <div class="item_product">
 
