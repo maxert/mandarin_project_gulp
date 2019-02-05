@@ -129,6 +129,40 @@
                 <input value="1" class="middle_count d_flex a_items_center j_c_center" />
                 <button class="right_counter">+1</button>
             </div>
+            <div class="popup_buy_click d_flex f_column a_items_center j_c_center">
+                <div class="content_pop_up_product">
+                    <div class="header_close">
+                        <div>Закрыть окно <span><img src="./img/close@2x.png" alt="Картинка"></span></div>
+                    </div>
+                    <div class="text_product_popup">
+                        <span>1</span>товар добавлен в корзину
+                    </div>
+                    <div class="img_product">
+                        <a href="#"><img src="img/img_product_4.png" alt="Картинка"></a>
+                    </div>
+                    <div class="content_block">
+                        <div class="name_product"> <a href="#"><span>Блюдце зеленое 16 см,</span><br>
+                                Royal, Genware</div></a>
+                        <div class="model_product">
+                            <div class="text_model">Модель:</div>
+                            <span class="model_id">182115GR</span>
+                        </div>
+                        <div class="none_product">
+                            Нет в наличии
+                        </div>
+                        <div class="price_product">
+                            <div class="price_text">Цена:</div>
+                            <span class="money">117.85</span>
+                            <span class="currency">грн</span>
+                        </div>
+                    </div>
+                    <div class="counter_number d_flex a_items_center">
+                        <button class="left_counter active">-1</button>
+                        <input value="1" class="middle_count d_flex a_items_center j_c_center" />
+                        <button class="right_counter">+1</button>
+                    </div>
+                </div>
+            </div>
             <div class="buy_product">
                 <button class="buy">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
@@ -189,153 +223,601 @@
         </div>
     </div>
 
-    <div class="forms_feedback d_flex">
+    <div class="forms_feedback d_flex a_items_center">
+
         <form class="feedback_items">
-            <div class="header_feedback d_flex">
-                <div class="image_download d_flex a_items_center j_c_center">
-                    <div>Добавить
-                        фото</div>
+            <!-- ПОПАП ДЛЯ ОТПРАВКИ
+            <div class="popap_feedback d_flex a_items_center j_c_center">
+                <div class="content_popap_feedback">
+                    <div class="image_popap">
+                        <img src="./img/support@2x.png" alt="Картинка">
+                    </div>
+                    <div class="text_popap_feedback">
+                        Ваш отзыв успешно
+                        отправлен на модерацию.
+                    </div>
+                    <button class="close_popup_feedback">Закрыть</button>
                 </div>
-                <div class="form_name_feedback d_flex  f_column">
-                    <input type="text" placeholder="Введите Ваше имя">
-                    <div class="assessment d_flex a_items_center">
-                        <div class="text_product_assessment">Оцените продукт</div>
-                        <div class="click_assessment d_flex">
-                            <div>
+            </div>
+            -->
+            <div class="forms_content">
+                <div class="header_feedback d_flex a_items_center">
+                    <div class="image_download d_flex a_items_center j_c_center">
+                        <div>Добавить
+                            фото</div>
+                    </div>
+                    <div class="form_name_feedback d_flex  f_column">
+                        <input type="text" placeholder="Введите Ваше имя">
+                        <div class="assessment d_flex a_items_center">
+                            <div class="text_product_assessment">Оцените продукт</div>
+                            <div class="click_assessment d_flex">
+                                <div>
 
-                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
-                                    xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill: none;
-                                            stroke: #FFCF00;
-                                            stroke-miterlimit: 10;
-                                        }
-                                    </style>
-                                    <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
 	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
 	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
-                                </svg>
-                            </div>
-                            <div>
+                                    </svg>
+                                </div>
+                                <div>
 
-                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
-                                    xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill: none;
-                                            stroke: #FFCF00;
-                                            stroke-miterlimit: 10;
-                                        }
-                                    </style>
-                                    <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
 	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
 	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
-                                </svg>
-                            </div>
-                            <div>
+                                    </svg>
+                                </div>
+                                <div>
 
-                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
-                                    xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill: none;
-                                            stroke: #FFCF00;
-                                            stroke-miterlimit: 10;
-                                        }
-                                    </style>
-                                    <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
 	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
 	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
-                                </svg>
-                            </div>
-                            <div>
+                                    </svg>
+                                </div>
+                                <div>
 
-                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
-                                    xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill: none;
-                                            stroke: #FFCF00;
-                                            stroke-miterlimit: 10;
-                                        }
-                                    </style>
-                                    <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
 	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
 	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
-                                </svg>
-                            </div>
-                            <div>
+                                    </svg>
+                                </div>
+                                <div>
 
-                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
-                                    xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill: none;
-                                            stroke: #FFCF00;
-                                            stroke-miterlimit: 10;
-                                        }
-                                    </style>
-                                    <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
 	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
 	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
-                                </svg>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <textarea placeholder="Введите Ваш отзыв, максимальное количество 
+                <textarea placeholder="Введите Ваш отзыв, максимальное количество 
 символов 300."></textarea>
-            <div class="footer_button_feedback d_flex j_c_center">
+                <div class="footer_button_feedback d_flex j_c_center">
 
-                <button class="send_me" type="select">
-                    <svg id="SVGDoc" width="20" height="21" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 20 21">
-                        <defs></defs>
-                        <desc>Generated with Avocode.</desc>
-                        <g transform="matrix(1,0,0,1,-1416,-1540)">
-                            <g>
-                                <title>send</title>
-                                <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAACQ0lEQVQ4T6XUaciPaRTH8c8jEm+QaCKhEInxSpEsQ7ZEFMpIyl6ipCxZJkSWFCk0XtmXoUkNso21mFLKli0hEpOIvBlmdJ7O/+l+7h4yuerf/76v67q/1zm/c35Xle8f9dAPP6Nr1XfwfkzIBDRGMxz5v8A2CEBE0wh7cBXb8S+WfwuwKcYmpDMOYXeC4oBLWIK16P4lYEMMT8hPOJGQU/gnZWqF8wm6iQ3oUwTGc9+EjME17MLveF/SugXO4ldsxmq8wbqAdMGk1OZl6rIfL75QsCY4g8NYk3tuYBzuBPBihIqN+AXvvlL5qOZpXMDC3NceJ9Ex3gMYv+ijGRicom/D9RI4dD2O25hdWJuLtphXARa/a4nJmI7X2Q778BG/4W9MwX+FjyLiVThXF7CyL6IehJlZqEd4iIn4VICFnvfQOg+tTrc4onqvSnM/ZKVX4FhpbTxGZmdULxWBo7EeHeooSjR2RDeqtBZOOYoDxdTieRh2ZFFu5eIA/JnPDRBp98aTnKuPZ+iEt0VgOCFOCmilsosQEfcsRBQpR0ZLc65/Wi60rhmxIewUXgyTx5iDaYiDinqGb6+gXdov+vYxNpWBxfepWJB9+Rxx10UrVVwTNtyLg7ifEoUUtSKsvMSVFJ4M1zzN9LbmfzR9jCEIOWYltFu5gJUqR+m3ZJoPclOk1AMj8CHnIuK7uIzIYHFdwIHYiaEIk8dYmemE4GVvz8/26pWa1mJGhHHXLcNfuRKNHJdoRFbTDoWvmuOPbKG4pWuNz2+ieP1NG5S5AAAAAElFTkSuQmCC"
-                                    width="20" height="21" transform="matrix(1,0,0,1,1416,1540)"></image>
+                    <button class="send_me" type="select">
+                        <svg id="SVGDoc" width="20" height="21" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 20 21">
+                            <defs></defs>
+                            <desc>Generated with Avocode.</desc>
+                            <g transform="matrix(1,0,0,1,-1416,-1540)">
+                                <g>
+                                    <title>send</title>
+                                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAACQ0lEQVQ4T6XUaciPaRTH8c8jEm+QaCKhEInxSpEsQ7ZEFMpIyl6ipCxZJkSWFCk0XtmXoUkNso21mFLKli0hEpOIvBlmdJ7O/+l+7h4yuerf/76v67q/1zm/c35Xle8f9dAPP6Nr1XfwfkzIBDRGMxz5v8A2CEBE0wh7cBXb8S+WfwuwKcYmpDMOYXeC4oBLWIK16P4lYEMMT8hPOJGQU/gnZWqF8wm6iQ3oUwTGc9+EjME17MLveF/SugXO4ldsxmq8wbqAdMGk1OZl6rIfL75QsCY4g8NYk3tuYBzuBPBihIqN+AXvvlL5qOZpXMDC3NceJ9Ex3gMYv+ijGRicom/D9RI4dD2O25hdWJuLtphXARa/a4nJmI7X2Q778BG/4W9MwX+FjyLiVThXF7CyL6IehJlZqEd4iIn4VICFnvfQOg+tTrc4onqvSnM/ZKVX4FhpbTxGZmdULxWBo7EeHeooSjR2RDeqtBZOOYoDxdTieRh2ZFFu5eIA/JnPDRBp98aTnKuPZ+iEt0VgOCFOCmilsosQEfcsRBQpR0ZLc65/Wi60rhmxIewUXgyTx5iDaYiDinqGb6+gXdov+vYxNpWBxfepWJB9+Rxx10UrVVwTNtyLg7ifEoUUtSKsvMSVFJ4M1zzN9LbmfzR9jCEIOWYltFu5gJUqR+m3ZJoPclOk1AMj8CHnIuK7uIzIYHFdwIHYiaEIk8dYmemE4GVvz8/26pWa1mJGhHHXLcNfuRKNHJdoRFbTDoWvmuOPbKG4pWuNz2+ieP1NG5S5AAAAAElFTkSuQmCC"
+                                        width="20" height="21" transform="matrix(1,0,0,1,1416,1540)"></image>
+                                </g>
                             </g>
-                        </g>
-                    </svg>
-                    Отправить</button>
+                        </svg>
+                        Отправить</button>
+                </div>
             </div>
         </form>
         <div class="slider_feedback">
-            
+            <div class="feedback_items">
+                <div class="header_feedback d_flex a_items_center">
+                    <div class="image_download d_flex a_items_center j_c_center">
+                        <div>Добавить
+                            фото</div>
+                    </div>
+                    <div class="form_name_feedback items_feedbackform d_flex  f_column">
+                        <div class="name_text_feedback">Петя Петров</div>
+                        <div class="assessment d_flex a_items_center">
+                            <div class="click_assessment d_flex">
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_feedbackText">
+                    Я стараюсь заинтересовать ребенка много чем, только главное, чтобы дочь не сидела каждый день у
+                    телевизора, компьютера и планшетом. Нет вы не подумайте я мама не монстр, ребенок смотрит мультики,
+                    но не часто и не долго, все же здоровье (зрение) надо беречь с детства.
+                </div>
+                <div class="footer_button_feedback d_flex j_c_start">
+                    <span class="data_feedback">11.11.2018</spa>
+                </div>
+            </div>
+            <div class="feedback_items">
+                <div class="header_feedback d_flex a_items_center">
+                    <div class="image_download d_flex a_items_center j_c_center">
+                        <div>Добавить
+                            фото</div>
+                    </div>
+                    <div class="form_name_feedback items_feedbackform d_flex  f_column">
+                        <div class="name_text_feedback">Петя Петров</div>
+                        <div class="assessment d_flex a_items_center">
+                            <div class="click_assessment d_flex">
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_feedbackText">
+                    Я стараюсь заинтересовать ребенка много чем, только главное, чтобы дочь не сидела каждый день у
+                    телевизора, компьютера и планшетом. Нет вы не подумайте я мама не монстр, ребенок смотрит мультики,
+                    но не часто и не долго, все же здоровье (зрение) надо беречь с детства.
+                </div>
+                <div class="footer_button_feedback d_flex j_c_start">
+                    <span class="data_feedback">11.11.2018</spa>
+                </div>
+            </div>
+            <div class="feedback_items">
+                <div class="header_feedback d_flex a_items_center">
+                    <div class="image_download d_flex a_items_center j_c_center">
+                        <div>Добавить
+                            фото</div>
+                    </div>
+                    <div class="form_name_feedback items_feedbackform d_flex  f_column">
+                        <div class="name_text_feedback">Петя Петров</div>
+                        <div class="assessment d_flex a_items_center">
+                            <div class="click_assessment d_flex">
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_feedbackText">
+                    Я стараюсь заинтересовать ребенка много чем, только главное, чтобы дочь не сидела каждый день у
+                    телевизора, компьютера и планшетом. Нет вы не подумайте я мама не монстр, ребенок смотрит мультики,
+                    но не часто и не долго, все же здоровье (зрение) надо беречь с детства.
+                </div>
+                <div class="footer_button_feedback d_flex j_c_start">
+                    <span class="data_feedback">11.11.2018</spa>
+                </div>
+            </div>
+            <div class="feedback_items">
+                <div class="header_feedback d_flex a_items_center">
+                    <div class="image_download d_flex a_items_center j_c_center">
+                        <div>Добавить
+                            фото</div>
+                    </div>
+                    <div class="form_name_feedback items_feedbackform d_flex  f_column">
+                        <div class="name_text_feedback">Петя Петров</div>
+                        <div class="assessment d_flex a_items_center">
+                            <div class="click_assessment d_flex">
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                                <div>
+
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 38 36" style="enable-background:new 0 0 38 36;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #FFCF00;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <path class="st0" d="M18,30.8L10.2,35c-1.5,0.8-3.3-0.5-3-2.2L8.6,24c0.1-0.7-0.1-1.4-0.6-1.9l-6.4-6.2c-1.2-1.2-0.6-3.3,1.2-3.6
+	l8.8-1.3c0.7-0.1,1.3-0.5,1.6-1.1l3.9-8c0.8-1.6,3-1.6,3.8,0l3.9,8c0.3,0.6,0.9,1,1.6,1.1l8.8,1.3c1.7,0.3,2.4,2.4,1.2,3.6L30,22.1
+	c-0.5,0.5-0.7,1.2-0.6,1.9l1.5,8.8c0.3,1.7-1.5,3-3,2.2L20,30.8C19.4,30.5,18.6,30.5,18,30.8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_feedbackText">
+                    Я стараюсь заинтересовать ребенка много чем, только главное, чтобы дочь не сидела каждый день у
+                    телевизора, компьютера и планшетом. Нет вы не подумайте я мама не монстр, ребенок смотрит мультики,
+                    но не часто и не долго, все же здоровье (зрение) надо беречь с детства.
+                </div>
+                <div class="footer_button_feedback d_flex j_c_start">
+                    <span class="data_feedback">11.11.2018</spa>
+                </div>
+            </div>
         </div>
 
     </div>
-            <div class="button_top d_flex j_c_center">
-                <button class="display_all d_flex a_items_center">
+    <div class="button_top d_flex j_c_center">
+        <button class="display_all d_flex a_items_center">
 
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                        <g id="Ellipsis">
-                            <path d="M32,0c-17.6730843,0-32,14.3268995-32,32s14.3269148,32,32,32s32-14.3269005,32-32S49.6730995,0,32,0z M32,62
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <g id="Ellipsis">
+                    <path d="M32,0c-17.6730843,0-32,14.3268995-32,32s14.3269148,32,32,32s32-14.3269005,32-32S49.6730995,0,32,0z M32,62
 		c-16.5419998,0-30-13.457901-30-30c0-16.5419998,13.4579992-30,30-30c16.542099,0,30,13.4580002,30,30
 		C62,48.542099,48.542099,62,32,62z" />
-                            <path d="M18,27c-2.7613993,0-4.999999,2.2385998-4.999999,5S15.2386007,37,18,37s5-2.2386017,5-5S20.7614002,27,18,27z M18,35
+                    <path d="M18,27c-2.7613993,0-4.999999,2.2385998-4.999999,5S15.2386007,37,18,37s5-2.2386017,5-5S20.7614002,27,18,27z M18,35
 		c-1.6541996,0-3-1.3456993-3-3c0-1.6541996,1.3458004-3,3-3c1.6543007,0,3,1.3458004,3,3C21,33.6543007,19.6543007,35,18,35z" />
-                            <path d="M32,27c-2.7614002,0-5,2.2385998-5,5s2.2385998,5,5,5s5-2.2386017,5-5S34.7613983,27,32,27z M32,35
+                    <path d="M32,27c-2.7614002,0-5,2.2385998-5,5s2.2385998,5,5,5s5-2.2386017,5-5S34.7613983,27,32,27z M32,35
 		c-1.6541996,0-3-1.3456993-3-3c0-1.6541996,1.3458004-3,3-3c1.6543007,0,3,1.3458004,3,3C35,33.6543007,33.6543007,35,32,35z" />
-                            <path d="M46,27c-2.7614021,0-5,2.2385998-5,5s2.2385979,5,5,5c2.7613983,0,5-2.2386017,5-5S48.7613983,27,46,27z M46,35
+                    <path d="M46,27c-2.7614021,0-5,2.2385998-5,5s2.2385979,5,5,5c2.7613983,0,5-2.2386017,5-5S48.7613983,27,46,27z M46,35
 		c-1.6542015,0-3-1.3456993-3-3c0-1.6541996,1.3457985-3,3-3c1.6543007,0,3,1.3458004,3,3C49,33.6543007,47.6543007,35,46,35z" />
-                        </g>
+                </g>
 
-                    </svg>
-                    <div>Показать еще</div>
-                </button>
-            </div>
+            </svg>
+            <div>Показать еще</div>
+        </button>
+    </div>
 </div>
 <div class="l_container product_buy_container">
     <div class="text_container">С этим товаром покупают</div>
@@ -362,7 +844,133 @@
         <li>Кувшины</li>
     </ul>
     <div class="tabs_product_items">
-        
+        <div class="active">
+            <div class="item_product">
+
+                <div class="new_tovar_img">
+                    <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1200 1200">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #ff0000;
+                                    stroke-miterlimit: 10;
+                                }
+                            </style>
+                        </defs>
+                        <title>Монтажная область 1</title>
+                        <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
+                    </svg>
+                    <div class="img_header">
+                        <p>New</p>
+                    </div>
+                </div>
+                <div class="img_product">
+                    <a href="#"><img src="img/img_product_4.png" alt="Картинка"></a>
+                </div>
+                <div class="content_block">
+                    <div class="name_product"> <a href="#"><span>Блюдце зеленое 16 см,</span><br>
+                            Royal, Genware</div></a>
+                    <div class="model_product">
+                        <div class="text_model">Модель:</div>
+                        <span class="model_id">182115GR</span>
+                    </div>
+                    <div class="none_product">
+                        Нет в наличии
+                    </div>
+                    <div class="price_product">
+                        <div class="price_text">Цена:</div>
+                        <span class="money">117.85</span>
+                        <span class="currency">грн</span>
+                    </div>
+                </div>
+                <div class="buy_product ">
+                    <button class="buy select_buy">
+                        <span>+</span>
+                        <span>Добавить</span></button>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<div class="l_container look_container">
+    <div class="text_container">Вы ранее смотрели</div>
+    <div class="look_items d_flex">
+        <div class="item_product">
+
+            <div class="new_tovar_img">
+                <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                                stroke: #ff0000;
+                                stroke-miterlimit: 10;
+                            }
+                        </style>
+                    </defs>
+                    <title>Монтажная область 1</title>
+                    <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
+                </svg>
+                <div class="img_header">
+                    <p>New</p>
+                </div>
+            </div>
+            <div class="img_product">
+                <a href="#">
+                    <img src="img/img_product_4.png" alt="Картинка">
+                </a>
+            </div>
+            <div class="content_block">
+                <div class="name_product"><a href="#"><span>Блюдце зеленое 16 см,</span><br>
+                        Royal, Genware</div></a>
+                <div class="model_product">
+                    <div class="text_model">Модель:</div>
+                    <span class="model_id">182115GR</span>
+                </div>
+                <div class="none_product">
+                    Нет в наличии
+                </div>
+                <div class="price_product">
+                    <div class="price_text">Цена:</div>
+                    <span class="money">117.85</span>
+                    <span class="currency">грн</span>
+                </div>
+            </div>
+            <div class="buy_product ">
+                <button class="buy">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                        x="0px" y="0px" viewBox="0 0 483.1 483.1" style="enable-background:new 0 0 483.1 483.1;"
+                        xml:space="preserve" width="18px" height="22px">
+                        <g>
+                            <path d="M434.55,418.7l-27.8-313.3c-0.5-6.2-5.7-10.9-12-10.9h-58.6c-0.1-52.1-42.5-94.5-94.6-94.5s-94.5,42.4-94.6,94.5h-58.6   c-6.2,0-11.4,4.7-12,10.9l-27.8,313.3c0,0.4,0,0.7,0,1.1c0,34.9,32.1,63.3,71.5,63.3h243c39.4,0,71.5-28.4,71.5-63.3   C434.55,419.4,434.55,419.1,434.55,418.7z M241.55,24c38.9,0,70.5,31.6,70.6,70.5h-141.2C171.05,55.6,202.65,24,241.55,24z    M363.05,459h-243c-26,0-47.2-17.3-47.5-38.8l26.8-301.7h47.6v42.1c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h141.2v42.1   c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h47.6l26.8,301.8C410.25,441.7,389.05,459,363.05,459z"
+                                fill="#FFFFFF" />
+                        </g>
+
+                    </svg>
+                    <span>Купить</span></button>
+            </div>
+        </div>
     </div>
 </div>
 //= template/store_content.html

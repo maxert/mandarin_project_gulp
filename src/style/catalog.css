@@ -389,6 +389,7 @@
 }
 .select_list>a:nth-child(4) {
     margin-left: -1px;
+    white-space: nowrap;
 }
 .display_all svg path {
     fill: white;

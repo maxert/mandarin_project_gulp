@@ -1,5 +1,5 @@
 window.onload = function () {
-
+  var valueSizePopulare = 0;
   var HoverDown = document.getElementsByClassName("hover_down");
   var HeaderTopLang = document.getElementsByClassName("m_header_top_lang")[0];
   var ArrowClick = document.getElementsByClassName("arrow_click");
@@ -71,47 +71,79 @@ window.onload = function () {
   }
 
 
-  var FeedbackItems = document.querySelectorAll(".feedback_items .click_assessment>div");
+  var FeedbackItems = document.querySelectorAll("form.feedback_items .click_assessment>div");
+  if (FeedbackItems) {
+    var counters = {
+      count: 0
+    };
 
-  var counters = {
-    count: 0
-  };
+    function FeedbackGraySvg(e) {
 
-  function FeedbackGraySvg(e) {
-
-    if (e.currentTarget.classList.length === 0) {
-      e.currentTarget.classList.add("active");
-      for (var i = 0; i < FeedbackItems.length; i++) {
-        if (FeedbackItems[i].classList.length === 1) {
-          counters.count = i;
-          for (var j = 0; j < counters.count; j++) {
-            FeedbackItems[j].classList.add("active");
+      if (e.currentTarget.classList.length === 0) {
+        e.currentTarget.classList.add("active");
+        for (var i = 0; i < FeedbackItems.length; i++) {
+          if (FeedbackItems[i].classList.length === 1) {
+            counters.count = i;
+            for (var j = 0; j < counters.count; j++) {
+              FeedbackItems[j].classList.add("active");
+            }
+          }
+        }
+      } else {
+        e.currentTarget.classList.remove("active");
+        for (var i = 0; i < FeedbackItems.length; i++) {
+          if (FeedbackItems[i].classList.length === 0) {
+            counters.count = i;
+            for (var j = counters.count; j < FeedbackItems.length; j++) {
+              e.currentTarget.classList.add("active");
+              FeedbackItems[j].classList.remove("active");
+            }
           }
         }
       }
-    }else{
-      e.currentTarget.classList.remove("active");
       for (var i = 0; i < FeedbackItems.length; i++) {
-        if (FeedbackItems[i].classList.length === 0) {
-          counters.count = i;
-          for (var j = counters.count; j < FeedbackItems.length; j++) {
-            e.currentTarget.classList.add("active");
-            FeedbackItems[j].classList.remove("active");
-          }
+        if (FeedbackItems[i].classList.length === 1) {
+          valueSizePopulare = i + 1;
+        }
+      }
+      alert(valueSizePopulare);
+    }
+    for (var i = 0; i < FeedbackItems.length; i++) {
+      FeedbackItems[i].addEventListener("click", FeedbackGraySvg, false)
+    }
+
+
+
+  }
+
+  var TabSproduct = document.getElementsByClassName("tabs_product")[0];
+  var TabsProductItems = document.getElementsByClassName("tabs_product_items")[0];
+  if (TabSproduct) {
+    function tabsFunction(e) {
+      for (var i = 0; i < TabSproduct.children.length; i++) {
+        TabSproduct.children[i].classList.remove("active");
+      }
+
+
+      e.currentTarget.classList.add("active");
+      for (var i = 0; i < TabSproduct.children.length; i++) {
+        if (TabSproduct.children[i].classList.length === 1) {
+          TabsProductItems.children[i].classList.add("active");
+        } else {
+          TabsProductItems.children[i].classList.remove("active");
         }
       }
     }
+
+    for (var i = 0; i < TabSproduct.children.length; i++) {
+      TabSproduct.children[i].addEventListener("click", tabsFunction, false)
+    }
+
   }
-  for (var i = 0; i < FeedbackItems.length; i++) {
-    FeedbackItems[i].addEventListener("click", FeedbackGraySvg, false)
-  }
 
-
-
-
-  if (SliderFeedbackDots.length===0){
- SliderFeedbackDots = null;
-  } else{
+  if (SliderFeedbackDots.length === 0) {
+    SliderFeedbackDots = null;
+  } else {
     for (var i = 0; i < SliderFeedbackArrow.length; i++) {
       ArrowClick[0].appendChild(SliderFeedbackArrow[i]);
     }
@@ -149,6 +181,8 @@ window.onload = function () {
   for (var i = 0; i < CatalogProductAll.length; i++) {
     CatalogProductAll[i].addEventListener("mouseover", Mouse, false);
   }
+
+
 
 
 

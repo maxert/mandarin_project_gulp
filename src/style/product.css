@@ -262,10 +262,14 @@
 }
 
 .right_counter.active {
-    border-radius: 20px 0 0 20px;
+    border-radius: 0px 20px 20px 0px;
     border: 1px solid #b9b9b9;
     background: none;
     color: #b9b9b9;
+    -webkit-border-radius: 0px 20px 20px 0px;
+    -moz-border-radius: 0px 20px 20px 0px;
+    -ms-border-radius: 0px 20px 20px 0px;
+    -o-border-radius: 0px 20px 20px 0px;
 }
 
 .product_card_container>div:last-child {
@@ -327,10 +331,14 @@
     margin-right: 65px;
 }
 
+.feedback_items {
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.06);
+    position: relative;
+}
+
 .feedback_container .feedback_items {
     width: 540px !important;
     height: 450px;
-    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     background-color: #ffffff;
     padding: 30px;
@@ -417,9 +425,6 @@
     resize: none;
 }
 
-.feedback_container .slider_product .slick-slide {
-    width: 100% !important;
-}
 
 .send_me {
     min-width: 174px;
@@ -472,7 +477,7 @@
 }
 
 .tabs_product li.active {
-    min-width: 186px;
+
     height: 40px;
     border-radius: 20px;
     background-color: #f5cf05;
@@ -481,11 +486,181 @@
 
 .tabs_product li {
     display: flex;
+    height: 40px;
+    margin: 5px 0px;
     align-items: center;
-    padding: 10px 40px;
+    padding: 0px 40px;
     color: #000000;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     cursor: pointer;
+}
+
+.tabs_product_items>div .item_product {
+    margin: inherit;
+}
+
+.tabs_product_items>div {
+    display: none;
+}
+
+.tabs_product_items {
+    margin-top: 30px;
+    margin-bottom: 85px;
+}
+
+.tabs_product_items>div.active {
+    display: block;
+    height: 490px;
+}
+
+.items_feedbackform .click_assessment>div:nth-child(1) {
+    margin-left: 0px;
+}
+
+.items_feedbackform .click_assessment>div.active svg path {
+    fill: #f5cf05 !important;
+}
+
+.items_feedbackform .click_assessment svg path {
+    stroke: #f5cf05;
+}
+
+.look_items .item_product {
+    margin: inherit;
+}
+
+.look_items {
+    height: 490px;
+}
+
+.look_container .text_container {
+    margin-bottom: 55px;
+}
+
+.look_container {
+    margin-bottom: 90px;
+}
+
+
+
+
+
+
+.name_text_feedback {
+    color: #000000;
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+.data_feedback {
+    color: #888888;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.content_feedbackText {
+    margin-top: 29px;
+    margin-bottom: 41px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.slider_feedback .feedback_items {
+    margin: 5px;
+}
+
+.close_popup_feedback {
+    min-width: 174px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f5cf05;
+    border: none;
+    margin-top: 56px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.popap_feedback {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #ffffff;
+}
+
+.content_popap_feedback {
+    max-width: 243px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.text_popap_feedback {
+    margin-top: 42px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.image_popap img {
+    width: 115px;
+    height: 115px;
+}
+
+.slider_feedback.slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+
+.slider_feedback .slick-dots {
+    display: none !important;
+}
+
+.slider_feedback {
+    width: 100% !important;
+    max-width: 1160px;
+    margin-left: 39px;
+}
+
+.popap_subskripe,
+.popup_buy_click {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    width: 592px;
+    height: 502px;
+    background-color: #ffffff;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.content_pop_up_product .img_product img {
+    width: 168px;
+    height: 170px;
+}
+.popup_buy_click {
+    padding: 45px;
+}
+.content_pop_up_product{
+    width: 100%;
 }

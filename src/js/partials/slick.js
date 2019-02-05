@@ -69,7 +69,7 @@ $(document).ready(function () {
             }
         }]
     })
- $('.slider_feedback').slick({
+    $('.slider_feedback').slick({
         dots: true,
         infinite: false,
         arrows: true,
