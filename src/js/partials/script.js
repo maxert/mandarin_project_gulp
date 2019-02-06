@@ -117,30 +117,30 @@ window.onload = function () {
   }
 
   var TabSproduct = document.getElementsByClassName("tabs_product")[0];
+  if (TabSproduct) {
+    TabSproduct.onmouseover = function (event) {
+      for (var i = 0; i < TabSproduct.children.length; i++) {
+        TabSproduct.children[i].classList.remove("active");
+      }
+      var target = event.target;
 
-  TabSproduct.onmouseover = function (event) {
-    for (var i = 0; i < TabSproduct.children.length; i++) {
-      TabSproduct.children[i].classList.remove("active");
-    }
-    var target = event.target;
+      if (target.nodeName === "LI") {
 
-    if (target.nodeName === "LI") {
+        target.classList.add("active");
+      } else if (target.nodeName === "A") {
+        target.parentNode.classList.add("active");
+      }
+    };
 
-      target.classList.add("active");
-    } else if (target.nodeName === "A") {
-      target.parentNode.classList.add("active");
-    }
-  };
-
-  TabSproduct.onmouseout = function (event) {
-    var target = event.target;
-    if (target.nodeName === "LI") {
-      target.classList.remove("active");
-    }else if (target.nodeName === "A") {
-      target.parentNode.classList.remove("active");
-    }
-  };
-
+    TabSproduct.onmouseout = function (event) {
+      var target = event.target;
+      if (target.nodeName === "LI") {
+        target.classList.remove("active");
+      } else if (target.nodeName === "A") {
+        target.parentNode.classList.remove("active");
+      }
+    };
+  }
   if (SliderFeedbackDots.length === 0) {
     SliderFeedbackDots = null;
   } else {
@@ -331,16 +331,35 @@ window.onload = function () {
     var ItemsOnlineStore = document.getElementsByClassName("items_online_store")[1];
     TextContainer.appendChild(ItemsOnlineStore.children[0]);
     var FilterProduct = document.getElementsByClassName("filter_product")[0];
+
     var PopUpMobileFilter = document.getElementsByClassName("pop_up_mobile_filter")[0];
-    PopUpMobileFilter.appendChild(FilterProduct);
-    var FilterMobile = document.getElementsByClassName("filter_mobile")[0];
-    FilterMobile.addEventListener("click", function () {
-      PopUpMobileFilter.classList.add("active");
-      ButtonClose.classList.add("active");
-      ButtonClose.addEventListener("click", function () {
-        PopUpMobileFilter.classList.remove("active");
-        ButtonClose.classList.remove("active");
-      })
-    });
+    if (PopUpMobileFilter) {
+      PopUpMobileFilter.appendChild(FilterProduct);
+      var FilterMobile = document.getElementsByClassName("filter_mobile")[0];
+      FilterMobile.addEventListener("click", function () {
+        PopUpMobileFilter.classList.add("active");
+        ButtonClose.classList.add("active");
+        ButtonClose.addEventListener("click", function () {
+          PopUpMobileFilter.classList.remove("active");
+          ButtonClose.classList.remove("active");
+        })
+
+      });
+    }
+    document.getElementsByClassName("tabs_product")[0].addEventListener('wheel', function(event) {
+    if (event.deltaMode == event.DOM_DELTA_PIXEL) {
+      var modifier = 1;
+      // иные режимы возможны в Firefox
+    } else if (event.deltaMode == event.DOM_DELTA_LINE) {
+      var modifier = parseInt(getComputedStyle(this).lineHeight);
+    } else if (event.deltaMode == event.DOM_DELTA_PAGE) {
+      var modifier = this.clientHeight;
+    }
+    if (event.deltaY != 0) {
+      // замена вертикальной прокрутки горизонтальной
+      this.scrollLeft += modifier * event.deltaY;
+      event.preventDefault();
+    }
+  });
   }
 };

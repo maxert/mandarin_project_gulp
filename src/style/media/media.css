@@ -2707,17 +2707,83 @@
     .select_list a:nth-child(4) {
         margin-left: 8px;
     }
-    .image_popap img{
+
+    .image_popap img {
         width: 70px;
         height: 70px;
     }
-    .text_popap_feedback{
+
+    .text_popap_feedback {
         margin-top: 20px;
         font-size: 13px;
     }
-    .close_popup_feedback{
+
+    .close_popup_feedback {
         margin-top: 30px;
         font-size: 14px;
         min-width: 140px;
     }
+
+    .one_click_popup {
+        width: 320px;
+        height: 409px;
+        padding: 20px;
+    }
+
+    .input_center input {
+        font-size: 14px;
+    }
+
+    .popup_buy_click {
+        padding: 20px;
+    }
+
+    .popup_buy_click .buy_product {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popup_buy_click {
+        width: 320px;
+        height: 550px;
+    }
+
+    .popup_buy_click .buy_product button {
+        margin-left: 0px;
+
+    }
+
+    .button_next_buy {
+        margin-top: 20px;
+    }
+
+    .product_card_container .buy_product {
+        margin-top: 10px;
+    }
+
+    .popup_buy_click .counter_number {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .tabs_product {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+
+    }
+
+    .tabs_product::-webkit-scrollbar {
+        width: 0px;
+        /* remove scrollbar space */
+        background: transparent;
+        /* optional: just make scrollbar invisible */
+
+    }
+
+    .tabs_product:hover {
+        overflow-x: auto;
+
+    }
+
 }
