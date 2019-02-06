@@ -1,4 +1,13 @@
 /*-------------------------------*/
+.ma_l{
+  margin-left: auto;
+}
+.ma_r{
+  margin-right: auto;
+}
+.ma_center{
+  margin: 0 auto;
+}
 .j_c_space_between {
   justify-content: space-between;
 }
@@ -72,6 +81,9 @@ body,
 sub,
 sup {
   position: relative;
+}
+
+body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -1514,16 +1526,22 @@ footer {
   -o-transform: translate(0%, -50%);
 }
 
+.search_online svg {
+  left: 14px;
+}
+
 .search_online {
   color: #fff;
+  display: flex;
+  justify-content: center;
   font-size: 18px;
   font-weight: 700;
-  max-width: 212px;
+  min-width: 212px;
   border-radius: 20px;
   position: relative;
   white-space: nowrap;
   border: 1px solid #fff;
-  padding: 7px 42px;
+  padding: 7px 0px;
   background: 0 0;
   transition: .5s all;
   margin-top: 37px;

@@ -1,0 +1,39 @@
+.checkout_container>.m_header {
+    margin-top: 77px;
+
+}
+
+.checkout_container .m_header_center {
+    background: transparent;
+}
+
+.checkout_container .m_header_center_tel:hover {
+    height: 67px;
+}
+
+.checkout_container .m_header_center_logo {
+    width: 262px;
+    height: 67px;
+}
+
+.checkout_container .m_header_center_logotext {
+    color: #000000;
+}
+
+.checkout_container .m_header_center_logotext {
+    right: 100px;
+    position: relative;
+}
+
+.checkout_container .m_header_center_tel {
+    border: 1px solid #f5cf05;
+}
+
+.checkout_container .m_header_center_tel a {
+    color: #000;
+}
+
+.checkbox_container_center .header_text {
+    line-height: normal;
+    margin-top: 89px;
+}
