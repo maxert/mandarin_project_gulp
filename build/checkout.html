@@ -92,13 +92,13 @@
                     <div class="mob_tel_search"></div>
                     <div class="m_header_center_logo">
                         <a href="#"><img src="./img/checkout_logo.png" alt="Картинка" /></a>
-                        <a class="mobile_logo" href="#"><img src="./img/logo_two.png" alt="" /></a>
+                        <a class="mobile_logo" href="#"><img src="./img/logo_buy@2x.png" alt="" /></a>
                     </div>
                     <div class="m_header_center_logotext">Профессиональная посуда для ресторанов, отелей, кафе</div>
                     <div class="m_header_center_tel">
                         <span class="iconTel">
                             <img src="./img/icon/tel.png" alt="" />
-                            <img class="orange_img" src="./img/telephone-orange.png" alt="" />
+                            <img class="orange_img" src="./img/icon/tel.png" alt="" />
                         </span>
                         <a href="tel:380676288857">+38-067-628-88-57</a>
                         <a class="inActive" href="tel:380676288857">+38-067-628-88-57</a>
@@ -114,10 +114,152 @@
         </header>
     </div>
     <div class="l_container checkbox_container_center">
+        <!--ПОПАП ОФОРМЛЕНИЯ ТОВАРА
+        <div class="popup_checbox">
+            <div class="popap_feedback d_flex a_items_center j_c_center">
+                <div class="content_popap_feedback">
+                    <div class="image_popap">
+                        <img src="./img/manager@2x.png" alt="Картинка">
+                    </div>
+                    <div class="text_popap_feedback">
+                        Ваш заказ успешно
+                        оформлен наш оператор
+                        свяжется с Вами.
+                    </div>
+                    <button class="close_popup_feedback">Перейти в каталог</button>
+                </div>
+            </div>
+        </div>
+        -->
         <div class="l_container header_text d_flex j_c_center">Оформление заказа</div>
-        <form class="l_container d_flex">
+        <form class="l_container users_functional d_flex">
             <div class="form_order_container">
+                <div class="headert_tabs d_flex a_items_center">
+                    <div class="active">Новый покупатель</div>
+                    <div>Я постоянный клиент</div>
+                </div>
+                <div class="tabs_container">
+                    <div class="items_tabs active">
+                        <div class="users_select">
+                            <div class="header_tabs_select">1. Покупатель</div>
+                            <div class="forms_tabs_select">
+                                <div class="row_items_forms">
+                                    <div class="column_forms">
+                                        <div class="top_input_text">E-mail<span>*</span></div>
+                                        <input type="email" name="email">
+                                    </div>
+                                    <div class="column_forms">
+                                        <div class="top_input_text">Телефон<span>*</span></div>
+                                        <input type="phone" name="phone" placeholder="+38 ___ - __ - __ - ___ ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forms_tabs_select">
+                                <div class="row_items_forms">
+                                    <div class="column_forms">
+                                        <div class="top_input_text">Имя<span>*</span></div>
+                                        <input type="name" name="name">
+                                    </div>
+                                    <div class="column_forms">
+                                        <div class="top_input_text">Фамилия<span>*</span></div>
+                                        <input type="name" name="FirstName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select_checkbox d_flex f_column">
+                                <label>
 
+                                    <input type="checkbox" name="select" checked>
+                                    <span class="checkmark"></span>
+                                    Хочу получать информацию о скидках, новинках, подарках по электронной почте
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="select">
+                                    <span class="checkmark"></span>
+                                    Адрес доставки совпадает с адресом плательщика
+                                </label>
+                            </div>
+                            <div class="feedback_users">
+                                <div class="header_tabs_select">3. Ваши пожелания</div>
+                                <textarea></textarea>
+                                <div class="size_text">
+                                    <div>Осталось<span class="number_size_text">250<span>символов</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery_select">
+                            <div class="header_tabs_select">
+                                2. Доставка
+                            </div>
+                            <div class="forms_tabs_select">
+                                <div class="row_items_forms">
+                                    <div class="column_forms">
+                                        <div class="top_input_text">Регион<span>*</span></div>
+                                        <div class="select_users_delivery">
+                                            <select name="" id="">
+                                                <option>1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="column_forms">
+                                        <div class="top_input_text">Город<span>*</span></div>
+                                        <div class="select_users_delivery">
+                                            <select name="" id="">
+                                                <option>1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forms_tabs_select">
+                                <div class="row_items_forms width_forms d_flex f_column">
+                                    <div class="top_input_text">Адрес<span>*</span></div>
+                                    <input type="adders" name="adders">
+                                </div>
+                            </div>
+                            <div class="form_select_radio">
+                                <label>
+                                    <input type="radio" class="checkmark" name="radio_delivery" checked>
+                                    <span class="checkmark"></span>
+                                    Delivery
+                                </label>
+                                <div class="new_mail d_flex">
+                                    <div class="checked_radio">
+                                        <label>
+                                            <input type="radio" class="checkmark" name="radio_delivery">
+                                            <span class="checkmark"></span>
+                                            Новая почта
+                                        </label>
+                                    </div>
+                                    <input type="text">
+                                    <input type="text">
+                                </div>
+
+                            </div>
+                            <div class="form_select_radio payment_forms">
+                                <div class="header_tabs_select">
+                                    4. Оплата
+                                </div>
+                                <label>
+                                    <input type="radio" class="checkmark" name="radio_paypass" checked>
+                                    <span class="checkmark"></span>
+                                    Банковский перевод
+                                </label>
+                                <div class="new_mail d_flex">
+                                    <div class="checked_radio">
+                                        <label>
+                                            <input type="radio" class="checkmark" name="radio_paypass">
+                                            <span class="checkmark"></span>
+                                            Наложенный платеж
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items_tabs"></div>
+                </div>
             </div>
             <div class="result_form_order">
                 <div class="result_text">
@@ -149,7 +291,7 @@
                     </svg>
                     Оформить заказ
                 </button>
-                <div>
+                <div class="text_form_buy">
                     Оформля заказ, Вы соглашаетесь
                     с <span>Политикой в отношении
                         обработки персональных даных</span>

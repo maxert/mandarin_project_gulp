@@ -27,13 +27,552 @@
 
 .checkout_container .m_header_center_tel {
     border: 1px solid #f5cf05;
+    box-shadow: none;
 }
 
 .checkout_container .m_header_center_tel a {
     color: #000;
 }
 
+.checkbox_container_center {
+    position: relative;
+}
+
 .checkbox_container_center .header_text {
     line-height: normal;
     margin-top: 89px;
+}
+
+.result_form_order {
+    max-width: 288px;
+    position: relative;
+    padding: 30px;
+}
+
+.users_functional>div {
+    flex: 1;
+}
+
+.form_order_container {
+    margin-right: 25px;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.result_form_order {
+    background: url(../img/backgraund_buy.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    bottom: 5px;
+    background-position: top;
+}
+
+.result_text {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 48px
+}
+
+.result_text>div:first-child {
+    margin-bottom: 21px;
+}
+
+
+.product_order {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 18px;
+}
+
+.summa_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.text_summa {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 22px;
+}
+
+.price_result {
+    color: #ff0000;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 20px;
+}
+
+.result_form_order .all_button {
+
+    min-width: 218px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.text_form_buy {
+    text-align: center;
+    color: #aeaeae;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    max-width: 190px;
+    margin: 0 auto;
+}
+
+.text_form_buy span {
+    text-decoration: underline;
+    color: #010;
+}
+
+.headert_tabs div.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.07);
+    border-radius: 10px 0 0;
+    background-color: #f5cf05;
+    width: 210px;
+    text-decoration: none;
+    color: #ffffff;
+    height: 40px;
+}
+
+.headert_tabs div:first-child {
+    margin-left: 0px;
+}
+
+.headert_tabs div {
+    color: #949494;
+    margin-left: 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 14px;
+    text-decoration: underline;
+}
+
+.items_tabs {
+    display: none;
+}
+
+.items_tabs.active {
+    display: flex;
+}
+
+.tabs_container {
+    padding: 40px;
+}
+
+.select_city {
+    position: relative;
+}
+
+.select_city .nice-select {
+    position: relative !important;
+    height: auto !important;
+    border: none !important;
+    line-height: normal !important;
+}
+
+.header_tabs_select {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.text_city {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.forms_tabs_select {
+    display: flex;
+
+}
+
+.row_items_forms {
+    display: flex;
+}
+
+.row_items_forms>div {
+    margin-left: 28px;
+}
+
+.row_items_forms input {
+
+    width: 280px;
+    padding: 14px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #f5cf05;
+    background-color: #fdfdfd;
+}
+
+.row_items_forms>div:first-child {
+    margin-left: 0px;
+}
+
+.top_input_text {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 22px;
+}
+
+.top_input_text span {
+    color: #ff0000;
+}
+
+.select_checkbox label:first-child {
+    margin-top: 23px;
+}
+
+.select_checkbox label {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 25px;
+}
+
+.select_checkbox input {
+    margin-right: 12px;
+}
+
+.size_text span {
+    margin-left: 5px;
+}
+
+.size_text {
+    color: #bbbbbb;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.number_size_text {
+    color: #000000;
+    font-weight: 500;
+}
+
+.feedback_users textarea {
+    width: 588px;
+    height: 107px;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid #f5cf05;
+    background-color: #fdfdfd;
+    resize: none;
+}
+
+.select_checkbox input {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #f5cf05;
+    background-color: #fdfdfd;
+}
+
+
+
+.select_checkbox label {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.select_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.select_checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #f5cf05;
+    background-color: #fdfdfd;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+}
+
+/* On mouse-over, add a grey background color */
+.select_checkbox .label:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.select_checkbox input:checked~.checkmark {
+    background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.select_checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.select_checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.select_checkbox .checkmark:after {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background: url(../img/select_button.png) no-repeat;
+    background-position: center;
+    top: 50%;
+    width: 10px;
+    height: 28px;
+    width: 10px;
+    height: 6px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.users_select {
+    margin-left: 20px;
+    margin-right: 88px;
+}
+
+.width_forms input {
+    width: 100%;
+}
+
+.width_forms {
+    width: 100%;
+}
+
+.width_forms .top_input_text {
+    margin-left: 22px !important;
+}
+
+.feedback_users {
+    margin-top: 41px;
+}
+
+.new_mail>input:first-child {
+    margin-left: 0px;
+}
+
+.form_select_radio {
+    margin-top: 25px;
+}
+
+.new_mail>input {
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #dcdcdc;
+    background-color: #fdfdfd;
+    padding: 14px;
+    margin-left: 19px;
+}
+
+.checked_radio {
+    display: flex;
+    align-items: center;
+}
+
+.select_users_delivery {
+    position: relative;
+}
+
+.select_users_delivery .nice-select {
+    display: flex;
+    align-items: center;
+    width: 280px !important;
+    padding: 14px !important;
+    height: 40px !important;
+    position: relative !important;
+    border-radius: 20px !important;
+    border: 1px solid #f5cf05 !important;
+    background-color: #fdfdfd !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+
+.select_users_delivery .current {
+    color: #000000;
+}
+
+.select_users_delivery .nice-select.open {
+    top: 0px;
+}
+
+.select_users_delivery .nice-select.open .list {
+    position: absolute !important;
+    top: 40px !important;
+    width: 100% !important;
+    left: 0px !important;
+    border: 1px solid #f5cf05 !important;
+    background-color: #fdfdfd !important;
+}
+
+.select_users_delivery .nice-select.open .list li {
+    padding: 0px 14px !important;
+}
+
+.select_users_delivery .nice-select:after {
+    background: url(../img/icon/arr.png) center no-repeat;
+}
+
+.select_users_delivery .nice-select .option.focus {
+    color: #000000;
+}
+
+.form_select_radio label {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+
+
+.form_select_radio label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.form_select_radio label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.form_select_radio label .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    border: 1px solid #f5cf05;
+    background-color: #fdfdfd;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.form_select_radio label:hover input~.checkmark {
+    background-color: #f5cf05;
+}
+
+/* When the radio button is checked, add a blue background */
+.form_select_radio label input:checked~.checkmark {
+    background-color: transparent;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.form_select_radio label .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.form_select_radio label input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.form_select_radio label .checkmark:after {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #f5cf05;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.payment_forms .header_tabs_select {
+    margin-bottom: 20px;
+}
+
+.payment_forms label {
+    margin-bottom: 24px;
+}
+
+.popup_checbox {
+    background: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 5px;
+}
+
+.popup_checbox .popap_feedback {
+    background: #f7f7f7;
+}
+
+.popup_checbox .image_popap img {
+    width: 107px;
+    height: 118px;
+}
+.checkout_container .mobile_header_top{
+    display: none;
 }
