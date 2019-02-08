@@ -1184,12 +1184,12 @@
         line-height: 9.97px;
     }
 
+    .headert_tabs div,
     .headert_tabs div.active {
         width: 151px;
         height: 30px;
-
-
     }
+
 
     .checkout_container .m_header_center_logo {
         width: 187px;
@@ -1227,10 +1227,60 @@
     .checkout_container .m_header_center_content {
         height: 48px;
     }
+
+    .google_contacts {
+        width: 1008px;
+        height: 345px;
+        margin-left: 16px;
+    }
+
+    .content_contacts li {
+        font-size: 13px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .content_contacts li .text_contacts>div:first-child {
+        letter-spacing: 0.25px;
+    }
+
+    .header_text.contacts {
+        font-size: 21px;
+        line-height: 15px;
+        margin-bottom: 37px;
+        margin-top: 6px;
+    }
+
+    .tabs_container_brands>div.active div {
+        min-width: 200px;
+        max-width: 169px;
+        height: 170px;
+        padding: 20px;
+    }
+
+    .tabs_container_brands>div.active img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .header_text.brands {
+        margin-bottom: 19px;
+    }
+
+    .tabs_brands_links {
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 29px;
+    }
+
+    .tabs_container_brands>div.active {
+        height: 570px;
+    }
 }
 
 
 @media only screen and (max-width:1279px) {
+
 
     /*Animation*/
 
@@ -1923,6 +1973,7 @@
 
     .items_tabs.active {
         flex-direction: column;
+        width: 428px;
     }
 
     .delivery_select {
@@ -1948,9 +1999,40 @@
         -ms-transform: translate(-45%, -50%);
         -o-transform: translate(-45%, -50%);
     }
+
+    .google_contacts {
+        width: 525px;
+        height: 345px;
+    }
+
+    .header_text.contacts {
+        margin-bottom: 48px;
+        margin-top: 13px;
+    }
+
+    .tabs_container_brands>div.active div:nth-child(6n-1),
+    .tabs_container_brands>div.active div:nth-child(6n) {
+        display: none;
+    }
+
+
+
+    .tabs_container_brands>div.active {
+        height: 536px;
+    }
+
+    .tabs_container_brands>div.active div {
+        min-width: 176px;
+        max-width: 169px;
+        height: 170px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width:767px) {
+
+
 
     /*Animation*/
     .mobile_header_top {
@@ -1959,23 +2041,23 @@
 
     @keyframes scale-in-top {
         0% {
-            top: -400px;
+            top: -447px;
             opacity: 1;
         }
 
         100% {
-            top: 200px;
+            top: 140px;
             opacity: 1;
         }
     }
 
     @keyframes scale-in-bottom {
         0% {
-            top: 200px;
+            top: 142px;
         }
 
         100% {
-            top: -427px;
+            top: -487px;
         }
     }
 
@@ -2345,7 +2427,7 @@
 
     .l_container.device_container {
         flex-direction: column;
-        top: -407px;
+        top: -447px;
         position: absolute;
     }
 
@@ -2752,10 +2834,19 @@
     .m_header_center_tel .iconTel img {
         position: relative !important;
         left: inherit !important;
-        top: inherit !important;
+        top: 0px !important;
         display: none;
     }
 
+    .m_header_center_bas .bas_img span {
+        top: 0px;
+        right: 31px;
+        width: auto;
+        min-width: 15px;
+        height: 15px;
+        line-height: normal;
+        padding: 0 3px;
+    }
 
     .m_header_center_tel .iconTel {
         height: 100% !important;
@@ -2932,7 +3023,7 @@
     }
 
     .m_header_center_tel:hover .iconTel {
-        top: 1px;
+        top: 20px;
     }
 
     .button_catalog::before {
@@ -3342,7 +3433,7 @@
     }
 
     .m_header_center_bas {
-        padding: 5px 10px 17px;
+        padding: 5px 0px 5px;
     }
 
     .items_button {
@@ -3461,11 +3552,11 @@
     }
 
     .form_select_radio label .checkmark:after {
-        transform: translate(-55%, -50%);
-        -webkit-transform: translate(-55%, -50%);
-        -moz-transform: translate(-55%, -50%);
-        -ms-transform: translate(-55%, -50%);
-        -o-transform: translate(-55%, -50%);
+        transform: translate(-45%, -50%);
+        -webkit-transform: translate(-45%, -50%);
+        -moz-transform: translate(-45%, -50%);
+        -ms-transform: translate(-45%, -50%);
+        -o-transform: translate(-45%, -50%);
     }
 
     .result_form_order {
@@ -3528,17 +3619,90 @@
     .row_items_forms input {
         width: 100% !important;
     }
-    .items_tabs.active{
+
+    .items_tabs.active {
         max-width: 222px;
         margin: 0 auto;
     }
-    .new_mail>input{
+
+    .new_mail>input {
         width: 100%;
     }
-    .form_select_radio label{
+
+    .form_select_radio label {
         margin-bottom: 13px;
     }
-    .select_checkbox label{
+
+    .select_checkbox label {
         padding-left: 20px;
+    }
+
+    .l_container.device_container *:not(:hover) {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+    }
+
+
+
+    #device>li,
+    .hover_down {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+    }
+
+    .contacts_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_text.contacts {
+        margin-bottom: 44px;
+        margin-top: 23px;
+    }
+
+    .google_contacts {
+        margin-top: 33px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .m_header_center_bas img {
+        margin-bottom: 4px;
+        margin-top: 7px;
+        width: 21px;
+    }
+
+    .tabs_container_brands>div.active div:nth-child(6n-2),
+    .tabs_container_brands>div.active div:nth-child(6n-3) {
+        display: none;
+    }
+
+    .tabs_brands_links>div {
+        display: flex;
+        margin: 0px;
+        justify-content: space-between;
+    }
+
+    .tabs_brands_links {
+        justify-content: space-between;
+    }
+
+    .tabs_container_brands>div.active div {
+        min-width: 152px;
+        max-width: 158px;
+        height: 170px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tabs_container_brands>div.active {
+        max-width: 320px;
+        margin: 0 auto;
     }
 }

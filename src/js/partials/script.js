@@ -231,10 +231,11 @@ window.onload = function () {
     var MobileHeaderTop = document.getElementsByClassName(
       "mobile_header_top"
     )[0];
-
-    MobRowElement.children[0].appendChild(MobAdaptive.lastElementChild);
-    MobileHeaderTop.appendChild(MobTelSearch);
-    ModalHeaderTop.appendChild(HeaderTopLang);
+    if (MobAdaptive) {
+      MobRowElement.children[0].appendChild(MobAdaptive.lastElementChild);
+      MobileHeaderTop.appendChild(MobTelSearch);
+      ModalHeaderTop.appendChild(HeaderTopLang);
+    }
 
     function menu(e) {
       if (
@@ -386,5 +387,47 @@ window.onload = function () {
       }
     }
 
+  }
+
+
+  var HeaderTabs = document.getElementsByClassName("headert_tabs")[0];
+  var TabsContainer = document.getElementsByClassName("tabs_container")[0];
+
+  if (HeaderTabs) {
+    function clickTabs(e) {
+      for (var i = 0; i < HeaderTabs.children.length; i++) {
+        if (HeaderTabs.children[i].classList.length === 0) {
+          HeaderTabs.children[i].classList.add("active");
+          TabsContainer.children[i].classList.add("active");
+        } else {
+          HeaderTabs.children[i].classList.remove("active");
+          TabsContainer.children[i].classList.remove("active");
+        }
+      }
+
+
+    }
+    for (var i = 0; i < HeaderTabs.children.length; i++) {
+      HeaderTabs.children[i].addEventListener("click", clickTabs, false);
+    }
+  }
+  var TabsBrandsLinks = document.getElementsByClassName("tabs_brands_links")[0];
+  var TabsContainerBrands = document.getElementsByClassName("tabs_container_brands")[0];
+  if (TabsBrandsLinks) {
+    function clickTabsBrands(e) {
+      for (var i = 0; i < TabsBrandsLinks.children.length; i++) {
+        TabsBrandsLinks.children[i].classList.remove("active");
+      }
+      e.currentTarget.classList.add("active");
+      for (var i = 0; i < TabsBrandsLinks.children.length; i++) {
+        TabsContainerBrands.children[i].classList.remove("active");
+        if (TabsBrandsLinks.children[i].classList.length === 1) {
+          TabsContainerBrands.children[i].classList.add("active");
+        }
+      }
+    }
+    for (var i = 0; i < TabsBrandsLinks.children.length; i++) {
+      TabsBrandsLinks.children[i].addEventListener("click", clickTabsBrands, false);
+    }
   }
 };

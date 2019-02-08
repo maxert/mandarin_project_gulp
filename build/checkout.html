@@ -113,24 +113,24 @@
 
         </header>
     </div>
-    <div class="l_container checkbox_container_center">
-        <!--ПОПАП ОФОРМЛЕНИЯ ТОВАРА
-        <div class="popup_checbox">
-            <div class="popap_feedback d_flex a_items_center j_c_center">
-                <div class="content_popap_feedback">
-                    <div class="image_popap">
-                        <img src="./img/manager@2x.png" alt="Картинка">
-                    </div>
-                    <div class="text_popap_feedback">
-                        Ваш заказ успешно
-                        оформлен наш оператор
-                        свяжется с Вами.
-                    </div>
-                    <button class="close_popup_feedback">Перейти в каталог</button>
+    <!-- ПОПАП ДЛЯ ОФОРМЛЕНИЯ ЗАКАЗА
+    <div class="popup_checbox">
+        <div class="popap_feedback d_flex a_items_center j_c_center">
+            <div class="content_popap_feedback">
+                <div class="image_popap">
+                    <img src="./img/manager@2x.png" alt="Картинка">
                 </div>
+                <div class="text_popap_feedback">
+                    Ваш заказ успешно
+                    оформлен наш оператор
+                    свяжется с Вами.
+                </div>
+                <a href="catalog.html"><button class="close_popup_feedback">Перейти в каталог</button></a>
             </div>
         </div>
-        -->
+    </div>
+    -->
+    <div class="l_container checkbox_container_center">
         <div class="l_container header_text d_flex j_c_center">Оформление заказа</div>
         <form class="l_container users_functional d_flex">
             <div class="form_order_container">
@@ -258,7 +258,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="items_tabs"></div>
+                    <div class="items_tabs">
+                        <div class="authorization_users">
+                            <div class="forms_tabs_select">
+                                <div class="row_items_forms">
+                                    <div class="column_forms">
+                                        <div class="top_input_text">E-mail<span>*</span></div>
+                                        <input type="email" name="email">
+                                    </div>
+                                    <div class="column_forms">
+                                        <div class="top_input_text">Пароль<span>*</span></div>
+                                        <input type="password" name="password">
+                                    </div>
+                                </div>
+                                <button class="all_button" type="submit">Вход</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="result_form_order">
