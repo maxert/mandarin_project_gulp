@@ -1,4 +1,5 @@
 window.onload = function () {
+  var body = document.querySelectorAll("body")[0];
   var valueSizePopulare = 0;
   var HoverDown = document.getElementsByClassName("hover_down");
   var HeaderTopLang = document.getElementsByClassName("m_header_top_lang")[0];
@@ -242,10 +243,15 @@ window.onload = function () {
         e.currentTarget.classList[e.currentTarget.classList.length - 1] ===
         "active"
       ) {
+        body.classList.remove("modal_open");
         e.currentTarget.classList.remove("active");
         ModalHeaderMenu.classList.remove("active");
         hamburger[1].classList.remove("active");
       } else {
+        setTimeout(function () {
+          body.classList.add("modal_open");
+        }, 500)
+
         e.currentTarget.classList.add("active");
         hamburger[0].classList.add("active");
         ModalHeaderMenu.classList.add("active");
@@ -342,8 +348,13 @@ window.onload = function () {
       FilterMobile.addEventListener("click", function () {
         PopUpMobileFilter.classList.add("active");
         ButtonClose.classList.add("active");
+        setTimeout(function(){
+          body.classList.add("modal_open");
+        },500)
+
         ButtonClose.addEventListener("click", function () {
           PopUpMobileFilter.classList.remove("active");
+            body.classList.remove("modal_open");
           ButtonClose.classList.remove("active");
         })
 

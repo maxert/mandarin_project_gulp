@@ -82,7 +82,9 @@ sub,
 sup {
   position: relative;
 }
-
+body.modal_open{
+  overflow-y: hidden;
+}
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -1856,7 +1858,9 @@ button.report_availability {
   stroke-opacity: 0.2;
   stroke-width: 0.4;
 }
-
+.buy a{
+color: white;
+}
 @import "/bower_components/nouislider/distribute/nouislider.min.css";
 @import "/bower_components/jquery-nice-select/css/nice-select.css";
 @import "media/media.css";

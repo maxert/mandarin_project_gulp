@@ -3023,7 +3023,7 @@
     }
 
     .m_header_center_tel:hover .iconTel {
-        top: 20px;
+        top: 18px;
     }
 
     .button_catalog::before {
@@ -3590,6 +3590,7 @@
 
     .checkout_container .m_header_center_tel {
         border: none;
+        top: 10px;
     }
 
     .select_users_delivery {
