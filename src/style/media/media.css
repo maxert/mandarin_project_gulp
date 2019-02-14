@@ -3,7 +3,9 @@
         left: 8px;
     }
 
-
+    .filter_product {
+        max-width: 203px;
+    }
 
     button.report_availability {
         min-width: 194px !important;
@@ -518,7 +520,7 @@
     }
 
     .product_size {
-        margin-left: 15px;
+        margin-left: 30px;
     }
 
     .catalog_product_all .product_size {
@@ -2058,6 +2060,7 @@
         padding: 20px;
         margin-bottom: 20px;
     }
+
     .container_content_warranty {
         margin-bottom: 290px;
     }
@@ -3745,7 +3748,8 @@
         font-weight: 700;
         line-height: normal;
     }
-     .container_content_warranty {
+
+    .container_content_warranty {
         margin-bottom: 200px;
     }
 }
