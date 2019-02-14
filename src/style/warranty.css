@@ -1,0 +1,31 @@
+.container_warranty .header_text.brands {
+    margin-bottom: 57px;
+    margin-top: 7px;
+}
+.container_content_warranty{
+    margin-bottom: 500px;
+}
+.container_content_warranty>p {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 49px;
+}
+
+.text_wrranty {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.bottom_text_wrranty {
+    padding-left: 16px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 37px;
+    line-height: 27px;
+}
