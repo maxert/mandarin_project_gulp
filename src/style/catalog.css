@@ -506,7 +506,9 @@
     color: #000000;
     font-weight: 900;
 }
-
+.number_list li>a{
+    color: #000000;
+}
 .number_list li {
     color: #858585;
     font-size: 16px;

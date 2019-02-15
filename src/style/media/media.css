@@ -1308,6 +1308,9 @@
     .container_content_warranty {
         margin-bottom: 300px;
     }
+    .device_list.active{
+        margin-left: -15px;
+    }
 }
 
 
@@ -2047,7 +2050,9 @@
         display: none;
     }
 
-
+.container_buy_and_delivery{
+        margin-bottom: 300px!important;
+    }
 
     .tabs_container_brands>div.active {
         height: 536px;
@@ -2063,6 +2068,13 @@
 
     .container_content_warranty {
         margin-bottom: 290px;
+    }
+    .container_content_buydelivery {
+        flex-direction: column;
+    }
+    .delivery_container{
+        margin-left: 0px;
+        max-width: 424px;
     }
 }
 
@@ -3751,5 +3763,11 @@
 
     .container_content_warranty {
         margin-bottom: 200px;
+    }
+    .device_list.active{
+        margin-left: 8px;
+    }
+    .container_buy_and_delivery{
+        margin-bottom: 200px!important;
     }
 }
