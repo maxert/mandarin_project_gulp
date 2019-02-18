@@ -3,6 +3,19 @@
         left: 8px;
     }
 
+    .device_list.active {
+        margin-left: -40px;
+    }
+
+    .look_items>div {
+        margin-left: 30px !important;
+    }
+
+    .product_buy_container .tabs_product_items>div {
+        margin-left: 30px !important;
+        margin-right: 0px;
+    }
+
     .filter_product {
         max-width: 203px;
     }
@@ -1308,14 +1321,14 @@
     .container_content_warranty {
         margin-bottom: 300px;
     }
-    .device_list.active{
-        margin-left: -15px;
+
+    .device_list.active {
+        margin-left: -40px;
     }
 }
 
 
 @media only screen and (max-width:1279px) {
-
 
     /*Animation*/
 
@@ -1958,6 +1971,10 @@
         max-width: 140px;
     }
 
+    .quality_size .counter_number {
+        width: 110px;
+    }
+
     .quality_size .middle_count {
         width: 26px;
     }
@@ -2050,8 +2067,8 @@
         display: none;
     }
 
-.container_buy_and_delivery{
-        margin-bottom: 300px!important;
+    .container_buy_and_delivery {
+        margin-bottom: 300px !important;
     }
 
     .tabs_container_brands>div.active {
@@ -2069,17 +2086,42 @@
     .container_content_warranty {
         margin-bottom: 290px;
     }
+
     .container_content_buydelivery {
         flex-direction: column;
     }
-    .delivery_container{
+
+    .delivery_container {
         margin-left: 0px;
         max-width: 424px;
+    }
+
+    .product_buy_container .tabs_product_items>div:nth-child(n+4) {
+        display: none;
+    }
+
+    .product_buy_container .look_container>div:nth-child(n+4) {
+        display: none;
     }
 }
 
 @media only screen and (max-width:767px) {
 
+    .product_buy_container .tabs_product_items>div:nth-child(n+2) {
+        display: none;
+    }
+
+    .look_items {
+        justify-content: center;
+    }
+
+    .look_items>div {
+        margin: 0!important;
+    }
+
+    .product_buy_container .look_container>div:nth-child(n+2) {
+        display: none;
+    }
 
 
     /*Animation*/
@@ -3764,10 +3806,12 @@
     .container_content_warranty {
         margin-bottom: 200px;
     }
-    .device_list.active{
+
+    .device_list.active {
         margin-left: 8px;
     }
-    .container_buy_and_delivery{
-        margin-bottom: 200px!important;
+
+    .container_buy_and_delivery {
+        margin-bottom: 200px !important;
     }
 }

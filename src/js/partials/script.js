@@ -184,11 +184,7 @@ window.onload = function () {
   }
 
 
-
-
-
-
-
+  
 
   var button_catalog = document.getElementsByClassName("button_catalog")[0];
   var Device = document.getElementsByClassName("device_container")[0];
@@ -348,13 +344,13 @@ window.onload = function () {
       FilterMobile.addEventListener("click", function () {
         PopUpMobileFilter.classList.add("active");
         ButtonClose.classList.add("active");
-        setTimeout(function(){
+        setTimeout(function () {
           body.classList.add("modal_open");
-        },500)
+        }, 500)
 
         ButtonClose.addEventListener("click", function () {
           PopUpMobileFilter.classList.remove("active");
-            body.classList.remove("modal_open");
+          body.classList.remove("modal_open");
           ButtonClose.classList.remove("active");
         })
 
@@ -441,4 +437,21 @@ window.onload = function () {
       TabsBrandsLinks.children[i].addEventListener("click", clickTabsBrands, false);
     }
   }
+
+  var clickSelect = document.querySelectorAll(".info_content_product>.buy_product>.buy");
+  clickSelect[0].addEventListener("click", function () {
+    document.getElementsByClassName("popup_buy_click")[0].style.display = "block";
+  })
+
+  var clickSelect = document.querySelectorAll(".info_content_product>.buy_product>.buy_one");
+  clickSelect[0].addEventListener("click", function () {
+    document.getElementsByClassName("one_click_popup")[0].style.display = "block";
+  })
+  var HeaderClose = document.querySelectorAll(".header_close>div");
+  HeaderClose[0].addEventListener("click", function () {
+    document.getElementsByClassName("popup_buy_click")[0].style.display = "none";
+  })
+   HeaderClose[1].addEventListener("click", function () {
+    document.getElementsByClassName("one_click_popup")[0].style.display = "none";
+  })
 };

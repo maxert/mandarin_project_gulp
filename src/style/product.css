@@ -144,7 +144,9 @@
 .product_card_container {
     margin-bottom: 77px;
 }
-
+.select_list>div:nth-child(4){
+    white-space: nowrap;
+}
 .text_info {
     margin-bottom: 31px;
 }
@@ -238,6 +240,7 @@
 .middle_count {
     color: #000000;
     width: 100%;
+    max-width: 86px;
     text-align: center;
     border: 1px solid transparent;
     height: 40px;
