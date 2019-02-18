@@ -184,7 +184,7 @@ window.onload = function () {
   }
 
 
-  
+
 
   var button_catalog = document.getElementsByClassName("button_catalog")[0];
   var Device = document.getElementsByClassName("device_container")[0];
@@ -439,19 +439,21 @@ window.onload = function () {
   }
 
   var clickSelect = document.querySelectorAll(".info_content_product>.buy_product>.buy");
-  clickSelect[0].addEventListener("click", function () {
-    document.getElementsByClassName("popup_buy_click")[0].style.display = "block";
-  })
+  if (clickSelect) {
+    clickSelect[0].addEventListener("click", function () {
+      document.getElementsByClassName("popup_buy_click")[0].style.display = "block";
+    })
 
-  var clickSelect = document.querySelectorAll(".info_content_product>.buy_product>.buy_one");
-  clickSelect[0].addEventListener("click", function () {
-    document.getElementsByClassName("one_click_popup")[0].style.display = "block";
-  })
-  var HeaderClose = document.querySelectorAll(".header_close>div");
-  HeaderClose[0].addEventListener("click", function () {
-    document.getElementsByClassName("popup_buy_click")[0].style.display = "none";
-  })
-   HeaderClose[1].addEventListener("click", function () {
-    document.getElementsByClassName("one_click_popup")[0].style.display = "none";
-  })
+    var clickSelect = document.querySelectorAll(".info_content_product>.buy_product>.buy_one");
+    clickSelect[0].addEventListener("click", function () {
+      document.getElementsByClassName("one_click_popup")[0].style.display = "block";
+    })
+    var HeaderClose = document.querySelectorAll(".header_close>div");
+    HeaderClose[0].addEventListener("click", function () {
+      document.getElementsByClassName("popup_buy_click")[0].style.display = "none";
+    })
+    HeaderClose[1].addEventListener("click", function () {
+      document.getElementsByClassName("one_click_popup")[0].style.display = "none";
+    })
+  }
 };

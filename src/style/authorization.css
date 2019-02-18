@@ -1,0 +1,117 @@
+.authorization_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authorization_container .header_text.brands {
+    margin-bottom: 39px;
+}
+
+.authorization_container .top_text_authorization {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.password_text_logout {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 23px;
+    margin-top: 23px;
+    text-decoration: underline;
+}
+
+.authorization_container .all_button {
+    margin: 0px auto !important;
+}
+
+.l_container.text_authorization_container {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 63px;
+    margin-bottom: 500px;
+}
+
+.l_container.text_authorization_container a {
+    color: #40a7ff;
+    font-weight: 700;
+}
+
+.text_users_permission {
+    font-size: 12px;
+    margin-left: 2px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.registration .select_checkbox label {
+    font-size: 12px;
+    padding-left: 24px;
+    line-height: normal;
+}
+
+.right_information {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: auto;
+    line-height: 25px;
+}
+
+.registration {
+    display: flex;
+    max-width: 1276px;
+    margin: 0 auto;
+    margin-bottom: 400px;
+    justify-content: center;
+}
+.registration .authorization_users{
+    margin: 0;
+}
+.text_top_info_registration {
+    margin-bottom: 20px;
+    line-height: normal;
+}
+
+.text_top_info_registration,
+.top_text_size {
+    font-weight: 400;
+}
+
+.registrations_container>h1 {
+    margin-bottom: 5px !important;
+}
+
+.fast_registration {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 34px!important;
+}
+
+.registration>.authorization_users {
+    max-width: 425px;
+}
+
+.registration>.authorization_users .row_items_forms input {
+    width: 100%!important;
+}
+
+.registration .forms_tabs_select .all_button {
+    min-width: 204px !important;
+}
+
+.registration .text_authorization_container {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 34px;
+    margin-bottom: 0px;
+}
