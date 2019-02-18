@@ -2116,7 +2116,7 @@
     }
 
     .look_items>div {
-        margin: 0!important;
+        margin: 0 !important;
     }
 
     .product_buy_container .look_container>div:nth-child(n+2) {
