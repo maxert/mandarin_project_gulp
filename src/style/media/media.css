@@ -2125,6 +2125,9 @@
     .product_buy_container .look_container>div:nth-child(n+4) {
         display: none;
     }
+    #breadcrumbs-two li:last-child{
+        font-size: 10px;
+    }
     #breadcrumbs-two a{
         font-size: 10px;
     }

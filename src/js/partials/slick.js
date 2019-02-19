@@ -96,22 +96,26 @@ $(document).ready(function () {
             }
         }]
     })
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        vertical: true,
-        dots: false,
-        arrows: false,
-        verticalSwiping: true,
-        asNavFor: '.slider-for',
-        focusOnSelect: true
-    });
+
+    var lengthSlider = document.querySelectorAll(".slider-nav img");
+    if (lengthSlider) {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: lengthSlider.length,
+            slidesToScroll: 1,
+            vertical: true,
+            dots: false,
+            arrows: false,
+            verticalSwiping: true,
+            asNavFor: '.slider-for',
+            focusOnSelect: true
+        });
+    }
 });
