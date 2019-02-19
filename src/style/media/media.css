@@ -455,7 +455,7 @@
     }
 
     .home_list img {
-        height: 30px;
+        height: auto;
     }
 
     .device_list svg {
@@ -2125,6 +2125,15 @@
     .product_buy_container .look_container>div:nth-child(n+4) {
         display: none;
     }
+    #breadcrumbs-two a{
+        font-size: 10px;
+    }
+    .home_list img{
+        height: 28px!important;
+    }
+    #breadcrumbs-two{
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width:767px) {
@@ -3354,7 +3363,7 @@
     }
 
     .home_list img {
-        height: 28px;
+        height: auto;
     }
 
     .select_list a:nth-child(2) {

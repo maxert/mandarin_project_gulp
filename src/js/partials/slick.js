@@ -105,7 +105,7 @@ $(document).ready(function () {
         asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
         vertical: true,
         dots: false,

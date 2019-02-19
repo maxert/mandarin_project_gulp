@@ -71,9 +71,11 @@
     margin-bottom: 400px;
     justify-content: center;
 }
-.registration .authorization_users{
+
+.registration .authorization_users {
     margin: 0;
 }
+
 .text_top_info_registration {
     margin-bottom: 20px;
     line-height: normal;
@@ -93,7 +95,7 @@
     font-size: 14px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 34px!important;
+    margin-bottom: 34px !important;
 }
 
 .registration>.authorization_users {
@@ -101,7 +103,7 @@
 }
 
 .registration>.authorization_users .row_items_forms input {
-    width: 100%!important;
+    width: 100% !important;
 }
 
 .registration .forms_tabs_select .all_button {
@@ -114,4 +116,64 @@
     font-weight: 300;
     margin-top: 34px;
     margin-bottom: 0px;
+}
+
+.all_button.white_button {
+    border-radius: 20px;
+    border: 1px solid #40a7ff;
+    background-color: #ffffff;
+    color: #40a7ff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.create_password .column_forms {
+    margin-left: 0px;
+}
+
+.personal_container input {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #000000;
+    width: 100% !important;
+}
+
+.personal_container .top_input_text {
+    color: #c5c5c5;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.personal_container form {
+    max-width: 425px;
+    width: 100%;
+}
+
+.create_password .row_items_forms {
+    width: 100%;
+}
+
+.personal_container .container_row {
+    justify-content: space-between;
+    display: flex;
+}
+
+.personal_container .all_button {
+    min-width: 204px !important;
+    height: 40px;
+    max-width: 204px;
+    margin: 35px auto !important;
+}
+
+.top_text_authorization {
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.personal_container .header_text.brands{
+    margin-bottom: 35px;
 }

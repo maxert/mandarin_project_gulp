@@ -439,7 +439,9 @@ window.onload = function () {
   }
 
   var clickSelect = document.querySelectorAll(".info_content_product>.buy_product>.buy");
-  if (clickSelect) {
+  if (clickSelect.length === 0) {
+
+  } else {
     clickSelect[0].addEventListener("click", function () {
       document.getElementsByClassName("popup_buy_click")[0].style.display = "block";
     })
