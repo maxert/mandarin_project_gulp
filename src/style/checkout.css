@@ -615,3 +615,21 @@
 .authorization_users{
     margin: auto;
 }
+.size_big{
+    min-width: 280px;
+}
+.delivery_select{
+    max-width: 590px;
+}
+.new_mail{
+    white-space: nowrap;
+}
+.new_mail>input{
+    width: 100%;
+}
+.delivery_send>label:nth-child(1){
+    margin-bottom: 20px;
+}
+.delivery_send>label{
+    margin-bottom: 10px;
+}

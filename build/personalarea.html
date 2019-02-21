@@ -720,254 +720,297 @@
 </div>
 <div class="l_container personal_container">
     <h1 class="l_container header_text brands d_flex j_c_center">Личный кабинет</h1>
-    <div class="container_row d_flex">
-        <form class="personal_date">
-            <div class="authorization_users">
-                <div class="top_text_authorization">Личные данные</div>
-                <div class="forms_tabs_select">
-                    <div class="row_items_forms">
-                        <div class="column_forms">
-                            <div class="top_input_text">Фамилия Имя</div>
-                            <input type="name" name="name" placeholder="Петро Петрович">
-                        </div>
-                        <div class="column_forms">
-                            <div class="top_input_text">E-mail</div>
-                            <input type="email" name="email" placeholder="E-mail">
-                        </div>
-                        <div class="column_forms">
-                            <div class="top_input_text">Телефон</div>
-                            <input type="phone" name="phone" placeholder="+38 ___ - __ - __ - ___ ">
-                        </div>
-                    </div>
-                    <button class="all_button" type="submit">Сохранить</button>
-                </div>
+    <div class="l_contaier tabs_personalarea d_flex j_c_center">
+        <div class="container_tabs_lsit_personal">
+            <div class="button_tabs active">
+                Личные данные
             </div>
-        </form>
-        <form class="list_address">
-            <div class="authorization_users">
-                <div class="top_text_authorization">Список адресов доставки</div>
-                <div class="forms_tabs_select">
-                    <div class="row_items_forms">
-                        <div class="column_forms">
-                            <div class="top_input_text">Основной адрес</div>
-                            <input type="address" name="address" placeholder="Нова Пошта, Поштове відділення № 8">
+            <div class="button_tabs">
+                Список адресов доставки
+            </div>
+            <div class="button_tabs">
+                Смена пароля
+            </div>
+            <div class="button_tabs">
+                Мои заказы
+            </div>
+        </div>
+    </div>
+    <div class="l_container tabs_container_personal">
+        <div class="active">
+            <form class="personal_date">
+                <div class="authorization_users">
+                    <div class="forms_tabs_select">
+                        <div class="row_items_forms">
+                            <div class="column_forms">
+                                <div class="top_input_text">Имя</div>
+                                <input type="name" name="name" placeholder="Петро">
+                            </div>
+                            <div class="column_forms">
+                                <div class="top_input_text">Фамилия</div>
+                                <input type="name" name="name" placeholder="Петрович">
+                            </div>
+                            <div class="column_forms">
+                                <div class="top_input_text">E-mail</div>
+                                <input type="email" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="column_forms">
+                                <div class="top_input_text">Телефон</div>
+                                <input type="phone" name="phone" placeholder="+38 ___ - __ - __ - ___ ">
+                            </div>
                         </div>
-                        <div class="column_forms">
-                            <div class="top_input_text">Дополнительный адрес</div>
-                            <input type="address" name="address_dop" placeholder="Нова Пошта, Поштове відділення № 8">
-                        </div>
-                        <div class="column_forms">
-                            <div class="top_input_text">Дополнительный адрес</div>
-                            <input type="address" name="address_dop" placeholder="Нова Пошта, Поштове відділення № 8">
-                        </div>
-                    </div>
-                    <div class="button_row d_flex">
-                        <button class="all_button white_button" type="submit">Добавить адрес</button>
                         <button class="all_button" type="submit">Сохранить</button>
                     </div>
                 </div>
-            </div>
-        </form>
-        <form class="create_password">
-            <div class="top_text_authorization">Смена пароля</div>
-            <div class="forms_tabs_select">
-                <div class="row_items_forms f_column">
-                    <div class="column_forms">
-                        <div class="top_input_text">Текущий пароль</div>
-                        <input type="password" name="password" placeholder="*************">
+            </form>
+        </div>
+        <div>
+            <form class="list_address">
+                <div class="authorization_users">
+                    <div class="forms_tabs_select">
+                        <div class="row_items_forms">
+                            <div class="column_forms">
+                                <div class="top_input_text">Страна</div>
+                                <input type="text" name="address" placeholder="Украина">
+                            </div>
+                            <div class="column_forms">
+                                <div class="top_input_text">Область/Регион</div>
+                                <div id="sizenew" class="select_users_delivery">
+                                    <select name="">
+                                        <option>Киевская</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column_forms">
+                                <div class="top_input_text">Город</div>
+                                <div id="sizenew" class="select_users_delivery">
+                                    <select name="">
+                                        <option>Киев</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column_forms width_forms size_big">
+                                <div class="top_input_text">Улица/Проспект/Бульвар</div>
+                                <input type="adders" name="adders" placeholder="Бульвар Дружбы Народов">
+                            </div>
+                            <div class="row_items_block_delivery d_flex j_c_space_between">
+                                <div class="column_forms width_forms">
+                                    <div class="top_input_text">Дом</div>
+                                    <input type="adders" name="adders" placeholder="13">
+                                </div>
+                                <div class="column_forms width_forms">
+                                    <div class="top_input_text">Квартира</div>
+                                    <input type="adders" name="adders" placeholder="13">
+                                </div>
+                            </div>
+                            <div class="column_forms">
+                                <div class="top_input_text">Отделение Новой почты</div>
+                                <div id="sizenew" class="select_users_delivery">
+                                    <select name="">
+                                        <option>Нова Пошта, Поштове відділення № 8</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="all_button" type="submit">Сохранить</button>
+                        </div>
                     </div>
-                    <div class="column_forms">
-                        <div class="top_input_text">Новый пароль</div>
-                        <input type="password" name="password" placeholder="*************">
-                    </div>
-                    <div class="column_forms">
-                        <div class="top_input_text">Подтвердите пароль</div>
-                        <input type="password_two" name="password_two" placeholder="*************">
-                    </div>
-                    <button class="all_button" type="submit">Сохранить</button>
                 </div>
+            </form>
+        </div>
+        <div>
+            <form class="create_password">
+                <div class="forms_tabs_select">
+                    <div class="row_items_forms f_column">
+                        <div class="column_forms">
+                            <div class="top_input_text">Текущий пароль</div>
+                            <input type="password" name="password" placeholder="*************">
+                        </div>
+                        <div class="column_forms">
+                            <div class="top_input_text">Новый пароль</div>
+                            <input type="password" name="password" placeholder="*************">
+                        </div>
+                        <div class="column_forms">
+                            <div class="top_input_text">Подтвердите пароль</div>
+                            <input type="password_two" name="password_two" placeholder="*************">
+                        </div>
+                        <button class="all_button" type="submit">Сохранить</button>
+                    </div>
 
-            </div>
-        </form>
-    </div>
-    <div class="l_container my_product_block">
-        <div class="top_bottom_buy_product d_flex ma_l a_items_center">
-            <div class="results">Итого:<span class="result_price">2065.70 грн</span></div>
-            <a href="
-checkout.html">
-                <button class="all_button">
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512px"
-                        version="1.1" height="512px" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
-                        <g>
-                            <g fill="#1D1D1B">
-                                <path d="m62.463,1.543c-1.017-1.017-2.403-1.542-3.83-1.543-1.43,0.021-2.778,0.591-3.801,1.609l-2.446,2.443c-0.01,0.012-0.015,0.025-0.024,0.035l-31.909,31.819c-0.104,0.104-0.158,0.233-0.234,0.353-0.131,0.152-0.245,0.317-0.327,0.505l-3.254,7.5c-0.324,0.75-0.169,1.62 0.397,2.211 0.392,0.41 0.927,0.631 1.476,0.631 0.241,0 0.486-0.043 0.719-0.131l7.824-2.943c0.217-0.081 0.406-0.209 0.579-0.352 0.126-0.08 0.262-0.14 0.367-0.245l32.035-31.945c0.006-0.006 0.008-0.014 0.015-0.02l2.341-2.33c2.118-2.111 2.15-5.52 0.072-7.597zm-35.905,37.576l-1.777-1.773 29.151-29.069 1.776,1.773-29.15,29.069zm32.95-32.857l-.916,.912-1.784-1.779 .911-.91c0.265-0.264 0.609-0.411 0.972-0.416 0.344-0.008 0.653,0.119 0.883,0.348 0.491,0.49 0.459,1.319-0.066,1.845z"
-                                    fill="#FFFFFF" />
-                                <path d="M58.454,22.253c-1.128,0-2.04,0.911-2.04,2.034v33.611c0,1.121-0.915,2.033-2.04,2.033H6.12    c-1.126,0-2.04-0.912-2.04-2.033V9.787c0-1.121,0.914-2.034,2.04-2.034h33.403c1.127,0,2.04-0.911,2.04-2.034    s-0.913-2.034-2.04-2.034H6.12C2.745,3.685,0,6.422,0,9.787v48.111C0,61.263,2.745,64,6.12,64h48.254    c3.374,0,6.12-2.737,6.12-6.102V24.287C60.494,23.164,59.581,22.253,58.454,22.253z"
-                                    fill="#FFFFFF" />
-                            </g>
-                        </g>
-                    </svg>
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="l_container my_product_block f_column">
+                <div class="container_new_product_element">
+                    <div class="container_buy">
+                        <div class="attribute_header d_flex">
+                            <div class="my_product_text">Заказ № 1548404301-1810, <span>23 февраля 2019 15:30</span></div>
+                            <ul class="header_product_conainer d_flex ma_l">
+                                <li class="result_size"> Доставлен </li>
+                            </ul>
+                        </div>
+                        <div class="container_tovar_basket d_flex f_column">
+                            <div class="basket_tovar">
+                                <div class="close_items">
+                                    <img src="./img/close@2x.png" alt="Картинка">
+                                </div>
+                                <div class="new_tovar_img">
+                                    <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1200 1200">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #ff0000;
+                                                    stroke-miterlimit: 10;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
+                                    </svg>
+                                    <div class="img_header">
+                                        <p>New</p>
+                                    </div>
+                                </div>
+                                <div class="image_tovar">
+                                    <img src="./img/tovar_basket.png" alt="Картинка">
+                                </div>
+                                <div class="right_size_block">
+                                    <div class="quality_size">
+                                        <div class="size_quality"><span>2</span>шт</div>
+                                    </div>
+                                    <div class="result_size">
+                                        <div>235.70 грн.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket_tovar">
+                                <div class="close_items">
+                                    <img src="./img/close@2x.png" alt="Картинка">
+                                </div>
+                                <div class="new_tovar_img">
+                                    <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1200 1200">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #ff0000;
+                                                    stroke-miterlimit: 10;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
+                                    </svg>
+                                    <div class="img_header">
+                                        <p>New</p>
+                                    </div>
+                                </div>
+                                <div class="image_tovar">
+                                    <img src="./img/tovar_basket.png" alt="Картинка">
+                                </div>
+                                <div class="right_size_block">
+                                    <div class="quality_size">
+                                        <div class="size_quality"><span>2</span>шт</div>
+                                    </div>
+                                    <div class="result_size">
+                                        <div>235.70 грн.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket_tovar">
+                                <div class="close_items">
+                                    <img src="./img/close@2x.png" alt="Картинка">
+                                </div>
+                                <div class="new_tovar_img">
+                                    <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 1200 1200">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #ff0000;
+                                                    stroke-miterlimit: 10;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
+                                    </svg>
+                                    <div class="img_header">
+                                        <p>New</p>
+                                    </div>
+                                </div>
+                                <div class="image_tovar">
+                                    <img src="./img/tovar_basket.png" alt="Картинка">
+                                </div>
+                                <div class="right_size_block">
+                                    <div class="quality_size">
+                                        <div class="size_quality"><span>2</span>шт</div>
+                                    </div>
+                                    <div class="result_size">
+                                        <div>235.70 грн.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top_bottom_buy_product d_flex ma_l a_items_center">
+                        <div class="my_product_button">Посмотреть весь заказ</div>
+                        <div class="results">Итого:<span class="result_price">2065.70 грн</span></div>
+                    </div>
+                </div>
+                <div class="container_buy new_color">
+                    <div class="attribute_header d_flex">
+                        <div class="my_product_text">Заказ № 1548404301-1810, <span>23 февраля 2019 15:30</span></div>
+                        <ul class="header_product_conainer d_flex ma_l">
+                            <li class="result_size"> Отменен </li>
+                        </ul>
+                    </div>
+                    <div class="container_tovar_basket d_flex f_column">
+                        <div class="basket_tovar">
+                            <div class="close_items">
+                                <img src="./img/close@2x.png" alt="Картинка">
+                            </div>
+                            <div class="new_tovar_img">
+                                <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                                stroke: #ff0000;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
+                                </svg>
+                                <div class="img_header">
+                                    <p>New</p>
+                                </div>
+                            </div>
+                            <div class="image_tovar">
+                                <img src="./img/tovar_basket.png" alt="Картинка">
+                            </div>
+                            <div class="right_size_block">
+                                <div class="quality_size">
+                                    <div class="size_quality"><span>2</span>шт</div>
+                                </div>
+                                <div class="result_size">
+                                    <div>235.70 грн.</div>
+                                </div>
+                            </div>
+                        </div>
 
-                    Оформить заказ</button>
-            </a>
-        </div>
-        <div class="container_buy">
-            <div class="attribute_header d_flex">
-                <ul class="header_product_conainer d_flex ma_l">
-                    <li class="name_tovar_size">Название товара</li>
-                    <li class="article_size">Артикул</li>
-                    <li class="buy_size">Цена</li>
-                    <li class="quality_size">Количество</li>
-                    <li class="result_size">Итого</li>
-                </ul>
-            </div>
-            <div class="container_tovar_basket d_flex f_column">
-                <div class="basket_tovar">
-                    <div class="close_items">
-                        <img src="./img/close@2x.png" alt="Картинка">
-                    </div>
-                    <div class="new_tovar_img">
-                        <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 1200 1200">
-                            <defs>
-                                <style>
-                                    .cls-1 {
-                                        fill: none;
-                                        stroke: #ff0000;
-                                        stroke-miterlimit: 10;
-                                    }
-                                </style>
-                            </defs>
-                            <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
-                        </svg>
-                        <div class="img_header">
-                            <p>New</p>
-                        </div>
-                    </div>
-                    <div class="image_tovar">
-                        <img src="./img/tovar_basket.png" alt="Картинка">
-                    </div>
-                    <div class="name_tovar_size">
-                        <div>Чайник прозрачный 16 см,
-                            Royal, Genware</div>
-                    </div>
-                    <div class="article_size">
-                        <div>182115GR</div>
-                    </div>
-                    <div class="buy_size">
-                        <div>117.85 грн.</div>
-                    </div>
-                    <div class="quality_size">
-                        <div class="counter_number d_flex a_items_center">
-                            <button class="left_counter active">-1</button>
-                            <input value="1" class="middle_count d_flex a_items_center j_c_center" />
-                            <button class="right_counter">+1</button>
-                        </div>
-                    </div>
-                    <div class="result_size">
-                        <div>235.70 грн.</div>
                     </div>
                 </div>
-                <div class="basket_tovar">
-                    <div class="close_items">
-                        <img src="./img/close@2x.png" alt="Картинка">
-                    </div>
-                    <div class="new_tovar_img">
-                        <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 1200 1200">
-                            <defs>
-                                <style>
-                                    .cls-1 {
-                                        fill: none;
-                                        stroke: #ff0000;
-                                        stroke-miterlimit: 10;
-                                    }
-                                </style>
-                            </defs>
-                            <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
-                        </svg>
-                        <div class="img_header">
-                            <p>New</p>
-                        </div>
-                    </div>
-                    <div class="image_tovar">
-                        <img src="./img/tovar_basket.png" alt="Картинка">
-                    </div>
-                    <div class="name_tovar_size">
-                        <div>Чайник прозрачный 16 см,
-                            Royal, Genware</div>
-                    </div>
-                    <div class="article_size">
-                        <div>182115GR</div>
-                    </div>
-                    <div class="buy_size">
-                        <div>117.85 грн.</div>
-                    </div>
-                    <div class="quality_size">
-                        <div class="counter_number d_flex a_items_center">
-                            <button class="left_counter active">-1</button>
-                            <input value="1" class="middle_count d_flex a_items_center j_c_center" />
-                            <button class="right_counter">+1</button>
-                        </div>
-                    </div>
-                    <div class="result_size">
-                        <div>235.70 грн.</div>
-                    </div>
-                </div>
-                <div class="basket_tovar">
-                    <div class="close_items">
-                        <img src="./img/close@2x.png" alt="Картинка">
-                    </div>
-                    <div class="new_tovar_img">
-                        <svg id="Слой_1" data-name="Слой 1" width="80" height="80" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 1200 1200">
-                            <defs>
-                                <style>
-                                    .cls-1 {
-                                        fill: none;
-                                        stroke: #ff0000;
-                                        stroke-miterlimit: 10;
-                                    }
-                                </style>
-                            </defs>
-                            <path class="cls-1" d="M827.58,367.53C823,363.86,811.74,389,807.74,428s3,53,8.36,61.25A239.83,239.83,0,0,1,860.74,629c0,133.1-107.9,241-241,241s-241-107.9-241-241,107.9-241,241-241c45,2,83-10,103-41s29.1-89,21-92c-41,37-83.22,40-124,40-184.46,0-334,149.54-334,334s149.54,334,334,334,334-149.54,334-334A333.39,333.39,0,0,0,827.58,367.53Z"></path>
-                        </svg>
-                        <div class="img_header">
-                            <p>New</p>
-                        </div>
-                    </div>
-                    <div class="image_tovar">
-                        <img src="./img/tovar_basket.png" alt="Картинка">
-                    </div>
-                    <div class="name_tovar_size">
-                        <div>Чайник прозрачный 16 см,
-                            Royal, Genware</div>
-                    </div>
-                    <div class="article_size">
-                        <div>182115GR</div>
-                    </div>
-                    <div class="buy_size">
-                        <div>117.85 грн.</div>
-                    </div>
-                    <div class="quality_size">
-                        <div class="counter_number d_flex a_items_center">
-                            <button class="left_counter active">-1</button>
-                            <input value="1" class="middle_count d_flex a_items_center j_c_center" />
-                            <button class="right_counter">+1</button>
-                        </div>
-                    </div>
-                    <div class="result_size">
-                        <div>235.70 грн.</div>
-                    </div>
+                <div class="top_bottom_buy_product d_flex ma_l a_items_center">
+                    <div class="results">Итого:<span class="result_price">2065.70 грн</span></div>
                 </div>
             </div>
-        </div>
-        <div class="top_bottom_buy_product d_flex ma_l a_items_center">
-            <div class="results">Итого:<span class="result_price">2065.70 грн</span></div>
         </div>
     </div>
+
 </div>
 
 <footer>

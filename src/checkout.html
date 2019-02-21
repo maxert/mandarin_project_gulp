@@ -113,7 +113,7 @@
 
         </header>
     </div>
-    ПОПАП ДЛЯ ОФОРМЛЕНИЯ ЗАКАЗА
+    <!--ПОПАП ДЛЯ ОФОРМЛЕНИЯ ЗАКАЗА
     <div class="popup_checbox">
         <div class="content_pop_up_product">
             <div class="popap_feedback d_flex a_items_center j_c_center">
@@ -196,7 +196,7 @@
                             <div class="forms_tabs_select">
                                 <div class="row_items_forms">
                                     <div class="column_forms">
-                                        <div class="top_input_text">Регион<span>*</span></div>
+                                        <div class="top_input_text">Область/Регион<span>*</span></div>
                                         <div class="select_users_delivery">
                                             <select name="" id="">
                                                 <option>1</option>
@@ -214,16 +214,31 @@
                                 </div>
                             </div>
                             <div class="forms_tabs_select">
-                                <div class="row_items_forms width_forms d_flex f_column">
-                                    <div class="top_input_text">Адрес<span>*</span></div>
-                                    <input type="adders" name="adders">
+                                <div class="row_items_forms size_mobile">
+                                    <div class="column_forms width_forms size_big">
+                                        <div class="top_input_text">Улица/Проспект/Бульвар<span>*</span></div>
+                                        <input type="adders" name="adders">
+                                    </div>
+                                    <div class="column_forms width_forms">
+                                        <div class="top_input_text">Дом<span>*</span></div>
+                                        <input type="adders" name="adders">
+                                    </div>
+                                    <div class="column_forms width_forms">
+                                        <div class="top_input_text">Квартира<span>*</span></div>
+                                        <input type="adders" name="adders">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form_select_radio">
+                            <div class="form_select_radio delivery_send">
                                 <label>
                                     <input type="radio" class="checkmark" name="radio_delivery" checked>
                                     <span class="checkmark"></span>
-                                    Delivery
+                                    Куръерская доставка по Киеву от 50 грн.
+                                </label>
+                                <label>
+                                    <input type="radio" class="checkmark" name="radio_delivery">
+                                    <span class="checkmark"></span>
+                                    Самовывоз из шоурума
                                 </label>
                                 <div class="new_mail d_flex">
                                     <div class="checked_radio">
@@ -233,7 +248,6 @@
                                             Новая почта
                                         </label>
                                     </div>
-                                    <input type="text">
                                     <input type="text">
                                 </div>
 
@@ -245,17 +259,19 @@
                                 <label>
                                     <input type="radio" class="checkmark" name="radio_paypass" checked>
                                     <span class="checkmark"></span>
-                                    Банковский перевод
+                                    Расчетный счет
                                 </label>
-                                <div class="new_mail d_flex">
-                                    <div class="checked_radio">
-                                        <label>
-                                            <input type="radio" class="checkmark" name="radio_paypass">
-                                            <span class="checkmark"></span>
-                                            Наложенный платеж
-                                        </label>
-                                    </div>
-                                </div>
+                                <label>
+                                    <input type="radio" class="checkmark" name="radio_paypass" >
+                                    <span class="checkmark"></span>
+                                    Наложенный платеж (заказ до 3000 грн.)
+                                </label>
+                                <label>
+                                    <input type="radio" class="checkmark" name="radio_paypass" >
+                                    <span class="checkmark"></span>
+                                    Оплата на карту
+                                </label>
+
 
                             </div>
                         </div>

@@ -107,7 +107,7 @@ window.onload = function () {
           valueSizePopular = i + 1;
         }
       }
-      
+
     }
     for (var i = 0; i < FeedbackItems.length; i++) {
       FeedbackItems[i].addEventListener("click", FeedbackGraySvg, false)
@@ -456,6 +456,30 @@ window.onload = function () {
     HeaderClose[1].addEventListener("click", function () {
       document.getElementsByClassName("one_click_popup")[0].style.display = "none";
     })
-    
+
   }
+
+  var containerTabsListPersonal = document.getElementsByClassName("container_tabs_lsit_personal")[0];
+  var tabslist = document.getElementsByClassName("tabs_container_personal")[0];
+
+  function functionClickTabs(e) {
+    for (var i = 0; i < containerTabsListPersonal.children.length; i++) {
+      containerTabsListPersonal.children[i].classList.remove("active");
+    }
+    e.currentTarget.classList.add("active");
+
+    for (var i = 0; i < containerTabsListPersonal.children.length; i++) {
+      if (containerTabsListPersonal.children[i].classList[1] === "active") {
+        tabslist.children[i].classList.add("active");
+      } else {
+        tabslist.children[i].classList.remove("active");
+      }
+    }
+  }
+  for (var i = 0; i < containerTabsListPersonal.children.length; i++) {
+    containerTabsListPersonal.children[i].addEventListener("click", functionClickTabs, false);
+  }
+
+
+
 };
