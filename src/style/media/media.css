@@ -642,6 +642,7 @@
 
     .labels_text li,
     .text_info>div,
+    .text_info a,
     .delivery,
     .delivery_text {
         font-size: 13px;
@@ -807,8 +808,11 @@
         padding: 20px;
     }
 
+
+
     .image_download {
         min-width: 101px;
+        max-width: 101px;
         height: 101px;
         font-size: 13px;
         line-height: 14.22px;
@@ -872,7 +876,6 @@
 
     .image_download>div {
         max-width: 80px;
-
     }
 
     .tabs_product li {
@@ -2125,16 +2128,21 @@
     .product_buy_container .look_container>div:nth-child(n+4) {
         display: none;
     }
-    #breadcrumbs-two li:last-child{
+
+    #breadcrumbs-two li:last-child {
+        font-size: 10px;
+        min-height: 28px;
+    }
+
+    #breadcrumbs-two a {
         font-size: 10px;
     }
-    #breadcrumbs-two a{
-        font-size: 10px;
+
+    .home_list img {
+        height: 28px !important;
     }
-    .home_list img{
-        height: 28px!important;
-    }
-    #breadcrumbs-two{
+
+    #breadcrumbs-two {
         height: 100%;
     }
 }
@@ -3263,6 +3271,7 @@
 
     .image_download {
         width: 72px;
+        min-width: 72px;
         height: 72px;
     }
 
@@ -3271,9 +3280,7 @@
         height: 28px;
     }
 
-    .form_name_feedback {
-        margin-left: 15px;
-    }
+
 
     .image_download {
         min-width: 72px;
@@ -3398,8 +3405,6 @@
     }
 
     .one_click_popup {
-        width: 320px;
-        height: 409px;
         padding: 20px;
     }
 
@@ -3416,9 +3421,9 @@
         justify-content: center;
     }
 
-    .popup_buy_click {
+    .content_pop_up_product {
         width: 320px;
-        height: 550px;
+        height: auto;
     }
 
     .popup_buy_click .buy_product button {
@@ -3444,6 +3449,14 @@
         flex-wrap: nowrap;
         overflow-x: scroll;
 
+    }
+
+    .pop_up_product_none .input_center input {
+        width: 100%;
+    }
+
+    .pop_up_product_none .input_center {
+        width: 100%;
     }
 
     .tabs_product::-webkit-scrollbar {

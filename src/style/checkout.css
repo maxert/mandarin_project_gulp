@@ -581,7 +581,7 @@
 }
 
 .popup_checbox .popap_feedback {
-    background: #f7f7f7;
+    background: #ffffff;
 }
 
 .popup_checbox .image_popap img {
@@ -614,7 +614,4 @@
 }
 .authorization_users{
     margin: auto;
-}
-.popap_feedback{
-    position: fixed!important;
 }

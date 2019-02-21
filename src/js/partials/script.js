@@ -1,6 +1,6 @@
 window.onload = function () {
   var body = document.querySelectorAll("body")[0];
-  var valueSizePopulare = 0;
+  var valueSizePopular = 0;
   var HoverDown = document.getElementsByClassName("hover_down");
   var HeaderTopLang = document.getElementsByClassName("m_header_top_lang")[0];
   var ArrowClick = document.getElementsByClassName("arrow_click");
@@ -104,10 +104,10 @@ window.onload = function () {
       }
       for (var i = 0; i < FeedbackItems.length; i++) {
         if (FeedbackItems[i].classList.length === 1) {
-          valueSizePopulare = i + 1;
+          valueSizePopular = i + 1;
         }
       }
-      alert(valueSizePopulare);
+      
     }
     for (var i = 0; i < FeedbackItems.length; i++) {
       FeedbackItems[i].addEventListener("click", FeedbackGraySvg, false)
@@ -437,7 +437,6 @@ window.onload = function () {
       TabsBrandsLinks.children[i].addEventListener("click", clickTabsBrands, false);
     }
   }
-
   var clickSelect = document.querySelectorAll(".info_content_product>.buy_product>.buy");
   if (clickSelect.length === 0) {
 
@@ -446,8 +445,8 @@ window.onload = function () {
       document.getElementsByClassName("popup_buy_click")[0].style.display = "block";
     })
 
-    var clickSelect = document.querySelectorAll(".info_content_product>.buy_product>.buy_one");
-    clickSelect[0].addEventListener("click", function () {
+    var clickSelectOne = document.querySelectorAll(".info_content_product>.buy_product>.buy_one");
+    clickSelectOne[0].addEventListener("click", function () {
       document.getElementsByClassName("one_click_popup")[0].style.display = "block";
     })
     var HeaderClose = document.querySelectorAll(".header_close>div");
@@ -457,5 +456,6 @@ window.onload = function () {
     HeaderClose[1].addEventListener("click", function () {
       document.getElementsByClassName("one_click_popup")[0].style.display = "none";
     })
+    
   }
 };
