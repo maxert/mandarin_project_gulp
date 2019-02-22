@@ -461,25 +461,66 @@ window.onload = function () {
 
   var containerTabsListPersonal = document.getElementsByClassName("container_tabs_lsit_personal")[0];
   var tabslist = document.getElementsByClassName("tabs_container_personal")[0];
+  if (containerTabsListPersonal) {
+    function functionClickTabs(e) {
+      for (var i = 0; i < containerTabsListPersonal.children.length; i++) {
+        containerTabsListPersonal.children[i].classList.remove("active");
+      }
+      e.currentTarget.classList.add("active");
 
-  function functionClickTabs(e) {
-    for (var i = 0; i < containerTabsListPersonal.children.length; i++) {
-      containerTabsListPersonal.children[i].classList.remove("active");
+      for (var i = 0; i < containerTabsListPersonal.children.length; i++) {
+        if (containerTabsListPersonal.children[i].classList[1] === "active") {
+          tabslist.children[i].classList.add("active");
+        } else {
+          tabslist.children[i].classList.remove("active");
+        }
+      }
     }
-    e.currentTarget.classList.add("active");
-
     for (var i = 0; i < containerTabsListPersonal.children.length; i++) {
-      if (containerTabsListPersonal.children[i].classList[1] === "active") {
-        tabslist.children[i].classList.add("active");
+      containerTabsListPersonal.children[i].addEventListener("click", functionClickTabs, false);
+    }
+  }
+
+  var massiveClosePopUp = [
+    document.querySelectorAll(".pop_up_product_none .header_close")[0],
+    document.querySelectorAll(".pop_up_save_data button")[0],
+    document.querySelectorAll(".pop_up_list_address_save button")[0],
+    document.querySelectorAll(".pop_up_password_save button")[0]
+  ]
+
+  function popupclose(e) {
+    if (e.currentTarget.classList[0] === "header_close") {
+      e.currentTarget.parentNode.parentNode.style.display = "none";
+    } else {
+      e.currentTarget.parentNode.parentNode.parentNode.style.display = "none";
+    }
+  }
+  for (var i = 0; i < massiveClosePopUp.length; i++) {
+    massiveClosePopUp[i].addEventListener("click", popupclose, false)
+  }
+
+  var massiveClicDivNode = [
+    document.querySelectorAll(".pop_up_product_none")[0],
+    document.querySelectorAll(".pop_up_save_data")[0],
+    document.querySelectorAll(".pop_up_list_address_save")[0],
+    document.querySelectorAll(".pop_up_password_save")[0],
+    document.querySelectorAll(".popap_subskripe")[0],
+    document.querySelectorAll(".one_click_popup")[0],
+    document.querySelectorAll(".popup_buy_click")[0],
+  ]
+  if (massiveClicDivNode) {
+    function popupcloseClick(e) {
+      if (!e.currentTarget.lastElementChild.contains(e.target)) {
+        e.currentTarget.style.display = "none";
+      }
+
+    }
+    for (var i = 0; i < massiveClicDivNode.length; i++) {
+      if (massiveClicDivNode[i] === undefined) {
+
       } else {
-        tabslist.children[i].classList.remove("active");
+        massiveClicDivNode[i].addEventListener("click", popupcloseClick, false);
       }
     }
   }
-  for (var i = 0; i < containerTabsListPersonal.children.length; i++) {
-    containerTabsListPersonal.children[i].addEventListener("click", functionClickTabs, false);
-  }
-
-
-
 };
