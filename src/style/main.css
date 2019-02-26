@@ -767,7 +767,7 @@ ul {
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.11);
   background-color: #ffffff;
   position: relative;
-  z-index: 11;
+  z-index: 13;
 }
 
 .m_header_center_tel:hover .inActive {
@@ -1955,6 +1955,11 @@ button.report_availability {
   margin-left: 55px !important;
 }
 
+.nice-select.open .list {
+  max-height: 300px;
+
+  overflow-y: scroll;
+}
 
 @import "/bower_components/nouislider/distribute/nouislider.min.css";
 @import "/bower_components/jquery-nice-select/css/nice-select.css";

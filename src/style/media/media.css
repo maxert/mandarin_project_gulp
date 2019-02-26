@@ -1379,9 +1379,6 @@
         width: 100% !important;
     }
 
-    .personal_container form {
-        max-width: 320px;
-    }
 
     .my_product_button {
         min-width: 170px !important;
@@ -1401,6 +1398,10 @@
     .new_color .header_product_conainer .result_size,
     .my_product_button {
         font-size: 13px !important;
+    }
+
+    .nice-select.open .list li {
+        font-size: 12px !important;
     }
 }
 
@@ -2200,6 +2201,10 @@
 
     .button_tabs {
         min-width: 175px;
+    }
+
+    .personal_container form {
+        max-width: 320px;
     }
 }
 
@@ -4032,5 +4037,9 @@
     .container_tabs_lsit_personal {
         flex-direction: column;
         height: auto;
+    }
+
+    .nice-select.open .list li,.select_users_delivery .current,.row_items_forms input {
+        font-size: 9px !important;
     }
 }
