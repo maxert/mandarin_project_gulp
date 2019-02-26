@@ -64,10 +64,11 @@
 
 .result_form_order {
     background: url(../img/backgraund_buy.png) no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     position: relative;
     bottom: 5px;
     background-position: top;
+    height: 100%;
 }
 
 .result_text {
@@ -127,7 +128,7 @@
     font-size: 12px;
     font-weight: 300;
     line-height: 18px;
-    max-width: 190px;
+    max-width: 195px;
     margin: 0 auto;
 }
 
@@ -518,6 +519,9 @@
     border: 1px solid #f5cf05;
     background-color: #fdfdfd;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* On mouse-over, add a grey background color */
@@ -533,7 +537,7 @@
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .form_select_radio label .checkmark:after {
     content: "";
-    position: absolute;
+    position: relative;
     display: none;
 }
 
@@ -544,9 +548,8 @@
 
 /* Style the indicator (dot/circle) */
 .form_select_radio label .checkmark:after {
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
+
+    top: 0;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -554,10 +557,7 @@
     height: 8px;
     border-radius: 4px;
     background-color: #f5cf05;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -632,4 +632,14 @@
 }
 .delivery_send>label{
     margin-bottom: 10px;
+}
+.text_form_buy a{
+    color: #000;
+}
+.delivery_send .select_users_delivery{
+    margin-left: 18px;
+    width: 100%;
+}
+.delivery_send .select_users_delivery .nice-select{
+    width: 100%!important;
 }

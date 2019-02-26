@@ -496,7 +496,13 @@ window.onload = function () {
     }
   }
   for (var i = 0; i < massiveClosePopUp.length; i++) {
-    massiveClosePopUp[i].addEventListener("click", popupclose, false)
+    if (massiveClosePopUp[i] === undefined) {
+
+    } else {
+      for (var i = 0; i < massiveClosePopUp.length; i++) {
+        massiveClosePopUp[i].addEventListener("click", popupclose, false)
+      }
+    }
   }
 
   var massiveClicDivNode = [

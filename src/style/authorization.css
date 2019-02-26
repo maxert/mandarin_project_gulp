@@ -340,3 +340,6 @@
     position: relative;
     z-index: 12;
 }
+.registration .select_checkbox a{
+    color: #000000;
+}

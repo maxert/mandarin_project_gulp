@@ -1069,6 +1069,7 @@ ul {
 }
 
 .content_block {
+  height: 140px;
   color: #000000;
   display: flex;
   flex-direction: column;
@@ -1095,7 +1096,7 @@ ul {
 }
 
 .price_product {
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 .money,

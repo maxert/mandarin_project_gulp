@@ -194,7 +194,7 @@
 
     .model_id,
     .name_product>a>span {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 19.22px;
     }
 
@@ -238,8 +238,12 @@
         -o-transform: scale(1.1);
     }
 
+    .content_block {
+        height: 105px;
+    }
+
     .price_product {
-        margin-top: 30px;
+        margin-top: auto;
     }
 
     .model_product {
@@ -630,7 +634,6 @@
 
     .m_header_center_tel:hover .iconTel {
         height: 88%;
-        top: 4px;
     }
 
     .select_list>a:nth-child(4) {
@@ -1048,6 +1051,10 @@
         line-height: 12.1px;
     }
 
+    .delivery_send .select_users_delivery .nice-select {
+        width: 100% !important;
+    }
+
     .size_big {
         min-width: 199px;
     }
@@ -1134,11 +1141,7 @@
     .form_select_radio label .checkmark:after {
         width: 7px;
         height: 7px;
-        transform: translate(-43%, -50%);
-        -webkit-transform: translate(-43%, -50%);
-        -moz-transform: translate(-43%, -50%);
-        -ms-transform: translate(-43%, -50%);
-        -o-transform: translate(-43%, -50%);
+
     }
 
     .select_users_delivery .nice-select.open .list {
@@ -1220,7 +1223,7 @@
     .text_form_buy {
         font-size: 9px;
         line-height: 13px;
-        max-width: 141px;
+        max-width: 146px;
     }
 
     .headert_tabs div {
@@ -2122,13 +2125,7 @@
         background-size: 100%;
     }
 
-    .form_select_radio label .checkmark:after {
-        transform: translate(-45%, -50%);
-        -webkit-transform: translate(-45%, -50%);
-        -moz-transform: translate(-45%, -50%);
-        -ms-transform: translate(-45%, -50%);
-        -o-transform: translate(-45%, -50%);
-    }
+
 
     .google_contacts {
         width: 525px;
@@ -3749,13 +3746,7 @@
         margin-bottom: 7px;
     }
 
-    .form_select_radio label .checkmark:after {
-        transform: translate(-45%, -50%);
-        -webkit-transform: translate(-45%, -50%);
-        -moz-transform: translate(-45%, -50%);
-        -ms-transform: translate(-45%, -50%);
-        -o-transform: translate(-45%, -50%);
-    }
+
 
     .result_form_order {
         margin-top: 30px;
@@ -4039,7 +4030,10 @@
         height: auto;
     }
 
-    .nice-select.open .list li,.select_users_delivery .current,.row_items_forms input {
+    .nice-select.open .list li,
+    .select_users_delivery .current,
+    .row_items_forms input {
         font-size: 9px !important;
     }
+
 }

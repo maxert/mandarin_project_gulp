@@ -964,6 +964,7 @@
 
 #breadcrumbs-two a {
   padding-left: 25px;
+  padding-right: 4px;
   display: flex;
   align-items: center;
   float: left;
