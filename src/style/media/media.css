@@ -1,6 +1,7 @@
 @media only screen and (max-width:1800px) {
 
 
+
     .buy_product svg {
         left: 8px;
     }
@@ -1406,6 +1407,15 @@
     .nice-select.open .list li {
         font-size: 12px !important;
     }
+
+    .tabs_personalarea .all_button {
+        min-width: 104px !important;
+        margin: 0 !important;
+        height: 40px !important;
+    }
+    .feedback_users textarea{
+        font-size: 13px;
+    }
 }
 
 
@@ -2202,6 +2212,21 @@
 
     .personal_container form {
         max-width: 320px;
+    }
+
+    .tabs_personalarea .all_button {
+        left: 50%;
+        height: 30px!important;
+        top: 50px;
+        transform: translate(-50%, 0%);
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+    }
+
+    .tabs_personalarea {
+        margin-bottom: 50px;
     }
 }
 
@@ -4036,4 +4061,8 @@
         font-size: 9px !important;
     }
 
+    .tabs_personalarea .all_button {
+        bottom: -50px;
+        top: inherit;
+    }
 }
