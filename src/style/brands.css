@@ -18,7 +18,7 @@
 }
 .tabs_container_brands>div.active{
     display: flex;
-    height: 806px;
+    height: auto;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
