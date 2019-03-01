@@ -1060,6 +1060,7 @@ ul {
 
 .img_product img {
   height: 280px;
+  padding: 10px;
 }
 
 .model_product,
