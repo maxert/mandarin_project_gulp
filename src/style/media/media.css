@@ -1,6 +1,9 @@
 @media only screen and (max-width:1800px) {
 
 
+    .registration {
+        max-width: 825px;
+    }
 
     .buy_product svg {
         left: 8px;
@@ -1413,7 +1416,8 @@
         margin: 0 !important;
         height: 40px !important;
     }
-    .feedback_users textarea{
+
+    .feedback_users textarea {
         font-size: 13px;
     }
 }
@@ -2216,7 +2220,7 @@
 
     .tabs_personalarea .all_button {
         left: 50%;
-        height: 30px!important;
+        height: 30px !important;
         top: 50px;
         transform: translate(-50%, 0%);
         -webkit-transform: translate(-50%, 0%);
