@@ -1810,7 +1810,9 @@ footer {
 .item_product .price_product span.gray {
   color: #b4b4b4;
 }
-
+#breadcrumbs-two li:last-child{
+  padding-right: 5px;
+}
 .none_product {
   color: #ff0000;
   font-weight: 700;

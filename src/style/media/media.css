@@ -3086,7 +3086,7 @@
         transition: .5s all;
         top: 50%;
         transform: translate(0%, -50%);
-        background: url(/img/pluse_img.png) no-repeat;
+        background: url(../img/pluse_img.png) no-repeat;
         opacity: 1;
         width: 18px;
         height: 18px;
