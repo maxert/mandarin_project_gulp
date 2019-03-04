@@ -332,7 +332,9 @@ window.onload = function () {
     var ButtonClose = document.getElementsByClassName("button_close")[0];
     var TextContainer = document.getElementsByClassName('text_container')[0];
     var ItemsOnlineStore = document.getElementsByClassName("items_online_store")[1];
-    if (TextContainer) {
+    if (ItemsOnlineStore===undefined){
+
+    } else{
       TextContainer.appendChild(ItemsOnlineStore.children[0]);
     }
     var FilterProduct = document.getElementsByClassName("filter_product")[0];
