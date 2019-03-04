@@ -284,7 +284,12 @@
 .product_card_container>div:last-child {
   max-width: 425px;
 }
-
+.slider-for{
+  display: flex!important;
+}
+.product_card_container .slick-list{
+  margin:  auto 0;
+}
 .product_card_container .buy_product {
   align-items: center;
   justify-content: flex-start;

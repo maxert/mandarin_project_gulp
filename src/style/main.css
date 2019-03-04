@@ -533,7 +533,7 @@ body {
   width: 234px;
   height: 38px;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 17px;
   border: 1px solid #fff;
   line-height: 40px;
   position: relative;
@@ -553,6 +553,10 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
 }
 
 .grAdres_mob,
@@ -578,7 +582,7 @@ body {
 }
 
 .m_header_center_tel:hover .iconTel {
-  height: 97%;
+  height: 99%;
 }
 
 .m_header_center_tel:hover .iconTel img {
@@ -607,6 +611,10 @@ body {
   -moz-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
   -o-transform: translate(0%, -50%);
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
 }
 
 .m_header_center_tel .iconTel img {
@@ -678,6 +686,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 95px;
   flex-direction: column;
   padding: 25px 0 20px;
   text-align: center;
@@ -1087,6 +1096,14 @@ ul {
 .name_product>a {
   color: #000000;
   cursor: pointer;
+}
+
+.m_header_center_bas {
+  cursor: pointer;
+}
+
+.m_header_center_bas:hover .bas_text,.m_header_center_acc a:hover {
+  font-weight: 700
 }
 
 .name_product>a>span,
