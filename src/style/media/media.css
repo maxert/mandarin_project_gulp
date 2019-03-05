@@ -3029,17 +3029,18 @@
     .device_container.active-scale #device {
         max-width: inherit;
     }
-
+     #device>li{
+             padding: 15px 15px;
+     }
     .device_container.active #device {
         max-width: inherit;
     }
-
+    
     .drop_down {
         position: relative;
         width: 100%;
         display: flex;
         order: 1;
-        padding: 15px 15px;
     }
 
     .link_items li {
@@ -4211,5 +4212,8 @@
         font-weight: 100;
         line-height: 65px;
         margin: auto 0 auto 15px;
+    }
+     .hover_down.active{
+        margin-top: 15px;
     }
 }
