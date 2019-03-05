@@ -800,6 +800,3 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     right: 0;
     bottom: -1px;
 }
-.nice-select.open .list{
-    overflow-y: hidden!important;
-}
