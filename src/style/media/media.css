@@ -4216,4 +4216,24 @@
      .hover_down.active{
         margin-top: 15px;
     }
+     .burger_menu_list {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        max-width: 320px;
+        height: 100%;
+        background-color: #ffffff;
+        top: 0;
+    }
+    
+  #device>li {
+        display: flex;
+        align-items: center;
+    }
+
+    #device>li>a {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
 }
