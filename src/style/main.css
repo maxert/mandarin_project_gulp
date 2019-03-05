@@ -408,7 +408,7 @@ body {
   -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.21);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.21);
   border-radius: 18px;
-  background-color: rgb(87, 83, 83);
+  background-color: white;
   padding: 10px 8px;
   font-size: 10px;
   text-transform: uppercase;
@@ -1102,7 +1102,8 @@ ul {
   cursor: pointer;
 }
 
-.m_header_center_bas:hover .bas_text,.m_header_center_acc a:hover {
+.m_header_center_bas:hover .bas_text,
+.m_header_center_acc a:hover {
   font-weight: 700
 }
 
@@ -1810,9 +1811,11 @@ footer {
 .item_product .price_product span.gray {
   color: #b4b4b4;
 }
-#breadcrumbs-two li:last-child{
+
+#breadcrumbs-two li:last-child {
   padding-right: 5px;
 }
+
 .none_product {
   color: #ff0000;
   font-weight: 700;
@@ -1865,7 +1868,7 @@ button.report_availability {
   margin: 0px auto;
 }
 
-.top_hover_items img {
+.top_hover_items>img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1981,6 +1984,22 @@ button.report_availability {
   max-height: 300px;
 
   overflow-y: scroll;
+}
+
+.header_action {
+  width: 100%;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.column_text_action {
+  font-size: 30px;
+font-weight: 700;
+}
+.column_text_action>div:last-child{
+  font-size: 38px;
+  line-height: normal;
 }
 
 @import "/bower_components/nouislider/distribute/nouislider.min.css";
