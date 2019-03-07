@@ -10,9 +10,7 @@
 .checkout_container .m_header_center_tel:hover {
     height: 67px;
 }
-.checkout_container .m_header_center_tel:hover .iconTel{
-        top: 18px;
-}
+
 .checkout_container .m_header_center_logo {
     width: 262px;
     height: 67px;
