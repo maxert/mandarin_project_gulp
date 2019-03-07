@@ -1628,7 +1628,7 @@ footer {
 }
 
 .divisions_block a {
-  color: #8a8a8a;
+  color: #afadad;
 }
 
 .develop {
@@ -1668,6 +1668,10 @@ footer {
   -moz-transition: 0.5s all;
   -ms-transition: 0.5s all;
   -o-transition: 0.5s all;
+}
+
+.select_text li.active a {
+  font-weight: 700;
 }
 
 .hover_down {
@@ -1982,7 +1986,6 @@ button.report_availability {
 
 .nice-select.open .list {
   max-height: 300px;
-
   overflow-y: scroll;
 }
 
@@ -1993,11 +1996,13 @@ button.report_availability {
   align-items: center;
   justify-content: space-between;
 }
+
 .column_text_action {
   font-size: 30px;
-font-weight: 700;
+  font-weight: 700;
 }
-.column_text_action>div:last-child{
+
+.column_text_action>div:last-child {
   font-size: 38px;
   line-height: normal;
 }

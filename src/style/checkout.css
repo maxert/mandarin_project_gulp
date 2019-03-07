@@ -639,6 +639,7 @@
 .delivery_send .select_users_delivery{
     margin-left: 18px;
     width: 100%;
+    z-index: 0;
 }
 .delivery_send .select_users_delivery .nice-select{
     width: 100%!important;

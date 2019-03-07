@@ -34,7 +34,7 @@
   display: none !important;
 }
 
-.slider-nav .slick-slide.slick-current.slick-active>div {
+.slider-nav .slick-current.slick-active>div {
   box-shadow: 0 0 4px 1px rgba(245, 207, 5, 0.73);
 }
 

@@ -3,7 +3,7 @@
 //= ../../bower_components/nouislider/distribute/nouislider.min.js
 //= ../../bower_components/slick/dist/slick.min.js
 //= ../../bower_components/jquery-nice-select/js/jquery.nice-select.min.js
-
+//= ../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
 
 
 

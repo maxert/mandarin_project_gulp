@@ -1,4 +1,48 @@
 window.onload = function () {
+
+  jQuery(function ($) {
+    $("#phone").mask("+3(999)-99-9999");
+  });
+  var SelectText = document.querySelectorAll(".select_text>li");
+  if (SelectText.length === 0) {
+
+  } else {
+    function clickFunction(e) {
+      for (var i = 0; i < SelectText.length; i++) {
+        SelectText[i].classList.remove("active");
+      }
+      e.currentTarget.classList.add("active");
+    }
+    for (var i = 0; i < SelectText.length; i++) {
+      SelectText[i].addEventListener("click", clickFunction, false);
+    }
+  }
+  var SliderProductHits = document.querySelectorAll(
+    ".slider_product"
+  )[0];
+  var SliderFeedback = document.querySelectorAll(
+    ".slider_product_hits"
+  )[0];
+  if (SliderProductHits) {
+    SliderProductHits.addEventListener("mouseup", function () {
+      for (var i = 0; i < SliderProductDots.length; i++) {
+        if (SliderProductDots[i].classList.length == 1) {
+          SizeUp[0].innerHTML = SliderProductDots[i].children[0].innerHTML;
+        }
+      }
+    })
+  }
+  if (SliderFeedback) {
+    SliderFeedback.addEventListener("mouseup", function () {
+      for (var i = 0; i < SliderProductHitsDots.length; i++) {
+        if (SliderProductHitsDots[i].classList.length == 1) {
+          SizeUp[1].innerHTML = SliderProductHitsDots[i].children[0].innerHTML;
+        }
+      }
+    })
+  }
+
+
   var body = document.querySelectorAll("body")[0];
   var valueSizePopular = 0;
   var HoverDown = document.getElementsByClassName("hover_down");
@@ -7,9 +51,7 @@ window.onload = function () {
   var SliderProductArrow = document.querySelectorAll(
     ".slider_product .slick-arrow"
   );
-  var SliderProductHitsArrow = document.querySelectorAll(
-    ".slider_product_hits .slick-arrow"
-  );
+
   var SliderProductHitsArrow = document.querySelectorAll(
     ".slider_product_hits .slick-arrow"
   );
@@ -332,9 +374,9 @@ window.onload = function () {
     var ButtonClose = document.getElementsByClassName("button_close")[0];
     var TextContainer = document.getElementsByClassName('text_container')[0];
     var ItemsOnlineStore = document.getElementsByClassName("items_online_store")[1];
-    if (ItemsOnlineStore===undefined){
+    if (ItemsOnlineStore === undefined) {
 
-    } else{
+    } else {
       TextContainer.appendChild(ItemsOnlineStore.children[0]);
     }
     var FilterProduct = document.getElementsByClassName("filter_product")[0];
