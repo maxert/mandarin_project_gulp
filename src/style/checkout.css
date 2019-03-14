@@ -453,10 +453,12 @@
 
 .select_users_delivery .nice-select.open {
     top: 0px;
+        z-index: 3;
 }
 
 .select_users_delivery .nice-select.open .list {
     position: absolute !important;
+
     top: 40px !important;
     width: 100% !important;
     left: 0px !important;
@@ -646,7 +648,11 @@
 .delivery_send .select_users_delivery {
     margin-left: 18px;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
+}
+.new_mail {
+    position: relative;
+    z-index: 1;
 }
 
 .delivery_send .select_users_delivery .nice-select {

@@ -2164,7 +2164,15 @@
 
   .image_tovar {
     margin-left: 0px;
-    min-width: 140px;
+    min-width: 120px;
+  }
+
+  .look_items>div {
+    display: none;
+  }
+
+  .look_items>div:nth-child(-n+3) {
+    display: block;
   }
 
   .image_tovar img {
@@ -4380,10 +4388,20 @@
     -ms-transform: none;
     -o-transform: none;
   }
+
   .center_container {
     margin-bottom: 9px;
   }
-  .nice-select:after{
-    width: 8px!important;
+
+  .nice-select:after {
+    width: 8px !important;
+  }
+
+  .look_items>div {
+    display: none !important;
+  }
+
+  .look_items>div:nth-child(-n+1) {
+    display: block !important;
   }
 }
