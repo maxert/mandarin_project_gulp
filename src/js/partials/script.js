@@ -1,6 +1,6 @@
 window.onload = function () {
   jQuery(function ($) {
-    $("#phone").mask("+3(999)-99-9999");
+    $(".phone").mask("+3(999)-99-9999");
   });
   var SelectText = document.querySelectorAll(".select_text>li");
   if (SelectText.length === 0) {
