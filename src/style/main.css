@@ -1,3 +1,4 @@
+
 /*-------------------------------*/
 .ma_l {
   margin-left: auto;
@@ -1069,7 +1070,6 @@ ul {
 
 .img_product img {
   height: 280px;
-  padding: 10px;
 }
 
 .model_product,
@@ -1121,7 +1121,7 @@ ul {
 
 .money,
 .currency {
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 .price_product span {

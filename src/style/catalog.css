@@ -2,9 +2,11 @@
     margin-top: 22px;
     margin-bottom: 10px;
 }
-.l_container.filter_content .nice-select.open .list{
+
+.l_container.filter_content .nice-select.open .list {
     overflow-y: hidden;
 }
+
 .l_container.filter_content {
     margin-bottom: 35px;
 }
@@ -213,7 +215,7 @@
     font-size: 30px;
     font-weight: 400;
     text-align: center;
-    height: 27px;
+    height: auto;
     margin-bottom: 31px;
 }
 
@@ -816,8 +818,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     margin-left: 77px;
 }
 
+.price_filter {
+    order: 1;
+}
+
 .backgraund_image {
     display: flex;
+}
+
+.list_filter {
+    order: 2;
 }
 
 .banner {
@@ -827,13 +837,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .banner::before {
     content: " ";
-    width: 101%;
+    width: 100%;
     position: absolute;
-    height: 102%;
-    background-position: center center;
+    height: 98%;
     background: url(../img/opacity_show.png) no-repeat;
     background-size: 100% 100%;
-    left: -6px;
+    left: 0px;
     right: 0;
-    bottom: -1px;
+    z-index: 0;
+    bottom: 4px;
 }

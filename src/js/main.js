@@ -1,3 +1,4 @@
+
 //= ../../bower_components/jquery/dist/jquery.js
 //= ../../bower_components/wnumb/wNumb.js
 //= ../../bower_components/nouislider/distribute/nouislider.min.js

@@ -1,5 +1,4 @@
 window.onload = function () {
-
   jQuery(function ($) {
     $("#phone").mask("+3(999)-99-9999");
   });
@@ -31,9 +30,23 @@ window.onload = function () {
         }
       }
     })
+    SliderProductHits.addEventListener("touchend", function () {
+      for (var i = 0; i < SliderProductDots.length; i++) {
+        if (SliderProductDots[i].classList.length == 1) {
+          SizeUp[0].innerHTML = SliderProductDots[i].children[0].innerHTML;
+        }
+      }
+    })
   }
   if (SliderFeedback) {
     SliderFeedback.addEventListener("mouseup", function () {
+      for (var i = 0; i < SliderProductHitsDots.length; i++) {
+        if (SliderProductHitsDots[i].classList.length == 1) {
+          SizeUp[1].innerHTML = SliderProductHitsDots[i].children[0].innerHTML;
+        }
+      }
+    })
+    SliderFeedback.addEventListener("touchend", function () {
       for (var i = 0; i < SliderProductHitsDots.length; i++) {
         if (SliderProductHitsDots[i].classList.length == 1) {
           SizeUp[1].innerHTML = SliderProductHitsDots[i].children[0].innerHTML;
@@ -324,13 +337,13 @@ window.onload = function () {
     var DropDown = document.getElementsByClassName("drop_down");
 
     function dropDown(e) {
-      if (e.currentTarget.classList[e.currentTarget.classList.length - 1] === "active") {
-        e.currentTarget.classList.remove("active");
+      if (e.currentTarget.parentNode.classList[e.currentTarget.classList.length - 1] === "active") {
+        e.currentTarget.parentNode.classList.remove("active");
         e.currentTarget.parentNode.children[0].classList.remove("active");
 
       } else {
         e.currentTarget.parentNode.children[0].classList.add("active");
-        e.currentTarget.classList.add("active");
+        e.currentTarget.parentNode.classList.add("active");
       }
     }
     for (var i = 0; i < DropDown.length; i++) {
@@ -529,6 +542,7 @@ window.onload = function () {
     document.querySelectorAll(".pop_up_product_none .header_close")[0],
     document.querySelectorAll(".pop_up_save_data button")[0],
     document.querySelectorAll(".pop_up_list_address_save button")[0],
+    document.querySelectorAll(".pop_up_list_address_save button")[1],
     document.querySelectorAll(".pop_up_password_save button")[0]
   ]
 
@@ -543,16 +557,31 @@ window.onload = function () {
     if (massiveClosePopUp[i] === undefined) {
 
     } else {
-      for (var i = 0; i < massiveClosePopUp.length; i++) {
-        massiveClosePopUp[i].addEventListener("click", popupclose, false)
-      }
+
+      massiveClosePopUp[i].addEventListener("click", popupclose, false)
+
+    }
+  }
+
+  var pop_up_all = document.getElementsByClassName("pop_up_list_address_save");
+
+
+  function popupclosenewclose(e) {
+    if (!e.currentTarget.lastElementChild.contains(e.target)) {
+      e.currentTarget.style.display = "none";
+    }
+  }
+  for (var i = 0; i < pop_up_all.length; i++) {
+    if (pop_up_all[i] === undefined) {
+
+    } else {
+      pop_up_all[i].addEventListener("click", popupclosenewclose, false);
     }
   }
 
   var massiveClicDivNode = [
     document.querySelectorAll(".pop_up_product_none")[0],
     document.querySelectorAll(".pop_up_save_data")[0],
-    document.querySelectorAll(".pop_up_list_address_save")[0],
     document.querySelectorAll(".pop_up_password_save")[0],
     document.querySelectorAll(".popap_subskripe")[0],
     document.querySelectorAll(".one_click_popup")[0],
@@ -573,4 +602,8 @@ window.onload = function () {
       }
     }
   }
+
+  $(document).ready(function () {
+    $('select').niceSelect();
+  });
 };

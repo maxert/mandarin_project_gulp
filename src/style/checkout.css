@@ -610,35 +610,73 @@
     min-width: 150px;
     margin: 20px auto;
 }
-.authorization_users{
+
+.authorization_users {
     margin: auto;
 }
-.size_big{
+
+.size_big {
     min-width: 280px;
 }
-.delivery_select{
+
+.delivery_select {
     max-width: 590px;
 }
-.new_mail{
+
+.new_mail {
     white-space: nowrap;
 }
-.new_mail>input{
+
+.new_mail>input {
     width: 100%;
 }
-.delivery_send>label:nth-child(1){
+
+.delivery_send>label:nth-child(1) {
     margin-bottom: 20px;
 }
-.delivery_send>label{
+
+.delivery_send>label {
     margin-bottom: 10px;
 }
-.text_form_buy a{
+
+.text_form_buy a {
     color: #000;
 }
-.delivery_send .select_users_delivery{
+
+.delivery_send .select_users_delivery {
     margin-left: 18px;
     width: 100%;
     z-index: 0;
 }
-.delivery_send .select_users_delivery .nice-select{
-    width: 100%!important;
+
+.delivery_send .select_users_delivery .nice-select {
+    width: 100% !important;
+
+}
+
+.checkout_container .popup_checbox {
+    position: relative;
+    left: inherit;
+    top: inherit;
+    transform: none;
+    background-color: transparent;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.checkout_container .popap_feedback {
+    display: flex;
+    background: transparent;
+}
+
+.checkout_container .content_pop_up_product {
+    top: inherit;
+    left: inherit;
+    background: transparent;
+    position: relative;
+    transform: none;
+    height: 84vh;
 }
