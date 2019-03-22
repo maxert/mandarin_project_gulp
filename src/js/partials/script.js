@@ -1,7 +1,5 @@
 window.onload = function () {
-  jQuery(function ($) {
-    $(".phone").mask("+3(999)-99-9999");
-  });
+
   var SelectText = document.querySelectorAll(".select_text>li");
   if (SelectText.length === 0) {
 
@@ -286,7 +284,9 @@ window.onload = function () {
     if (MobAdaptive) {
       MobRowElement.children[0].appendChild(MobAdaptive.lastElementChild);
       MobileHeaderTop.appendChild(MobTelSearch);
-      ModalHeaderTop.appendChild(HeaderTopLang);
+      if (HeaderTopLang) {
+        ModalHeaderTop.appendChild(HeaderTopLang);
+      }
     }
 
     function menu(e) {
@@ -605,5 +605,23 @@ window.onload = function () {
 
   $(document).ready(function () {
     $('select').niceSelect();
+  });
+
+
+  var number = document.querySelectorAll("input");
+  for (var i = 0; i < number.length; i++) {
+    if (number[i] === undefined) {
+
+    } else {
+      for (var j = 0; j < number[i].attributes.length; j++) {
+        if (number[i].attributes[j].nodeValue === "telephone") {
+          number[i].classList.add("phone");
+        }
+      }
+    }
+
+  }
+  jQuery(function ($) {
+    $(".phone").inputmask({"mask": "+38(999) 999-9999"});
   });
 };

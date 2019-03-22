@@ -167,8 +167,7 @@ textarea {
   margin: 0;
 }
 
-button,
-input {}
+
 
 button,
 select {
@@ -1090,7 +1089,7 @@ ul {
 
 .name_product {
   text-align: center;
-  max-width: 260px;
+  max-width: 298px;
 }
 
 .name_product>a {
@@ -1109,9 +1108,9 @@ ul {
 
 .name_product>a>span,
 .model_id {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 20px;
   text-transform: uppercase;
 }
 
@@ -1819,7 +1818,9 @@ footer {
 #breadcrumbs-two li:last-child {
   padding-right: 5px;
 }
-
+.nice-select{
+  color: #a2a2a2;
+}
 .none_product {
   color: #ff0000;
   font-weight: 700;
@@ -2005,6 +2006,16 @@ button.report_availability {
 .column_text_action>div:last-child {
   font-size: 38px;
   line-height: normal;
+}
+.resize_product{
+  max-width: inherit!important;
+  margin-left: 0px!important;
+}
+.resize_product .catalog_product_all>div:nth-child(4n+1){
+margin-left: 50px;
+}
+.resize_product .catalog_product_all>div:nth-child(5n+1){
+margin-left: 0px!important;
 }
 
 @import "/bower_components/nouislider/distribute/nouislider.min.css";
