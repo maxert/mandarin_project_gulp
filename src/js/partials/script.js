@@ -1,19 +1,6 @@
 window.onload = function () {
 
-  var SelectText = document.querySelectorAll(".select_text>li");
-  if (SelectText.length === 0) {
-
-  } else {
-    function clickFunction(e) {
-      for (var i = 0; i < SelectText.length; i++) {
-        SelectText[i].classList.remove("active");
-      }
-      e.currentTarget.classList.add("active");
-    }
-    for (var i = 0; i < SelectText.length; i++) {
-      SelectText[i].addEventListener("click", clickFunction, false);
-    }
-  }
+ 
   var SliderProductHits = document.querySelectorAll(
     ".slider_product"
   )[0];
@@ -539,6 +526,7 @@ window.onload = function () {
   }
 
   var massiveClosePopUp = [
+    document.querySelectorAll(".one_click_popup .header_close")[0],
     document.querySelectorAll(".pop_up_product_none .header_close")[0],
     document.querySelectorAll(".pop_up_save_data button")[0],
     document.querySelectorAll(".pop_up_list_address_save button")[0],
@@ -622,6 +610,73 @@ window.onload = function () {
 
   }
   jQuery(function ($) {
-    $(".phone").inputmask({"mask": "+38(999) 999-9999"});
+    $(".phone").inputmask({
+      "mask": "+38(999) 999-9999"
+    });
   });
+
+
+  var lilist = document.querySelectorAll("#device>li");
+
+  function clickNew(e) {
+    for (var i = 0; i < lilist.length; i++) {
+      lilist[i].classList.remove("active");
+    }
+    e.currentTarget.classList.add("active");
+    for (var i = 0; i < lilist.length; i++) {
+      if (lilist[i].classList[0] === "active") {
+        localStorage.setItem(1, i);
+      }
+    }
+  }
+  for (var i = 0; i < lilist.length; i++) {
+    lilist[i].addEventListener("click", clickNew, false);
+  }
+
+  for (var i = 0; i < lilist.length; i++) {
+    lilist[localStorage.getItem(1)].classList.add("active");
+  }
+
+
+
+
+  if (document.querySelectorAll(".right_counter")[0]) {
+    for (var i = 0; i < document.querySelectorAll(".right_counter").length; i++) {
+      document.querySelectorAll(".right_counter")[i].addEventListener("click", element_number_two, false);
+    }
+
+    function element_number_two(e) {
+
+      if (e.currentTarget.attributes[1] === undefined) {
+        var counter = 1;
+        e.currentTarget.setAttribute("index-value", counter++);
+        if (Number(e.currentTarget.attributes[1].value) > 0) {
+          e.currentTarget.parentNode.children[0].classList.remove("active");
+        }
+      } else {
+        e.currentTarget.setAttribute("index-value", Number(e.currentTarget.attributes[1].value) + 1);
+        if (Number(e.currentTarget.attributes[1].value) > 0) {
+          e.currentTarget.parentNode.children[0].classList.remove("active");
+        }
+      }
+    }
+
+    function element_number(e) {
+      if (e.currentTarget.parentNode.children[2].attributes[1].value === "undefined") {
+
+      } else {
+        if (Number(e.currentTarget.parentNode.children[2].attributes[1].value) > 0) {
+          e.currentTarget.parentNode.children[2].setAttribute("index-value", Number(e.currentTarget.parentNode.children[2].attributes[1].value) - 1);
+        }
+        if (Number(e.currentTarget.parentNode.children[2].attributes[1].value) === 0) {
+          e.currentTarget.classList.add("active");
+          console.log(counter);
+        }
+      }
+
+    }
+    for (var i = 0; i < document.querySelectorAll(".left_counter").length; i++) {
+      document.querySelectorAll(".left_counter")[i].addEventListener("click", element_number, false);
+    }
+  }
 };

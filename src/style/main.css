@@ -1,4 +1,3 @@
-
 /*-------------------------------*/
 .ma_l {
   margin-left: auto;
@@ -501,6 +500,7 @@ body {
 
 .m_header_center_content {
   margin: 0 auto;
+  height: 152px;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -686,7 +686,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95px;
+  width: 125px;
   flex-direction: column;
   padding: 25px 0 20px;
   text-align: center;
@@ -1443,6 +1443,34 @@ ul {
   margin-bottom: 0px;
 }
 
+.slider-for img {
+  width: 100%;
+}
+
+#device>li.active>a {
+  color: white;
+}
+
+#device>li.active {
+  background: #f5cf05;
+}
+.noUi-handle.noUi-handle-lower::before,
+.noUi-handle.noUi-handle-upper::before {
+  content: "";
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: block !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+}
+
+.assessment {
+  margin-left: 20px;
+}
+
 .content_learn_items form {
   box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.04);
   border-radius: 25px;
@@ -1457,6 +1485,7 @@ ul {
   border-radius: 25px 0px 0px 25px;
   border: none;
   height: 100%;
+  width: 92%;
   padding: 6px 32px;
 }
 
@@ -1668,9 +1697,18 @@ footer {
   -ms-transition: 0.5s all;
   -o-transition: 0.5s all;
 }
+.search_online,
+.content_footer>div:last-child .head_items_footer ,
+.content_footer>div:last-child .divisions_block{
+  display: none;
+}
+.mob_footer{
+  margin-bottom: 50px;
+}
 
 .select_text li.active a {
   font-weight: 700;
+  color: black;
 }
 
 .hover_down {
@@ -1818,9 +1856,11 @@ footer {
 #breadcrumbs-two li:last-child {
   padding-right: 5px;
 }
-.nice-select{
+
+.nice-select {
   color: #a2a2a2;
 }
+
 .none_product {
   color: #ff0000;
   font-weight: 700;
@@ -2007,15 +2047,18 @@ button.report_availability {
   font-size: 38px;
   line-height: normal;
 }
-.resize_product{
-  max-width: inherit!important;
-  margin-left: 0px!important;
+
+.resize_product {
+  max-width: inherit !important;
+  margin-left: 0px !important;
 }
-.resize_product .catalog_product_all>div:nth-child(4n+1){
-margin-left: 50px;
+
+.resize_product .catalog_product_all>div:nth-child(4n+1) {
+  margin-left: 50px;
 }
-.resize_product .catalog_product_all>div:nth-child(5n+1){
-margin-left: 0px!important;
+
+.resize_product .catalog_product_all>div:nth-child(5n+1) {
+  margin-left: 0px !important;
 }
 
 @import "/bower_components/nouislider/distribute/nouislider.min.css";
