@@ -127,7 +127,19 @@
   .device_list.active {
     margin-left: -15px;
   }
-
+  .info_content_product .price_product_old{
+    top: -5px;
+    left: 53px;
+    font-size: 16px;
+}
+  .price_product_old{
+    position: relative;
+    top: 15px;
+    left: 12px;
+    color: gray;
+    font-size: 14px;
+    font-weight: 900;
+}
   .look_items>div {
     margin-left: 30px !important;
   }
@@ -1770,7 +1782,10 @@
   .slider_container .slick-slide img {
     height: 100%;
   }
-
+  .image_container .slick-next::before, .image_container .slick-prev::before{
+    width: 12px!important;
+    height: 21px!important;
+  }
   .l_container.device_container {
     display: flex;
     box-shadow: none;
@@ -2453,7 +2468,11 @@
     flex-direction: column;
     justify-content: center;
   }
-
+  .info_content_product .price_product_old{
+    top: -15px;
+    left: 53px;
+    font-size: 16px;
+}
   .product_buy_container .tabs_product_items>div:nth-child(n + 2) {
     display: none;
   }
@@ -4584,5 +4603,17 @@
     -moz-transform: inherit !important;
     -ms-transform: inherit !important;
     -o-transform: inherit !important;
+  }
+  .image_container .slick-next{
+    right: 5px;
+  }
+  .image_container .slick-prev{
+    left: 5px;
+  }
+  .image_tovar>div:nth-child(2){
+    margin-right: 0px!important;
+  }
+  .l_container.tabs_container_personal{
+    margin-bottom: 50px;
   }
 }

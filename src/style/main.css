@@ -2050,7 +2050,7 @@ button.report_availability {
 
 .resize_product {
   max-width: inherit !important;
-  margin-left: 0px !important;
+  margin:0 auto!important;
 }
 
 .resize_product .catalog_product_all>div:nth-child(4n+1) {

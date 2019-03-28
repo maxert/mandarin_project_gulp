@@ -5,6 +5,13 @@ $(document).ready(function () {
         arrows: true,
         speed: 1000,
         slidesToShow: 1
+    });
+    $(".image_container").slick({
+        dots: false,
+        infinite: true,
+        arrows: true,
+        speed: 1000,
+        slidesToShow: 1
     })
 });
 
