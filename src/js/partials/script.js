@@ -1,6 +1,6 @@
-window.onload = function () {
+$(document).ready(function () {
 
- 
+
   var SliderProductHits = document.querySelectorAll(
     ".slider_product"
   )[0];
@@ -615,7 +615,13 @@ window.onload = function () {
     });
   });
 
-
+if(window.innerWidth<=768){
+  var lilist = document.querySelectorAll("#device>li");
+  for (var i = 0; i < lilist.length; i++) {
+    lilist[i].classList.remove("active");
+  }
+  
+}else{
   var lilist = document.querySelectorAll("#device>li");
 
   function clickNew(e) {
@@ -623,60 +629,86 @@ window.onload = function () {
       lilist[i].classList.remove("active");
     }
     e.currentTarget.classList.add("active");
-    for (var i = 0; i < lilist.length; i++) {
-      if (lilist[i].classList[0] === "active") {
-        localStorage.setItem(1, i);
-      }
-    }
+
   }
+}
   for (var i = 0; i < lilist.length; i++) {
     lilist[i].addEventListener("click", clickNew, false);
   }
 
-  for (var i = 0; i < lilist.length; i++) {
-    lilist[localStorage.getItem(1)].classList.add("active");
+  if (window.innerWidth <= 768) {
+    if (document.querySelectorAll(".filters_product_container")[0]) {
+      document.querySelectorAll(".filters_product_container")[0].appendChild(document.querySelectorAll(".all_product_content .text_top_product")[0]);
+    }
+  }
+
+  if (document.querySelectorAll(".result_form_order .all_button")[0]) {
+    var intervalId = 1;
+
+
+
+    document.querySelectorAll(".result_form_order .all_button")[0].addEventListener("click", function () {
+
+      intervalId = setInterval(function () {
+        var valueError = document.querySelectorAll(".form_order_container .text-danger");
+        for (var i = 0; i < document.getElementsByClassName("column_forms").length; i++) {
+          document.getElementsByClassName("column_forms")[i].classList.remove("errors");
+        }
+        for (var i = 0; i < valueError.length; i++) {
+          valueError[i].parentNode.classList.add("errors");
+        }
+
+
+
+
+      }, 10); //опять запускается таймер
+
+    })
+
+    if (document.querySelectorAll(".delivery_select>div:nth-child(3)")[0]) {
+      document.querySelectorAll(".delivery_select>div:nth-child(3)")[0].classList.add("city_none");
+    }
+
+    var elementActive = document.querySelectorAll(".delivery_select>div:nth-child(3)>div>div:nth-child(1) #au-country-id")[0];
+    elementActive.addEventListener("input", function () {
+      if (elementActive.value == "") {
+        document.querySelectorAll(".delivery_select>div:nth-child(3)")[0].classList.add("city_none");
+      } else {
+        document.querySelectorAll(".delivery_select>div:nth-child(3)")[0].classList.remove("city_none");
+      }
+    })
+    setTimeout(function () {
+      clearInterval(intervalId); //тут останавливаем таймер
+    }, 1000)
+
+    function clickremove(e) {
+      clearInterval(intervalId); //тут останавливаем таймер
+      if (e.currentTarget.id === "au-country-id") {
+        e.currentTarget.parentNode.parentNode.classList.remove("errors");
+      } else if (e.currentTarget.id === "au-city-id") {
+        e.currentTarget.parentNode.parentNode.classList.remove("errors");
+      } else {
+        e.currentTarget.parentNode.classList.remove("errors");
+      }
+    }
+    for (var i = 0; i < document.querySelectorAll(".form_order_container input").length; i++) {
+      document.querySelectorAll(".form_order_container input")[i].addEventListener("click", clickremove, false);
+    }
   }
 
 
-
-
-  if (document.querySelectorAll(".right_counter")[0]) {
-    for (var i = 0; i < document.querySelectorAll(".right_counter").length; i++) {
-      document.querySelectorAll(".right_counter")[i].addEventListener("click", element_number_two, false);
-    }
-
-    function element_number_two(e) {
-
-      if (e.currentTarget.attributes[1] === undefined) {
-        var counter = 1;
-        e.currentTarget.setAttribute("index-value", counter++);
-        if (Number(e.currentTarget.attributes[1].value) > 0) {
-          e.currentTarget.parentNode.children[0].classList.remove("active");
-        }
-      } else {
-        e.currentTarget.setAttribute("index-value", Number(e.currentTarget.attributes[1].value) + 1);
-        if (Number(e.currentTarget.attributes[1].value) > 0) {
-          e.currentTarget.parentNode.children[0].classList.remove("active");
-        }
+  var hoverElement = document.querySelectorAll(".forms_content .click_assessment>div");
+  for (var i = 0; i < hoverElement.length; i++) {
+    hoverElement[i].setAttribute("data-index", i);
+    hoverElement[i].onmouseover = function (event) {
+      for (var j = 0; j < hoverElement.length; j++) {
+        hoverElement[j].classList.remove("active");
+      }
+      for (var j = 0; j < Number(event.currentTarget.dataset.index) + 1; j++) {
+        hoverElement[j].classList.add("active");
       }
     }
 
-    function element_number(e) {
-      if (e.currentTarget.parentNode.children[2].attributes[1].value === "undefined") {
-
-      } else {
-        if (Number(e.currentTarget.parentNode.children[2].attributes[1].value) > 0) {
-          e.currentTarget.parentNode.children[2].setAttribute("index-value", Number(e.currentTarget.parentNode.children[2].attributes[1].value) - 1);
-        }
-        if (Number(e.currentTarget.parentNode.children[2].attributes[1].value) === 0) {
-          e.currentTarget.classList.add("active");
-          console.log(counter);
-        }
-      }
-
-    }
-    for (var i = 0; i < document.querySelectorAll(".left_counter").length; i++) {
-      document.querySelectorAll(".left_counter")[i].addEventListener("click", element_number, false);
-    }
   }
-};
+
+});

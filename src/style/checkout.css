@@ -223,6 +223,9 @@
 
 .row_items_forms>div {
     margin-left: 28px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .row_items_forms input {
@@ -245,7 +248,7 @@
     color: #000000;
     font-size: 12px;
     font-weight: 400;
-    margin-left: 22px;
+    margin-left: 15px;
 }
 
 .top_input_text span {
@@ -305,7 +308,21 @@
     background-color: #fdfdfd;
 }
 
+.headert_tabs div:nth-child(1):hover {
+    background: #f5cf05;
+    color: white;
+    text-decoration: none;
+    transition: .5s all ease;
+    border-radius: 10px 0 0 0;
+}
 
+.headert_tabs div:nth-child(2):hover {
+    background: #f5cf05;
+    color: white;
+    text-decoration: none;
+    transition: .5s all ease;
+    border-radius: 0 10px 0 0;
+}
 
 .select_checkbox label {
     position: relative;
@@ -449,13 +466,22 @@
 
 .select_users_delivery .current {
     color: #000000;
+    overflow: hidden;
+    max-width: 402px;
 }
 
 .select_users_delivery .nice-select.open {
     top: 0px;
-        z-index: 3;
+    z-index: 3;
+    overflow: inherit !important;
 }
-
+.easy-autocomplete-container ul{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.select_users_delivery .nice-select.open .list>li:nth-child(1){
+    display: none!important;
+}
 .select_users_delivery .nice-select.open .list {
     position: absolute !important;
 
@@ -650,6 +676,7 @@
     width: 100%;
     z-index: 1;
 }
+
 .new_mail {
     position: relative;
     z-index: 1;

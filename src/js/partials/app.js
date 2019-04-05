@@ -1,4 +1,4 @@
-$(function() {
+$( document ).ready(function() {
 
 	if ($(window).width() < 1280) {
    		$('.m_header_top_gr').appendTo('.grAdres_mob');

@@ -217,7 +217,7 @@ textarea {
 }
 
 .our_advantages_container .text_product {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 [type="checkbox"],
@@ -728,7 +728,7 @@ body {
   color: #fff;
   font-size: 14px;
   font-weight: 300;
-  max-width: 95px;
+  max-width: 113px;
 }
 
 .m_header_center_bas .bas_text span {
@@ -1012,7 +1012,7 @@ ul {
 }
 
 .new_product_container {
-  margin-top: 112px;
+  margin-top: 35px;
   position: relative;
 }
 
@@ -1294,6 +1294,17 @@ ul {
   justify-content: center;
   height: 40px;
 }
+.item_product .new_tovar_img svg path{
+  fill: red;
+}
+.slider_product_hits .item_product .new_tovar_img svg path{
+  fill: #ff9d03!important;
+}
+.popup_buy_click .buy_product .buy>span:nth-child(1) {
+  left: 50%;
+  transform: translate(-50%,-50%);
+  white-space: nowrap;
+}
 
 .buy_product .buy>span:nth-child(1) {
   position: absolute;
@@ -1307,11 +1318,27 @@ ul {
 }
 
 .buy_product button.buy:hover {
-  box-shadow: 0px 12px 42px -9px rgba(53, 0, 255, 0.5);
+  box-shadow: 0 17px 27px -10px rgba(53, 0, 255, .6);
+}
+
+.bottom_button button:hover {
+  background: #f5cf05;
+  color: white;
+  transition: .5s all ease;
+}
+
+.m_header_center_search input[type=button]:hover {
+  background-color: #40a7ff;
+  transition: .5s all linear;
+}
+
+.m_header_top_content a:hover {
+  color: white;
+  transition: .2s all ease;
 }
 
 .buy_product button.report_availability:hover {
-  box-shadow: 0px 12px 42px -9px rgba(92, 92, 92, 0.5);
+  box-shadow: 0 17px 27px -10px rgba(92, 92, 92, 0.65);
 }
 
 .buy_product button {
@@ -1447,6 +1474,10 @@ ul {
   width: 100%;
 }
 
+.easy-autocomplete {
+  width: 100% !important;
+}
+
 #device>li.active>a {
   color: white;
 }
@@ -1454,6 +1485,7 @@ ul {
 #device>li.active {
   background: #f5cf05;
 }
+
 .noUi-handle.noUi-handle-lower::before,
 .noUi-handle.noUi-handle-upper::before {
   content: "";
@@ -1556,7 +1588,7 @@ ul {
 .content_learn_items form button:hover {
   -webkit-box-shadow: inset 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 20px -5px rgba(0, 0, 0, 0.85);
 }
 
 .email_sand svg {
@@ -1697,12 +1729,14 @@ footer {
   -ms-transition: 0.5s all;
   -o-transition: 0.5s all;
 }
+
 .search_online,
-.content_footer>div:last-child .head_items_footer ,
-.content_footer>div:last-child .divisions_block{
+.content_footer>div:last-child .head_items_footer,
+.content_footer>div:last-child .divisions_block {
   display: none;
 }
-.mob_footer{
+
+.mob_footer {
   margin-bottom: 50px;
 }
 
@@ -1718,7 +1752,7 @@ footer {
   */
   /*transform: translate(-50%,0);
   */
-  height: 604px;
+  height: auto;
   min-width: 1720px;
   margin: 0 auto;
   width: 100%;
@@ -1754,7 +1788,7 @@ footer {
 }
 
 .link_items {
-  max-width: 250px;
+  max-width: max-content;
 }
 
 .link_items>li>a {
@@ -1812,13 +1846,13 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 455px;
   margin: 35px 41px 0 47px;
 }
 
 .bottom_button {
   margin-top: auto;
-  margin-bottom: 62px;
+  margin-bottom: 22px;
 }
 
 .bottom_button button {
@@ -1857,6 +1891,7 @@ footer {
   padding-right: 5px;
 }
 
+.easy-autocomplete-container,
 .nice-select {
   color: #a2a2a2;
 }
@@ -2030,6 +2065,14 @@ button.report_availability {
   overflow-y: scroll;
 }
 
+.easy-autocomplete-container ul {
+  border: 1px solid #f5cf05 !important;
+}
+
+.easy-autocomplete-container ul li {
+  padding: 10px 12px !important;
+}
+
 .header_action {
   width: 100%;
   margin-bottom: auto;
@@ -2043,6 +2086,17 @@ button.report_availability {
   font-weight: 700;
 }
 
+.l_container.filter_content {
+  position: relative;
+  z-index: 8;
+}
+
+.items_button:hover {
+  background: #f5cf05;
+  color: white;
+  transition: .5s all ease;
+}
+
 .column_text_action>div:last-child {
   font-size: 38px;
   line-height: normal;
@@ -2050,7 +2104,7 @@ button.report_availability {
 
 .resize_product {
   max-width: inherit !important;
-  margin:0 auto!important;
+  margin: 0 auto !important;
 }
 
 .resize_product .catalog_product_all>div:nth-child(4n+1) {

@@ -129,7 +129,9 @@
     justify-content: center;
     margin: 0px 14px;
 }
-
+.basket_tovar>div a{
+    color: #000000;
+}
 .basket_tovar>div {
     color: #000000;
     font-size: 18px;

@@ -33,9 +33,9 @@
     width: 1417px;
     height: 521px;
     margin-left: 91px;
--webkit-box-shadow: -2px 20px 101px -44px rgba(0,0,0,0.83);
--moz-box-shadow: -2px 20px 101px -44px rgba(0,0,0,0.83);
-box-shadow: -2px 20px 101px -44px rgba(0,0,0,0.83);
+    -webkit-box-shadow: -2px 20px 101px -44px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: -2px 20px 101px -44px rgba(0, 0, 0, 0.83);
+    box-shadow: -2px 20px 101px -44px rgba(0, 0, 0, 0.83);
 }
 
 .contacts_container {
@@ -53,6 +53,7 @@ box-shadow: -2px 20px 101px -44px rgba(0,0,0,0.83);
     margin-bottom: 45px;
     line-height: 22px;
 }
-.content_contacts li .text_contacts>div>a{
+
+.content_contacts li .text_contacts>div>a {
     color: #000000;
 }

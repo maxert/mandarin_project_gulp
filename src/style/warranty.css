@@ -31,7 +31,8 @@
     margin-bottom: 37px;
     line-height: 27px;
 }
-.image_container img{
+
+.image_container img {
     width: 100%;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -99,7 +100,8 @@
 }
 
 
-.image_container  .slick-next::before, .image_container .slick-prev::before {
+.image_container .slick-next::before,
+.image_container .slick-prev::before {
     position: absolute;
     left: 50%;
     background: url(../img/right_arrow_slider.png) center center no-repeat;
@@ -113,15 +115,17 @@
     content: "";
     background-size: 100%;
     border: none;
-    transform: rotate(180deg) translate(50%,50%);
-    -moz-transform: rotate(180deg) translate(50%,50%);
-    -ms-transform: rotate(180deg) translate(50%,50%);
-    -o-transform: rotate(180deg) translate(50%,50%);
-    -webkit-transform: rotate(180deg) translate(50%,50%);
+    transform: rotate(180deg) translate(50%, 50%);
+    -moz-transform: rotate(180deg) translate(50%, 50%);
+    -ms-transform: rotate(180deg) translate(50%, 50%);
+    -o-transform: rotate(180deg) translate(50%, 50%);
+    -webkit-transform: rotate(180deg) translate(50%, 50%);
 }
-.checkout_container  .content_popap_feedback{
+
+.checkout_container .content_popap_feedback {
     background: transparent;
 }
+
 .image_container .slick-prev.slick-arrow::before {
     content: "";
     background: url(../img/right_arrow_slider.png) center center no-repeat;
@@ -131,36 +135,46 @@
     z-index: 1;
     border: none;
 }
-.image_container .slick-next{
+
+.image_container .slick-next {
     right: 10px;
 }
-.image_container .slick-prev{
+
+.image_container .slick-prev {
     left: 10px;
     z-index: 1;
 }
+
 .image_container .slick-prev::before {
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-size: 100%;
     border: none;
 }
-.info_content_product .price_product_old{
+
+.info_content_product .price_product_old {
     top: -5px;
     left: 70px;
     font-size: 18px;
 }
-.price_product_old{
+
+.price_product_old {
     position: relative;
-    top: 45px;
-    left: 12px;
+    top: -19px;
+    left: 84px;
     color: gray;
     font-size: 16px;
     font-weight: 900;
     display: flex;
 }
-.price_product_old>div{
-    position: relative;
+
+.price_product_old>div {
+    position: absolute;
+    top: -8px;
+    left: -80px;
+    white-space: nowrap;
 }
-.price_product_old>div::before{
+
+.price_product_old>div::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -171,4 +185,8 @@
     background: gray;
     -webkit-transform: rotate(10deg);
     transform: rotate(9deg);
+}
+
+.site_map {
+    margin-bottom: 50px;
 }

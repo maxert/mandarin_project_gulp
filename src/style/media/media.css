@@ -4,6 +4,17 @@
     font-weight: 700;
   }
 
+  .nice-select .current:after {
+    right: -14px;
+    width: 10px;
+    height: 6px;
+    top: 55%;
+  }
+
+  .middle_count {
+    max-width: 60px;
+  }
+
   .slider-nav .slick-slide {
     width: 93px !important;
   }
@@ -134,10 +145,17 @@
     font-size: 16px;
   }
 
+  .price_product_old>div {
+    position: absolute;
+    top: -8px;
+    left: -63px;
+    white-space: nowrap;
+  }
+
   .price_product_old {
     position: relative;
-    top: 15px;
-    left: 12px;
+    top: -16px;
+    left: 69px;
     color: gray;
     font-size: 14px;
     font-weight: 900;
@@ -196,7 +214,7 @@
   }
 
   .m_header_center_search input[type="text"] {
-    width: 390px;
+    width: 330px;
   }
 
   .m_header_center_logo {
@@ -291,8 +309,17 @@
     background-color: #f5cf05;
   }
 
+  .top_hover_items {
+    height: 310px;
+  }
+
   #device {
     max-width: 1200px;
+  }
+
+  .buy_product svg {
+    width: 12px;
+    height: 22px;
   }
 
   #device>li>a {
@@ -304,7 +331,7 @@
     top: 48px;
     z-index: 2;
     min-width: 1200px;
-    height: 433px;
+    height: auto;
   }
 
   .link_items>li>a {
@@ -474,6 +501,7 @@
   .email_sand svg {
     width: 19px;
     height: 19px;
+    left: 9px;
   }
 
   .content_learn_items form {
@@ -586,6 +614,7 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 9.96px;
+    vertical-align: middle;
   }
 
   .nice-select:after {
@@ -751,6 +780,7 @@
 
   .left_arrow_number {
     margin-right: 32px;
+    margin-left: 0px;
   }
 
   .right_arrow_number {
@@ -831,7 +861,7 @@
   }
 
   .counter_number {
-    width: 147px;
+    width: 146px;
     height: 29px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -1179,6 +1209,10 @@
     height: 144px;
   }
 
+  .select_users_delivery .current {
+    max-width: 272px;
+  }
+
   .close_items img {
     width: 12px;
     height: 12px;
@@ -1200,6 +1234,9 @@
 
   .delivery_send .select_users_delivery .nice-select {
     width: 100% !important;
+    padding-right: 20px !important;
+    overflow: hidden;
+
   }
 
   .size_big {
@@ -1297,8 +1334,8 @@
   .select_users_delivery .nice-select,
   .nice-select.open {
     padding: 0px !important;
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+    padding-left: 6px !important;
+    padding-right: 0px !important;
   }
 
   .select_users_delivery .nice-select:after {
@@ -1584,6 +1621,22 @@
 }
 
 @media only screen and (max-width: 1279px) {
+  .tabs_container_brands>div {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .price_filter {
+    position: relative;
+    z-index: 2;
+  }
+
+  .list_filter {
+    position: relative;
+    z-index: 3;
+  }
+
   /*Animation*/
 
   @keyframes scale-in-top {
@@ -2034,7 +2087,16 @@
 
   .text_filter {
     margin-bottom: 23px;
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+
+  .filter>div {
+    margin-bottom: 20px;
+  }
+
+  .filter {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 
   .new_product>div {
@@ -2069,7 +2131,7 @@
   }
 
   .l_container.filter_content {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 
   .new_product>div:nth-child(2n + 1) {
@@ -2122,7 +2184,7 @@
   }
 
   .slider-nav {
-    display: none;
+    display: none !important;
   }
 
   .header_text {
@@ -2374,6 +2436,7 @@
 
   #breadcrumbs-two a {
     font-size: 10px;
+    padding-left: 20px;
   }
 
   .home_list img {
@@ -2470,6 +2533,16 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .l_container.text_authorization_container {
+    margin-bottom: 50px;
+  }
+
+  .tabs_container_brands>div {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
   .product_card_container {
     flex-direction: column;
     justify-content: center;
@@ -2635,7 +2708,9 @@
 
   .modal_header_top .m_header_top_lang {
     height: 100%;
-    width: 68px;
+    max-height: 35px;
+    min-height: 35px;
+    width: 70px;
     background: white;
   }
 
@@ -3955,7 +4030,6 @@
 
   .popup_buy_click .counter_number {
     margin-bottom: 20px;
-    margin-top: 20px;
   }
 
   .tabs_product {
@@ -4128,6 +4202,7 @@
 
   .row_items_forms>div {
     margin: 0px;
+    position: relative;
   }
 
   .result_form_order {
@@ -4366,7 +4441,7 @@
   }
 
   .container_content_warranty {
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
 
   .device_list.active {
@@ -4627,5 +4702,15 @@
 
   .l_container.tabs_container_personal {
     margin-bottom: 50px;
+  }
+
+  .l_container.online_store_container {
+    padding: 0 10px;
+  }
+  #device>li.active{
+    background: transparent;
+  }
+  .text_container {
+    text-align: center;
   }
 }
