@@ -7,10 +7,6 @@
     background: transparent;
 }
 
-.checkout_container .m_header_center_tel:hover {
-    height: 67px;
-}
-
 .checkout_container .m_header_center_logo {
     width: 262px;
     height: 67px;
@@ -28,8 +24,28 @@
 .checkout_container .m_header_center_tel {
     border: 1px solid #f5cf05;
     box-shadow: none;
+    background: #f7f7f7;
 }
-
+.checkout_container .m_header_center_tel:hover,
+.checkout_container .m_header_center_tel:hover .feedback_header{
+    background-color: #f7f7f7;
+}
+.checkout_container .m_header_center_tel:hover .feedback_header{
+    border-bottom: 1px solid #f5cf05;
+    border-right: 1px solid #f5cf05;
+    border-left: 1px solid #f5cf05;
+    box-shadow: 0 7px 9px 0px rgba(0,0,0,.1);
+}
+.checkout_container  .m_header_center_tel:hover{
+    border-top: 1px solid #f5cf05;
+    border-right: 1px solid #f5cf05;
+    border-left: 1px solid #f5cf05;
+    border-bottom: 1px solid transparent;
+}
+.checkout_container .coll_center,
+.checkout_container .feedback_header>span,
+.checkout_container .m_header_center_tel .feedback_header,
+.checkout_container .m_header_center_tel,
 .checkout_container .m_header_center_tel a {
     color: #000;
 }

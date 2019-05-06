@@ -152,8 +152,7 @@
 }
 
 .info_content_product .price_product_old {
-    top: -5px;
-    left: 70px;
+    top: -14px;
     font-size: 18px;
 }
 
@@ -169,8 +168,8 @@
 
 .price_product_old>div {
     position: absolute;
-    top: -8px;
-    left: -80px;
+    top:0px;
+    left: -180px;
     white-space: nowrap;
 }
 
