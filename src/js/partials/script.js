@@ -620,4 +620,9 @@ $(document).ready(function() {
       }
     };
   }
+  if (window.innerWidth <= 1280) {
+    if (document.querySelectorAll(".grid_container")[0]) {
+      document.querySelectorAll(".grid_container")[0].appendChild(document.querySelectorAll(".product_card_container>div:nth-child(1)")[0]);
+    }
+  }
 });
